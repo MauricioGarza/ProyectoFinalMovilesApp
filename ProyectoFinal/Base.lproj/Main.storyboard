@@ -37,7 +37,7 @@
                                 <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cerrodelasillacirc" translatesAutoresizingMaskIntoConstraints="NO" id="aeF-6a-5Wn">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logoCongreso" translatesAutoresizingMaskIntoConstraints="NO" id="aeF-6a-5Wn">
                                 <rect key="frame" x="18" y="119" width="286" height="264"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -563,8 +563,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cerrodelasillacirc" width="1189" height="1131"/>
         <image name="home" width="30" height="30"/>
+        <image name="logoCongreso" width="403" height="138"/>
         <image name="mail-512" width="512" height="512"/>
         <image name="meeting-clipart-group-activity-1" width="812" height="555"/>
         <image name="multiple" width="30" height="30"/>
