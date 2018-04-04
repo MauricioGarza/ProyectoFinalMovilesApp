@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC80EB34205ADAA000C080E3 /* ViewControllerInfoActividad.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80EB33205ADAA000C080E3 /* ViewControllerInfoActividad.swift */; };
 		ECF3914820584D220044BDCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF3914720584D220044BDCD /* AppDelegate.swift */; };
 		ECF3914A20584D220044BDCD /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF3914920584D220044BDCD /* FirstViewController.swift */; };
 		ECF3914C20584D220044BDCD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF3914B20584D220044BDCD /* SecondViewController.swift */; };
 		ECF3914F20584D220044BDCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF3914D20584D220044BDCD /* Main.storyboard */; };
 		ECF3915120584D220044BDCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECF3915020584D220044BDCD /* Assets.xcassets */; };
 		ECF3915420584D220044BDCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF3915220584D220044BDCD /* LaunchScreen.storyboard */; };
+		ECF39162205851CC0044BDCD /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF39161205851CC0044BDCD /* InfoViewController.swift */; };
+		ECF39164205869460044BDCD /* TableViewControllerActividadesCult.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF39163205869460044BDCD /* TableViewControllerActividadesCult.swift */; };
+		ECF3916A205872620044BDCD /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF39169205872620044BDCD /* TabBarController.swift */; };
+		ECF39172205ACF230044BDCD /* ViewControllerFiltrar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF39171205ACF230044BDCD /* ViewControllerFiltrar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC80EB33205ADAA000C080E3 /* ViewControllerInfoActividad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInfoActividad.swift; sourceTree = "<group>"; };
 		ECF3914420584D220044BDCD /* ProyectoFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF3914720584D220044BDCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECF3914920584D220044BDCD /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +30,10 @@
 		ECF3915020584D220044BDCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECF3915320584D220044BDCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECF3915520584D220044BDCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF39161205851CC0044BDCD /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		ECF39163205869460044BDCD /* TableViewControllerActividadesCult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerActividadesCult.swift; sourceTree = "<group>"; };
+		ECF39169205872620044BDCD /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		ECF39171205ACF230044BDCD /* ViewControllerFiltrar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFiltrar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +68,13 @@
 			children = (
 				ECF3914720584D220044BDCD /* AppDelegate.swift */,
 				ECF3914920584D220044BDCD /* FirstViewController.swift */,
+				ECF39171205ACF230044BDCD /* ViewControllerFiltrar.swift */,
 				ECF3914B20584D220044BDCD /* SecondViewController.swift */,
 				ECF3914D20584D220044BDCD /* Main.storyboard */,
+				EC80EB33205ADAA000C080E3 /* ViewControllerInfoActividad.swift */,
+				ECF39169205872620044BDCD /* TabBarController.swift */,
+				ECF39163205869460044BDCD /* TableViewControllerActividadesCult.swift */,
+				ECF39161205851CC0044BDCD /* InfoViewController.swift */,
 				ECF3915020584D220044BDCD /* Assets.xcassets */,
 				ECF3915220584D220044BDCD /* LaunchScreen.storyboard */,
 				ECF3915520584D220044BDCD /* Info.plist */,
@@ -139,9 +154,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC80EB34205ADAA000C080E3 /* ViewControllerInfoActividad.swift in Sources */,
 				ECF3914C20584D220044BDCD /* SecondViewController.swift in Sources */,
 				ECF3914820584D220044BDCD /* AppDelegate.swift in Sources */,
+				ECF39164205869460044BDCD /* TableViewControllerActividadesCult.swift in Sources */,
+				ECF39172205ACF230044BDCD /* ViewControllerFiltrar.swift in Sources */,
+				ECF3916A205872620044BDCD /* TabBarController.swift in Sources */,
 				ECF3914A20584D220044BDCD /* FirstViewController.swift in Sources */,
+				ECF39162205851CC0044BDCD /* InfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
