@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import EventKit
 
 class ViewControllerInfoActividad: UIViewController {
 
@@ -38,6 +39,34 @@ class ViewControllerInfoActividad: UIViewController {
     */
     @IBAction func butRegresar(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
+    }
+    @IBAction func addToCalendar(_ sender: Any) {
+        let eventStore:EKEventStore = EKEventStore()
+        
+        eventStore.requestAccess(to: .event) { (granted, error) in
+            if(granted) && (error==nil){
+                print("granted")
+                print("error")
+                
+                let event:EKEvent=EKEvent(eventStore: eventStore)
+                event.title="titulo evento"
+                event.startDate=Date()
+                event.endDate=Date()
+                event.notes="Nota del evento"
+                event.calendar=eventStore.defaultCalendarForNewEvents
+                do{
+                    try eventStore.save(event, span: .thisEvent)
+                } catch let error as NSError{
+                    print(error)
+                }
+                print("Save Event")
+                
+                
+            } else{
+                print("error")
+            }
+            
+        }
     }
     
     

@@ -80,14 +80,6 @@
                                 <color key="textColor" red="0.31184337280000002" green="0.38296631580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="phone" translatesAutoresizingMaskIntoConstraints="NO" id="Keg-4J-XSF">
-                                <rect key="frame" x="211" y="138" width="42" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mail-512" translatesAutoresizingMaskIntoConstraints="NO" id="CgV-Uk-eg7">
-                                <rect key="frame" x="211" y="265" width="42" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="8121093720" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ISa-GS-WWf">
                                 <rect key="frame" x="79" y="203" width="148" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -108,6 +100,22 @@
                                 <state key="normal" title="Regresar"/>
                                 <connections>
                                     <action selector="butonRegroso:" destination="O5o-IV-OVM" eventType="touchUpInside" id="tVc-eu-sys"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzq-9f-ycW">
+                                <rect key="frame" x="218" y="138" width="35" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="phone"/>
+                                <connections>
+                                    <action selector="makeCall:" destination="O5o-IV-OVM" eventType="touchUpInside" id="KvL-la-aAk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21e-M1-5oR">
+                                <rect key="frame" x="218" y="265" width="35" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="mail-512"/>
+                                <connections>
+                                    <action selector="sendEmail:" destination="O5o-IV-OVM" eventType="touchUpInside" id="t01-Rb-isV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -250,6 +258,9 @@
                                 <rect key="frame" x="88" y="494" width="144" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Agregar a Calendario"/>
+                                <connections>
+                                    <action selector="addToCalendar:" destination="aei-PF-N5d" eventType="touchUpInside" id="mqs-yk-CHT"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Expositor:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="67s-dV-IYa">
                                 <rect key="frame" x="16" y="373" width="107" height="21"/>
