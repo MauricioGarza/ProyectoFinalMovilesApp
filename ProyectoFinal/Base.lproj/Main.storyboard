@@ -38,7 +38,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logoCongreso" translatesAutoresizingMaskIntoConstraints="NO" id="aeF-6a-5Wn">
-                                <rect key="frame" x="18" y="119" width="286" height="264"/>
+                                <rect key="frame" x="6" y="205" width="286" height="264"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
