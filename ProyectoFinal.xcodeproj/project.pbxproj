@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		01CF7B70CB75EED72AB16CA0 /* Pods_ProyectoFinal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3603347AEBC61785E105364D /* Pods_ProyectoFinal.framework */; };
 		EC413D1F2078585F00CCDD58 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC413D1E2078585F00CCDD58 /* GoogleService-Info.plist */; };
+		EC413D2120785B9C00CCDD58 /* Git in Resources */ = {isa = PBXBuildFile; fileRef = EC413D2020785B9C00CCDD58 /* Git */; };
 		EC80EB34205ADAA000C080E3 /* ViewControllerInfoActividad.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80EB33205ADAA000C080E3 /* ViewControllerInfoActividad.swift */; };
 		ECF3914820584D220044BDCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF3914720584D220044BDCD /* AppDelegate.swift */; };
 		ECF3914A20584D220044BDCD /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF3914920584D220044BDCD /* FirstViewController.swift */; };
@@ -27,6 +28,7 @@
 		3603347AEBC61785E105364D /* Pods_ProyectoFinal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProyectoFinal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97C6DB2C50138CE3F611667 /* Pods-ProyectoFinal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProyectoFinal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProyectoFinal/Pods-ProyectoFinal.debug.xcconfig"; sourceTree = "<group>"; };
 		EC413D1E2078585F00CCDD58 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EC413D2020785B9C00CCDD58 /* Git */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Git; path = ../../../../../../.Trash/Git; sourceTree = "<group>"; };
 		EC80EB33205ADAA000C080E3 /* ViewControllerInfoActividad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInfoActividad.swift; sourceTree = "<group>"; };
 		ECF3914420584D220044BDCD /* ProyectoFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF3914720584D220044BDCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				ECF39163205869460044BDCD /* TableViewControllerActividadesCult.swift */,
 				ECF39161205851CC0044BDCD /* InfoViewController.swift */,
 				ECF3915020584D220044BDCD /* Assets.xcassets */,
+				EC413D2020785B9C00CCDD58 /* Git */,
 				ECF3915220584D220044BDCD /* LaunchScreen.storyboard */,
 				ECF3915520584D220044BDCD /* Info.plist */,
 			);
@@ -171,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECF3915420584D220044BDCD /* LaunchScreen.storyboard in Resources */,
+				EC413D2120785B9C00CCDD58 /* Git in Resources */,
 				EC413D1F2078585F00CCDD58 /* GoogleService-Info.plist in Resources */,
 				ECF3915120584D220044BDCD /* Assets.xcassets in Resources */,
 				ECF3914F20584D220044BDCD /* Main.storyboard in Resources */,
