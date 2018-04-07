@@ -7,26 +7,32 @@
 //
 
 import UIKit
+import Firebase
 
 class TableViewControllerActividadesCult: UITableViewController {
     @IBOutlet weak var butRegresar: UIButton!
     @IBOutlet weak var butFiltrar: UIButton!
     @IBOutlet weak var butTitle: UILabel!
-    
-    let arrActividades : [String] = ["Actividad 1","Actividad 2", "Actividad 3", "Actividad 4", "Actividad 5"]
-    let arrPabellones : [String] = ["Pabellon 1", "Pabellon 2", "Pabellon 3", "Pabellon 4", "Pabellon 5", "Pabellon 6"]
-    let arrDerHumanos : [String] = ["Humano 1", "Humano 2", "Humano 3", "Humano 4"]
-    let caliddadVida : [String] = ["Cal1", "Cal2", "Cal3", "Cal4", "Cal5","Cal6"]
-    let geriatria : [String] = ["G1","G2"]
-    let inclusion : [String] = ["Inc1","Inc2","Norby","Norby2"]
-    let tec : [String] = ["Tec1","Tec2","Tec3","Tec4","Tec5","Tec21","Tec22"]
-    let bienestar : [String] = ["Bien1","Bien2","Bien3","Bien4","Bien5","6","7","8"]
+
+    var arrActividadesCulturales : [String] = []
+    var arrActDerHumanos : [String] = []
+    var arrDerHumanos : [String] = []
+    var arrCalidadVida : [String] = []
+    var arrActGeriatria : [String] = []
+    var arrActInclusion : [String] = []
+    var arrActTecnologia : [String] = []
+    var arrActBienestar : [String] = []
     
     var Indice : Int!
     var FinalIndice : Int!
     
+    var Handle:DatabaseHandle?
+    var FireBaseRef:DatabaseReference?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Conecta a la base datos Firebase
+            FireBaseRef = Database.database().reference()
         FinalIndice = Indice
         navigationController?.setNavigationBarHidden(true, animated: false)
         if tabBarController?.selectedIndex != nil {
@@ -35,6 +41,13 @@ class TableViewControllerActividadesCult: UITableViewController {
             switch tabBarController?.selectedIndex{
             case 2?:
                 butTitle.text = "Actividades Culturales"
+                Handle = FireBaseRef?.observe(.childAdded, with:{(DataSnapshot) in
+                    if let item = DataSnapshot.value as? String
+                    {
+                        self.arrActividadesCulturales.append(item)
+                        self.tableView.reloadData()
+                    }
+                })
             case 3?:
             butTitle.text = "Pabellones"
             default:
@@ -48,7 +61,7 @@ class TableViewControllerActividadesCult: UITableViewController {
             case 0:
                 butTitle.text = "Actividades Eje Derechos Humanos"
             case 1:
-                butTitle.text = "Actividades Eje Bienestar"
+                butTitle.text = "Actividades Eje arrActBienestar"
             case 2:
                 butTitle.text = "Actividades Eje Calidad de Vida"
             case 3:
@@ -79,9 +92,9 @@ class TableViewControllerActividadesCult: UITableViewController {
         if tabBarController?.selectedIndex != nil{
             switch tabBarController?.selectedIndex {
             case 3?:
-                return arrPabellones.count
+                return arrActDerHumanos.count
             case 2?:
-                return arrActividades.count
+                return arrActividadesCulturales.count
             default:
                 break
             }
@@ -92,15 +105,15 @@ class TableViewControllerActividadesCult: UITableViewController {
             case 0:
                 return arrDerHumanos.count
             case 1:
-                return bienestar.count
+                return arrActBienestar.count
             case 2:
-                return caliddadVida.count
+                return arrCalidadVida.count
             case 3:
-                return geriatria.count
+                return arrActGeriatria.count
             case 4:
-                return inclusion.count
+                return arrActInclusion.count
             case 5:
-                return tec.count
+                return arrActTecnologia.count
             default:
                 break
             }
@@ -115,10 +128,10 @@ class TableViewControllerActividadesCult: UITableViewController {
         if tabBarController?.selectedIndex != nil{
             switch tabBarController?.selectedIndex {
             case 3?:
-                cell.textLabel?.text = arrPabellones[indexPath.row]
+                cell.textLabel?.text = arrActDerHumanos[indexPath.row]
                 cell.detailTextLabel?.text = "Descripcion breve pabellon"
             case 2?:
-                cell.textLabel?.text = arrActividades[indexPath.row]
+                cell.textLabel?.text = arrActividadesCulturales[indexPath.row]
                 cell.detailTextLabel?.text = "Descripción breve actividad"
             default:
                 break
@@ -131,19 +144,19 @@ class TableViewControllerActividadesCult: UITableViewController {
                 cell.textLabel?.text = self.arrDerHumanos[indexPath.row]
                 cell.detailTextLabel?.text = "Descripcion act derechos humanos"
             case 1:
-                cell.textLabel?.text = bienestar[indexPath.row]
-                cell.detailTextLabel?.text = "Descripcion act bienestar"
+                cell.textLabel?.text = arrActBienestar[indexPath.row]
+                cell.detailTextLabel?.text = "Descripcion act arrActBienestar"
             case 2:
-                cell.textLabel?.text = caliddadVida[indexPath.row]
+                cell.textLabel?.text = arrCalidadVida[indexPath.row]
                 cell.detailTextLabel?.text = "Descripcion actividades calidad vida"
             case 3:
-                cell.textLabel?.text = geriatria[indexPath.row]
+                cell.textLabel?.text = arrActGeriatria[indexPath.row]
                 cell.detailTextLabel?.text = "Descripcion actividades eje geriantria"
             case 4:
-                cell.textLabel?.text = inclusion[indexPath.row]
+                cell.textLabel?.text = arrActInclusion[indexPath.row]
                 cell.detailTextLabel?.text = "Descripcion de actividades eje    inclusion"
             case 5:
-                cell.textLabel?.text = tec[indexPath.row]
+                cell.textLabel?.text = arrActTecnologia[indexPath.row]
                 cell.detailTextLabel?.text = "Descripcion actividades eje tecnologias"
             default:
                 print("Norby me la pela")
@@ -200,10 +213,10 @@ class TableViewControllerActividadesCult: UITableViewController {
             if tabBarController?.selectedIndex != nil{
                 switch tabBarController?.selectedIndex {
                 case 3?:
-                    dest.titulo = arrPabellones[(indice?.row)!]
+                    dest.titulo = arrActDerHumanos[(indice?.row)!]
                     dest.descripcion = "Descripcion de los pabellones"
                 case 2?:
-                    dest.titulo = arrActividades[(indice?.row)!]
+                    dest.titulo = arrActividadesCulturales[(indice?.row)!]
                     dest.descripcion = "Descripcion de actividades culturales"
                 default:
                     break
@@ -216,19 +229,19 @@ class TableViewControllerActividadesCult: UITableViewController {
                     dest.titulo = arrDerHumanos[(indice?.row)!]
                     dest.descripcion = "Descripcion act derechos humanos"
                 case 1:
-                    dest.titulo =  bienestar[(indice?.row)!]
-                    dest.descripcion = "Descripcion act bienestar"
+                    dest.titulo =  arrActBienestar[(indice?.row)!]
+                    dest.descripcion = "Descripcion act arrActBienestar"
                 case 2:
-                    dest.titulo = caliddadVida[(indice?.row)!]
+                    dest.titulo = arrCalidadVida[(indice?.row)!]
                     dest.descripcion = "Descripcion actividades calidad vida"
                 case 3:
-                    dest.titulo = geriatria[(indice?.row)!]
+                    dest.titulo = arrActGeriatria[(indice?.row)!]
                     dest.descripcion = "Descripcion actividades eje geriantria"
                 case 4:
-                    dest.titulo = inclusion[(indice?.row)!]
+                    dest.titulo = arrActInclusion[(indice?.row)!]
                     dest.descripcion = "Descripcion de actividades eje    inclusion"
                 case 5:
-                    dest.titulo = tec[(indice?.row)!]
+                    dest.titulo = arrActTecnologia[(indice?.row)!]
                     dest.descripcion = "Descripcion actividades eje tecnologias"
                 default:
                     break
