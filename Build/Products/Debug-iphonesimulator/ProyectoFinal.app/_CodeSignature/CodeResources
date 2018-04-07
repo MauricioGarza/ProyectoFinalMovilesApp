@@ -4,10 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.gitignore</key>
-		<data>
-		8jR/02Ile2qSKL3PO2wLnw4cwHo=
-		</data>
 		<key>Assets.car</key>
 		<data>
 		ygkeYr0t6K2ZcmfQDjE2cNYliRE=
@@ -26,51 +22,51 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/8rJ-Kc-sve-view-QS5-Rx-YEW.nib</key>
 		<data>
-		YCgPr9GL3d7MV0wJMn8+m8BIxMs=
+		XJ4p67skgTqzuNnNBPDXDZsz27s=
 		</data>
 		<key>Base.lproj/Main.storyboardc/9pv-A4-QxB-view-tsR-hK-woN.nib</key>
 		<data>
-		qOvo5yMngNtUsxKZo/R7wlDjGYE=
+		MmvnxXrr+thJ28403nXYcHqBH4k=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
-		qh4mm+J2NER66gt1aAyO2bjvjSo=
+		5JT02HS/TgqRhtZwm6rIRLASRQQ=
 		</data>
 		<key>Base.lproj/Main.storyboardc/O5o-IV-OVM-view-Lfj-7z-bRu.nib</key>
 		<data>
-		tKQmaQRP5hO5nvTwnkjjJzmt+cY=
+		51E4N4tYRyPK5GFXO1V5X7dQVuY=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UITabBarController-49e-Tb-3d3.nib</key>
 		<data>
-		t0MKEWOsxB0v1vcsZvf0DD1pJNo=
+		1j8qCAoi2DEE/IbCYDjSXfDQwM4=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UITableViewController-mdI-SV-wKd.nib</key>
 		<data>
-		WBkYDkUOIOjvk5HVha5CCNrQ8Oo=
+		J51BsTT88iXX2QDuZb30jblZziE=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-O5o-IV-OVM.nib</key>
 		<data>
-		hfBEVgCp9qJXTpGXn7gZOaXMnGs=
+		/mHDC/lS2mxor++IoUu4QyLm178=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-UjK-3D-Sog.nib</key>
 		<data>
-		c8nl9j/O7braH+5p6Zs77u10YgM=
+		JwCvLo6ZjSQkEnzz+b0uFuUVpA4=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-aei-PF-N5d.nib</key>
 		<data>
-		gJqy8JfoLC0dGGTHCroiX+Xof40=
+		YacjjyOQlANiU2j3D0wMKSegVFo=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UjK-3D-Sog-view-llw-gG-DdO.nib</key>
 		<data>
-		p7WF3ADPMN87rLQktzY6rZxyNJc=
+		fgau50aYXOF0UdzGZ2TSIq7eNoY=
 		</data>
 		<key>Base.lproj/Main.storyboardc/aei-PF-N5d-view-lKf-GR-30U.nib</key>
 		<data>
-		X2CRV8HWTO+vlwJwvk+9NhYyZuU=
+		dyDPS6/Ll8YDqRGmI9BAn7TjlRg=
 		</data>
 		<key>Base.lproj/Main.storyboardc/mdI-SV-wKd-view-mQg-8B-KbV.nib</key>
 		<data>
-		68vEmhXZjwdIFgryXBQ1Gfrujv0=
+		W+N7MJYz6FAX8Zk7y6ABeZiuc+M=
 		</data>
 		<key>Frameworks/GoogleToolboxForMac.framework/GoogleToolboxForMac</key>
 		<data>
@@ -183,17 +179,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>.gitignore</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			8jR/02Ile2qSKL3PO2wLnw4cwHo=
-			</data>
-			<key>hash2</key>
-			<data>
-			Yc8OIUZTj90GbhKlH9piILy9HXRwo8hOfFx7CZWGw6w=
-			</data>
-		</dict>
 		<key>Assets.car</key>
 		<dict>
 			<key>hash</key>
@@ -242,132 +227,132 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YCgPr9GL3d7MV0wJMn8+m8BIxMs=
+			XJ4p67skgTqzuNnNBPDXDZsz27s=
 			</data>
 			<key>hash2</key>
 			<data>
-			ShvjeVLp4N77mpBT9wxMBKLQ1zuLuH3GgKWEj+6S9Fw=
+			x59WzvjGrT9W4Z+LFCifvW+iKkfQWIMo+qOqzdeNQD4=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/9pv-A4-QxB-view-tsR-hK-woN.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qOvo5yMngNtUsxKZo/R7wlDjGYE=
+			MmvnxXrr+thJ28403nXYcHqBH4k=
 			</data>
 			<key>hash2</key>
 			<data>
-			YGc5NCh7eB7af3sfaKTram+Cb5UsyFW1kQ/tAsxxC20=
+			tX5sHP1iVCYiS5SQ2VxxSiBhEbmJPzTBGvi3+ojW8f4=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qh4mm+J2NER66gt1aAyO2bjvjSo=
+			5JT02HS/TgqRhtZwm6rIRLASRQQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			pckQZqldVzoTjvzwrUDLEN+TypncLfY6KuBUkq/L0Iw=
+			km1Qk+TPfOgXwEKC1JOjaVuyveSBhIeRKtQVOLl2lRw=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/O5o-IV-OVM-view-Lfj-7z-bRu.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tKQmaQRP5hO5nvTwnkjjJzmt+cY=
+			51E4N4tYRyPK5GFXO1V5X7dQVuY=
 			</data>
 			<key>hash2</key>
 			<data>
-			yFX/DFjTB0jnB1UYR3sinvDPQiCxnBbazofaG4mKvKw=
+			LcttmxMy4O2v7RLa4J/GZ5KXbtGZqye2G94H4Vo+McM=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UITabBarController-49e-Tb-3d3.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			t0MKEWOsxB0v1vcsZvf0DD1pJNo=
+			1j8qCAoi2DEE/IbCYDjSXfDQwM4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Absoyj9Ar/zQfMEbfmmeRF/VqzvwzkwnGC2UjhoxVbs=
+			T+cw2It7l6DKMFUo4TC6fFGiyglz3tZFzzdWZy0TUB4=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UITableViewController-mdI-SV-wKd.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WBkYDkUOIOjvk5HVha5CCNrQ8Oo=
+			J51BsTT88iXX2QDuZb30jblZziE=
 			</data>
 			<key>hash2</key>
 			<data>
-			XvBde9S2TTa900nFDG2j0vD3YQgCBj3zQGReW0X7Qwk=
+			5cR4B7ZyGUAWHplY9YunPuOw7sqi5AspOi42wqG1ruU=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UIViewController-O5o-IV-OVM.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hfBEVgCp9qJXTpGXn7gZOaXMnGs=
+			/mHDC/lS2mxor++IoUu4QyLm178=
 			</data>
 			<key>hash2</key>
 			<data>
-			xo5i8rrCgvMPCipXhOZvm1mhlhtbfCnRNfEFW8rJKok=
+			zaoKOc8tfdHz4Mn4NELmVwa6XBoBbH7cmG55ktVpP9g=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UIViewController-UjK-3D-Sog.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			c8nl9j/O7braH+5p6Zs77u10YgM=
+			JwCvLo6ZjSQkEnzz+b0uFuUVpA4=
 			</data>
 			<key>hash2</key>
 			<data>
-			NpHQ8/5AsQ/9tTVssaNfZTTs5ggS+ewK9iBy7FYaDtk=
+			K/BwMsZmEKyIjFaDvYAsa6FlPv+6EsbnSTOyXvDOkaU=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UIViewController-aei-PF-N5d.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gJqy8JfoLC0dGGTHCroiX+Xof40=
+			YacjjyOQlANiU2j3D0wMKSegVFo=
 			</data>
 			<key>hash2</key>
 			<data>
-			QqX+sA0d5xepIVI+CMIReg5TEWKWilAXOCchFuN52XI=
+			bqkcTnGcevAA7fv8xdLOTUNPD+zlHh7ayI2gJD5aCag=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UjK-3D-Sog-view-llw-gG-DdO.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			p7WF3ADPMN87rLQktzY6rZxyNJc=
+			fgau50aYXOF0UdzGZ2TSIq7eNoY=
 			</data>
 			<key>hash2</key>
 			<data>
-			3jQPiEi1g7y9fxv3KU6rWceaCriPjXVTQN/n4e4OpwQ=
+			/Ykiz5FTtgxnIVQmxXmjb38fH1ts8vio2/pKo9iJsi4=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/aei-PF-N5d-view-lKf-GR-30U.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			X2CRV8HWTO+vlwJwvk+9NhYyZuU=
+			dyDPS6/Ll8YDqRGmI9BAn7TjlRg=
 			</data>
 			<key>hash2</key>
 			<data>
-			i0Aw8h1rcuZNQnaBQGy0V2l8jJuWeNRbZ5njmkDjAgg=
+			JNFeFf4yqS0SDeBC6fAecfoIErqyTaT6NSo4exvPfMQ=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/mdI-SV-wKd-view-mQg-8B-KbV.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			68vEmhXZjwdIFgryXBQ1Gfrujv0=
+			W+N7MJYz6FAX8Zk7y6ABeZiuc+M=
 			</data>
 			<key>hash2</key>
 			<data>
-			4H8mj3SCDy5BZ5htn1oCi413NuUnkujRLAaAeoWyIpo=
+			SlWNy9diVrsjzOARfOpZ4m0YV/9+wQzaQp4WOHT7GhA=
 			</data>
 		</dict>
 		<key>Frameworks/GoogleToolboxForMac.framework/GoogleToolboxForMac</key>
