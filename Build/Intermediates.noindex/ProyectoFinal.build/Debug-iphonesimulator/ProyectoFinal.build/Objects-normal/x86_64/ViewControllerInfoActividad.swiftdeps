@@ -1,0 +1,579 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ViewControllerInfoActividad"
+provides-nominal:
+- "13ProyectoFinal27ViewControllerInfoActividadC"
+provides-member:
+- ["13ProyectoFinal27ViewControllerInfoActividadC", ""]
+provides-dynamic-lookup:
+- "addToCalendar"
+- "butRegresar"
+- "descActividad"
+- "didReceiveMemoryWarning"
+- "labTitulo"
+- "viewDidLoad"
+depends-top-level:
+- !private "&&"
+- !private "=="
+- "AssignmentPrecedence"
+- !private "BooleanLiteralType"
+- !private "Date"
+- !private "EKEvent"
+- !private "EKEventStore"
+- !private "NSError"
+- "String"
+- "StringLiteralType"
+- "UIButton"
+- "UILabel"
+- "UIViewController"
+- "ViewControllerInfoActividad"
+- !private "print"
+depends-member:
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So15CALayerDelegateP", "text"]
+- !private ["s7CVarArgP", "Date"]
+- !private ["s7CVarArgP", "EKEvent"]
+- !private ["s7CVarArgP", "EKEventStore"]
+- !private ["s7CVarArgP", "calendar"]
+- !private ["s7CVarArgP", "defaultCalendarForNewEvents"]
+- !private ["s7CVarArgP", "descActividad"]
+- !private ["s7CVarArgP", "descripcion"]
+- !private ["s7CVarArgP", "didReceiveMemoryWarning"]
+- !private ["s7CVarArgP", "dismiss"]
+- !private ["s7CVarArgP", "endDate"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "labTitulo"]
+- !private ["s7CVarArgP", "notes"]
+- !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "requestAccess"]
+- !private ["s7CVarArgP", "save"]
+- !private ["s7CVarArgP", "startDate"]
+- !private ["s7CVarArgP", "text"]
+- !private ["s7CVarArgP", "title"]
+- !private ["s7CVarArgP", "titulo"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- ["s7CVarArgP", ""]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "Date"]
+- !private ["s28CustomDebugStringConvertibleP", "EKEvent"]
+- !private ["s28CustomDebugStringConvertibleP", "EKEventStore"]
+- !private ["s28CustomDebugStringConvertibleP", "calendar"]
+- !private ["s28CustomDebugStringConvertibleP", "defaultCalendarForNewEvents"]
+- !private ["s28CustomDebugStringConvertibleP", "descActividad"]
+- !private ["s28CustomDebugStringConvertibleP", "descripcion"]
+- !private ["s28CustomDebugStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s28CustomDebugStringConvertibleP", "dismiss"]
+- !private ["s28CustomDebugStringConvertibleP", "endDate"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "labTitulo"]
+- !private ["s28CustomDebugStringConvertibleP", "notes"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "requestAccess"]
+- !private ["s28CustomDebugStringConvertibleP", "save"]
+- !private ["s28CustomDebugStringConvertibleP", "startDate"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "title"]
+- !private ["s28CustomDebugStringConvertibleP", "titulo"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "Date"]
+- !private ["s23CustomStringConvertibleP", "EKEvent"]
+- !private ["s23CustomStringConvertibleP", "EKEventStore"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "calendar"]
+- !private ["s23CustomStringConvertibleP", "defaultCalendarForNewEvents"]
+- !private ["s23CustomStringConvertibleP", "descActividad"]
+- !private ["s23CustomStringConvertibleP", "descripcion"]
+- !private ["s23CustomStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s23CustomStringConvertibleP", "dismiss"]
+- !private ["s23CustomStringConvertibleP", "endDate"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "labTitulo"]
+- !private ["s23CustomStringConvertibleP", "notes"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "requestAccess"]
+- !private ["s23CustomStringConvertibleP", "save"]
+- !private ["s23CustomStringConvertibleP", "startDate"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- !private ["s23CustomStringConvertibleP", "title"]
+- !private ["s23CustomStringConvertibleP", "titulo"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["10Foundation4DateV", "init"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "init"]
+- !private ["So14EKCalendarItemC", "calendar"]
+- !private ["So14EKCalendarItemC", "endDate"]
+- !private ["So14EKCalendarItemC", "init"]
+- !private ["So14EKCalendarItemC", "notes"]
+- !private ["So14EKCalendarItemC", "startDate"]
+- !private ["So14EKCalendarItemC", "title"]
+- !private ["SC12EKEntityTypeO", "event"]
+- !private ["So7EKEventC", "calendar"]
+- !private ["So7EKEventC", "endDate"]
+- !private ["So7EKEventC", "init"]
+- !private ["So7EKEventC", "notes"]
+- !private ["So7EKEventC", "startDate"]
+- !private ["So7EKEventC", "title"]
+- !private ["So12EKEventStoreC", "defaultCalendarForNewEvents"]
+- !private ["So12EKEventStoreC", "init"]
+- !private ["So12EKEventStoreC", "requestAccess"]
+- !private ["So12EKEventStoreC", "save"]
+- !private ["So8EKObjectC", "calendar"]
+- !private ["So8EKObjectC", "endDate"]
+- !private ["So8EKObjectC", "init"]
+- !private ["So8EKObjectC", "notes"]
+- !private ["So8EKObjectC", "startDate"]
+- !private ["So8EKObjectC", "title"]
+- !private ["SC6EKSpanO", "thisEvent"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "Date"]
+- !private ["s9EquatableP", "EKEvent"]
+- !private ["s9EquatableP", "EKEventStore"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "calendar"]
+- !private ["s9EquatableP", "defaultCalendarForNewEvents"]
+- !private ["s9EquatableP", "descActividad"]
+- !private ["s9EquatableP", "descripcion"]
+- !private ["s9EquatableP", "didReceiveMemoryWarning"]
+- !private ["s9EquatableP", "dismiss"]
+- !private ["s9EquatableP", "endDate"]
+- !private ["s9EquatableP", "event"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "labTitulo"]
+- !private ["s9EquatableP", "notes"]
+- !private ["s9EquatableP", "print"]
+- !private ["s9EquatableP", "requestAccess"]
+- !private ["s9EquatableP", "save"]
+- !private ["s9EquatableP", "startDate"]
+- !private ["s9EquatableP", "text"]
+- !private ["s9EquatableP", "thisEvent"]
+- !private ["s9EquatableP", "title"]
+- !private ["s9EquatableP", "titulo"]
+- !private ["s9EquatableP", "viewDidLoad"]
+- ["s9EquatableP", ""]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s8HashableP", "Date"]
+- !private ["s8HashableP", "EKEvent"]
+- !private ["s8HashableP", "EKEventStore"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "calendar"]
+- !private ["s8HashableP", "defaultCalendarForNewEvents"]
+- !private ["s8HashableP", "descActividad"]
+- !private ["s8HashableP", "descripcion"]
+- !private ["s8HashableP", "didReceiveMemoryWarning"]
+- !private ["s8HashableP", "dismiss"]
+- !private ["s8HashableP", "endDate"]
+- !private ["s8HashableP", "event"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "labTitulo"]
+- !private ["s8HashableP", "notes"]
+- !private ["s8HashableP", "print"]
+- !private ["s8HashableP", "requestAccess"]
+- !private ["s8HashableP", "save"]
+- !private ["s8HashableP", "startDate"]
+- !private ["s8HashableP", "text"]
+- !private ["s8HashableP", "thisEvent"]
+- !private ["s8HashableP", "title"]
+- !private ["s8HashableP", "titulo"]
+- !private ["s8HashableP", "viewDidLoad"]
+- ["s8HashableP", ""]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "Date"]
+- !private ["So8NSCodingP", "EKEvent"]
+- !private ["So8NSCodingP", "EKEventStore"]
+- !private ["So8NSCodingP", "descActividad"]
+- !private ["So8NSCodingP", "descripcion"]
+- !private ["So8NSCodingP", "didReceiveMemoryWarning"]
+- !private ["So8NSCodingP", "dismiss"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "labTitulo"]
+- !private ["So8NSCodingP", "print"]
+- !private ["So8NSCodingP", "text"]
+- !private ["So8NSCodingP", "titulo"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- ["So8NSCodingP", ""]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "Date"]
+- !private ["So26NSExtensionRequestHandlingP", "EKEvent"]
+- !private ["So26NSExtensionRequestHandlingP", "EKEventStore"]
+- !private ["So26NSExtensionRequestHandlingP", "descActividad"]
+- !private ["So26NSExtensionRequestHandlingP", "descripcion"]
+- !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
+- !private ["So26NSExtensionRequestHandlingP", "dismiss"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "labTitulo"]
+- !private ["So26NSExtensionRequestHandlingP", "print"]
+- !private ["So26NSExtensionRequestHandlingP", "titulo"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So16NSMutableCopyingP", "init"]
+- !private ["So8NSObjectC", "Date"]
+- !private ["So8NSObjectC", "EKEvent"]
+- !private ["So8NSObjectC", "EKEventStore"]
+- !private ["So8NSObjectC", "NSError"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "UIButton"]
+- ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "addToCalendar"]
+- ["So8NSObjectC", "butRegresar"]
+- !private ["So8NSObjectC", "calendar"]
+- !private ["So8NSObjectC", "defaultCalendarForNewEvents"]
+- ["So8NSObjectC", "descActividad"]
+- ["So8NSObjectC", "descripcion"]
+- ["So8NSObjectC", "didReceiveMemoryWarning"]
+- !private ["So8NSObjectC", "dismiss"]
+- !private ["So8NSObjectC", "endDate"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "labTitulo"]
+- !private ["So8NSObjectC", "notes"]
+- !private ["So8NSObjectC", "print"]
+- !private ["So8NSObjectC", "requestAccess"]
+- !private ["So8NSObjectC", "save"]
+- !private ["So8NSObjectC", "startDate"]
+- !private ["So8NSObjectC", "text"]
+- !private ["So8NSObjectC", "title"]
+- ["So8NSObjectC", "titulo"]
+- ["So8NSObjectC", "viewDidLoad"]
+- !private ["So16NSObjectProtocolP", "Date"]
+- !private ["So16NSObjectProtocolP", "EKEvent"]
+- !private ["So16NSObjectProtocolP", "EKEventStore"]
+- !private ["So16NSObjectProtocolP", "calendar"]
+- !private ["So16NSObjectProtocolP", "defaultCalendarForNewEvents"]
+- !private ["So16NSObjectProtocolP", "descActividad"]
+- !private ["So16NSObjectProtocolP", "descripcion"]
+- !private ["So16NSObjectProtocolP", "didReceiveMemoryWarning"]
+- !private ["So16NSObjectProtocolP", "dismiss"]
+- !private ["So16NSObjectProtocolP", "endDate"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "labTitulo"]
+- !private ["So16NSObjectProtocolP", "notes"]
+- !private ["So16NSObjectProtocolP", "print"]
+- !private ["So16NSObjectProtocolP", "requestAccess"]
+- !private ["So16NSObjectProtocolP", "save"]
+- !private ["So16NSObjectProtocolP", "startDate"]
+- !private ["So16NSObjectProtocolP", "text"]
+- !private ["So16NSObjectProtocolP", "title"]
+- !private ["So16NSObjectProtocolP", "titulo"]
+- !private ["So16NSObjectProtocolP", "viewDidLoad"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So8NSStringC", "init"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s16RawRepresentableP", "event"]
+- !private ["s16RawRepresentableP", "thisEvent"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["s8SequenceP", "init"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So12UIAppearanceP", "text"]
+- !private ["So21UIAppearanceContainerP", "Date"]
+- !private ["So21UIAppearanceContainerP", "EKEvent"]
+- !private ["So21UIAppearanceContainerP", "EKEventStore"]
+- !private ["So21UIAppearanceContainerP", "descActividad"]
+- !private ["So21UIAppearanceContainerP", "descripcion"]
+- !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
+- !private ["So21UIAppearanceContainerP", "dismiss"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "labTitulo"]
+- !private ["So21UIAppearanceContainerP", "print"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- !private ["So21UIAppearanceContainerP", "titulo"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So18UIContentContainerP", "Date"]
+- !private ["So18UIContentContainerP", "EKEvent"]
+- !private ["So18UIContentContainerP", "EKEventStore"]
+- !private ["So18UIContentContainerP", "descActividad"]
+- !private ["So18UIContentContainerP", "descripcion"]
+- !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
+- !private ["So18UIContentContainerP", "dismiss"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "labTitulo"]
+- !private ["So18UIContentContainerP", "print"]
+- !private ["So18UIContentContainerP", "titulo"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- ["So18UIContentContainerP", ""]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So13UIDynamicItemP", "text"]
+- !private ["So18UIFocusEnvironmentP", "Date"]
+- !private ["So18UIFocusEnvironmentP", "EKEvent"]
+- !private ["So18UIFocusEnvironmentP", "EKEventStore"]
+- !private ["So18UIFocusEnvironmentP", "descActividad"]
+- !private ["So18UIFocusEnvironmentP", "descripcion"]
+- !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UIFocusEnvironmentP", "dismiss"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "labTitulo"]
+- !private ["So18UIFocusEnvironmentP", "print"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- !private ["So18UIFocusEnvironmentP", "titulo"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So11UIFocusItemP", "text"]
+- !private ["So7UILabelC", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "Date"]
+- !private ["So30UIPasteConfigurationSupportingP", "EKEvent"]
+- !private ["So30UIPasteConfigurationSupportingP", "EKEventStore"]
+- !private ["So30UIPasteConfigurationSupportingP", "descActividad"]
+- !private ["So30UIPasteConfigurationSupportingP", "descripcion"]
+- !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
+- !private ["So30UIPasteConfigurationSupportingP", "dismiss"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "labTitulo"]
+- !private ["So30UIPasteConfigurationSupportingP", "print"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "titulo"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So11UIResponderC", "Date"]
+- !private ["So11UIResponderC", "EKEvent"]
+- !private ["So11UIResponderC", "EKEventStore"]
+- !private ["So11UIResponderC", "NSError"]
+- ["So11UIResponderC", "String"]
+- ["So11UIResponderC", "UIButton"]
+- ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "addToCalendar"]
+- ["So11UIResponderC", "butRegresar"]
+- ["So11UIResponderC", "descActividad"]
+- ["So11UIResponderC", "descripcion"]
+- ["So11UIResponderC", "didReceiveMemoryWarning"]
+- !private ["So11UIResponderC", "dismiss"]
+- ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "labTitulo"]
+- !private ["So11UIResponderC", "print"]
+- !private ["So11UIResponderC", "text"]
+- ["So11UIResponderC", "titulo"]
+- ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "Date"]
+- !private ["So30UIResponderStandardEditActionsP", "EKEvent"]
+- !private ["So30UIResponderStandardEditActionsP", "EKEventStore"]
+- !private ["So30UIResponderStandardEditActionsP", "descActividad"]
+- !private ["So30UIResponderStandardEditActionsP", "descripcion"]
+- !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
+- !private ["So30UIResponderStandardEditActionsP", "dismiss"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "labTitulo"]
+- !private ["So30UIResponderStandardEditActionsP", "print"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- !private ["So30UIResponderStandardEditActionsP", "titulo"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So16UIStateRestoringP", "Date"]
+- !private ["So16UIStateRestoringP", "EKEvent"]
+- !private ["So16UIStateRestoringP", "EKEventStore"]
+- !private ["So16UIStateRestoringP", "descActividad"]
+- !private ["So16UIStateRestoringP", "descripcion"]
+- !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
+- !private ["So16UIStateRestoringP", "dismiss"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "labTitulo"]
+- !private ["So16UIStateRestoringP", "print"]
+- !private ["So16UIStateRestoringP", "titulo"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So18UITraitEnvironmentP", "Date"]
+- !private ["So18UITraitEnvironmentP", "EKEvent"]
+- !private ["So18UITraitEnvironmentP", "EKEventStore"]
+- !private ["So18UITraitEnvironmentP", "descActividad"]
+- !private ["So18UITraitEnvironmentP", "descripcion"]
+- !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UITraitEnvironmentP", "dismiss"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "labTitulo"]
+- !private ["So18UITraitEnvironmentP", "print"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- !private ["So18UITraitEnvironmentP", "titulo"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So6UIViewC", "text"]
+- !private ["So16UIViewControllerC", "Date"]
+- !private ["So16UIViewControllerC", "EKEvent"]
+- !private ["So16UIViewControllerC", "EKEventStore"]
+- !private ["So16UIViewControllerC", "NSError"]
+- ["So16UIViewControllerC", "String"]
+- ["So16UIViewControllerC", "UIButton"]
+- ["So16UIViewControllerC", "UILabel"]
+- ["So16UIViewControllerC", "addToCalendar"]
+- ["So16UIViewControllerC", "butRegresar"]
+- ["So16UIViewControllerC", "descActividad"]
+- ["So16UIViewControllerC", "descripcion"]
+- ["So16UIViewControllerC", "didReceiveMemoryWarning"]
+- !private ["So16UIViewControllerC", "dismiss"]
+- ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "labTitulo"]
+- !private ["So16UIViewControllerC", "print"]
+- ["So16UIViewControllerC", "titulo"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- ["So16UIViewControllerC", ""]
+- !private ["13ProyectoFinal27ViewControllerInfoActividadC", "Date"]
+- !private ["13ProyectoFinal27ViewControllerInfoActividadC", "EKEvent"]
+- !private ["13ProyectoFinal27ViewControllerInfoActividadC", "EKEventStore"]
+- !private ["13ProyectoFinal27ViewControllerInfoActividadC", "NSError"]
+- ["13ProyectoFinal27ViewControllerInfoActividadC", "String"]
+- ["13ProyectoFinal27ViewControllerInfoActividadC", "UIButton"]
+- ["13ProyectoFinal27ViewControllerInfoActividadC", "UILabel"]
+- ["13ProyectoFinal27ViewControllerInfoActividadC", "addToCalendar"]
+- ["13ProyectoFinal27ViewControllerInfoActividadC", "butRegresar"]
+- ["13ProyectoFinal27ViewControllerInfoActividadC", "deinit"]
+- ["13ProyectoFinal27ViewControllerInfoActividadC", "descActividad"]
+- ["13ProyectoFinal27ViewControllerInfoActividadC", "descripcion"]
+- ["13ProyectoFinal27ViewControllerInfoActividadC", "didReceiveMemoryWarning"]
+- !private ["13ProyectoFinal27ViewControllerInfoActividadC", "dismiss"]
+- ["13ProyectoFinal27ViewControllerInfoActividadC", "init"]
+- ["13ProyectoFinal27ViewControllerInfoActividadC", "labTitulo"]
+- !private ["13ProyectoFinal27ViewControllerInfoActividadC", "print"]
+- ["13ProyectoFinal27ViewControllerInfoActividadC", "titulo"]
+- ["13ProyectoFinal27ViewControllerInfoActividadC", "viewDidLoad"]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s10_IndexableP", "init"]
+- !private ["s14_IndexableBaseP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Date"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "EKEvent"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "EKEventStore"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "calendar"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "defaultCalendarForNewEvents"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "descActividad"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "descripcion"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveMemoryWarning"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dismiss"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "endDate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "labTitulo"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "notes"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "requestAccess"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "save"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "startDate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "titulo"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "s23BidirectionalCollectionP"
+- !private "Sb"
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "10Foundation4DateV"
+- !private "s9DecodableP"
+- !private "So14EKCalendarItemC"
+- !private "SC12EKEntityTypeO"
+- !private "So7EKEventC"
+- !private "So12EKEventStoreC"
+- !private "So8EKObjectC"
+- !private "SC6EKSpanO"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- "So26NSExtensionRequestHandlingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s16RawRepresentableP"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "s8SequenceP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So18UIContentContainerP"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So7UILabelC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So16UIStateRestoringP"
+- "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- "13ProyectoFinal27ViewControllerInfoActividadC"
+- !private "s23_BidirectionalIndexableP"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/Firebase/Core/Sources/module.modulemap"
+interface-hash: "c21719b3d55fd2f85b653c2fe2a23cfb"

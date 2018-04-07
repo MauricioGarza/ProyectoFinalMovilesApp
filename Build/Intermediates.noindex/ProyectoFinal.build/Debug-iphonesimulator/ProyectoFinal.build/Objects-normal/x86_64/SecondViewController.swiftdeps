@@ -1,0 +1,340 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SecondViewController"
+provides-nominal:
+- "13ProyectoFinal20SecondViewControllerC"
+provides-member:
+- ["13ProyectoFinal20SecondViewControllerC", ""]
+provides-dynamic-lookup:
+- "butBienestar"
+- "butCalidad"
+- "butDerechosHumanos"
+- "butGeriantria"
+- "butInclusion"
+- "butNewTecnologia"
+- "didReceiveMemoryWarning"
+- "prepare"
+- "viewDidLoad"
+depends-top-level:
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- "SecondViewController"
+- !private "TableViewControllerActividadesCult"
+- "UIButton"
+- "UIStoryboardSegue"
+- "UIViewController"
+- !private "~="
+depends-member:
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "Indice"]
+- !private ["s7CVarArgP", "butBienestar"]
+- !private ["s7CVarArgP", "butCalidad"]
+- !private ["s7CVarArgP", "butDerechosHumanos"]
+- !private ["s7CVarArgP", "butGeriantria"]
+- !private ["s7CVarArgP", "butInclusion"]
+- !private ["s7CVarArgP", "butNewTecnologia"]
+- !private ["s7CVarArgP", "destination"]
+- !private ["s7CVarArgP", "didReceiveMemoryWarning"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- ["s7CVarArgP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "Indice"]
+- !private ["s28CustomDebugStringConvertibleP", "butBienestar"]
+- !private ["s28CustomDebugStringConvertibleP", "butCalidad"]
+- !private ["s28CustomDebugStringConvertibleP", "butDerechosHumanos"]
+- !private ["s28CustomDebugStringConvertibleP", "butGeriantria"]
+- !private ["s28CustomDebugStringConvertibleP", "butInclusion"]
+- !private ["s28CustomDebugStringConvertibleP", "butNewTecnologia"]
+- !private ["s28CustomDebugStringConvertibleP", "destination"]
+- !private ["s28CustomDebugStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "Indice"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "butBienestar"]
+- !private ["s23CustomStringConvertibleP", "butCalidad"]
+- !private ["s23CustomStringConvertibleP", "butDerechosHumanos"]
+- !private ["s23CustomStringConvertibleP", "butGeriantria"]
+- !private ["s23CustomStringConvertibleP", "butInclusion"]
+- !private ["s23CustomStringConvertibleP", "butNewTecnologia"]
+- !private ["s23CustomStringConvertibleP", "destination"]
+- !private ["s23CustomStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "Indice"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "butBienestar"]
+- !private ["s9EquatableP", "butCalidad"]
+- !private ["s9EquatableP", "butDerechosHumanos"]
+- !private ["s9EquatableP", "butGeriantria"]
+- !private ["s9EquatableP", "butInclusion"]
+- !private ["s9EquatableP", "butNewTecnologia"]
+- !private ["s9EquatableP", "destination"]
+- !private ["s9EquatableP", "didReceiveMemoryWarning"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "viewDidLoad"]
+- ["s9EquatableP", ""]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "Indice"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "butBienestar"]
+- !private ["s8HashableP", "butCalidad"]
+- !private ["s8HashableP", "butDerechosHumanos"]
+- !private ["s8HashableP", "butGeriantria"]
+- !private ["s8HashableP", "butInclusion"]
+- !private ["s8HashableP", "butNewTecnologia"]
+- !private ["s8HashableP", "destination"]
+- !private ["s8HashableP", "didReceiveMemoryWarning"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "viewDidLoad"]
+- ["s8HashableP", ""]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["So8NSCodingP", "Indice"]
+- !private ["So8NSCodingP", "butBienestar"]
+- !private ["So8NSCodingP", "butCalidad"]
+- !private ["So8NSCodingP", "butDerechosHumanos"]
+- !private ["So8NSCodingP", "butGeriantria"]
+- !private ["So8NSCodingP", "butInclusion"]
+- !private ["So8NSCodingP", "butNewTecnologia"]
+- !private ["So8NSCodingP", "didReceiveMemoryWarning"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- ["So8NSCodingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "Indice"]
+- !private ["So26NSExtensionRequestHandlingP", "butBienestar"]
+- !private ["So26NSExtensionRequestHandlingP", "butCalidad"]
+- !private ["So26NSExtensionRequestHandlingP", "butDerechosHumanos"]
+- !private ["So26NSExtensionRequestHandlingP", "butGeriantria"]
+- !private ["So26NSExtensionRequestHandlingP", "butInclusion"]
+- !private ["So26NSExtensionRequestHandlingP", "butNewTecnologia"]
+- !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So8NSObjectC", "Indice"]
+- !private ["So8NSObjectC", "TableViewControllerActividadesCult"]
+- ["So8NSObjectC", "UIButton"]
+- ["So8NSObjectC", "UIStoryboardSegue"]
+- ["So8NSObjectC", "butBienestar"]
+- ["So8NSObjectC", "butCalidad"]
+- ["So8NSObjectC", "butDerechosHumanos"]
+- ["So8NSObjectC", "butGeriantria"]
+- ["So8NSObjectC", "butInclusion"]
+- ["So8NSObjectC", "butNewTecnologia"]
+- !private ["So8NSObjectC", "destination"]
+- ["So8NSObjectC", "didReceiveMemoryWarning"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "prepare"]
+- ["So8NSObjectC", "viewDidLoad"]
+- !private ["So16NSObjectProtocolP", "Indice"]
+- !private ["So16NSObjectProtocolP", "butBienestar"]
+- !private ["So16NSObjectProtocolP", "butCalidad"]
+- !private ["So16NSObjectProtocolP", "butDerechosHumanos"]
+- !private ["So16NSObjectProtocolP", "butGeriantria"]
+- !private ["So16NSObjectProtocolP", "butInclusion"]
+- !private ["So16NSObjectProtocolP", "butNewTecnologia"]
+- !private ["So16NSObjectProtocolP", "destination"]
+- !private ["So16NSObjectProtocolP", "didReceiveMemoryWarning"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "viewDidLoad"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["13ProyectoFinal20SecondViewControllerC", "TableViewControllerActividadesCult"]
+- ["13ProyectoFinal20SecondViewControllerC", "UIButton"]
+- ["13ProyectoFinal20SecondViewControllerC", "UIStoryboardSegue"]
+- ["13ProyectoFinal20SecondViewControllerC", "butBienestar"]
+- ["13ProyectoFinal20SecondViewControllerC", "butCalidad"]
+- ["13ProyectoFinal20SecondViewControllerC", "butDerechosHumanos"]
+- ["13ProyectoFinal20SecondViewControllerC", "butGeriantria"]
+- ["13ProyectoFinal20SecondViewControllerC", "butInclusion"]
+- ["13ProyectoFinal20SecondViewControllerC", "butNewTecnologia"]
+- ["13ProyectoFinal20SecondViewControllerC", "deinit"]
+- ["13ProyectoFinal20SecondViewControllerC", "didReceiveMemoryWarning"]
+- ["13ProyectoFinal20SecondViewControllerC", "init"]
+- ["13ProyectoFinal20SecondViewControllerC", "prepare"]
+- ["13ProyectoFinal20SecondViewControllerC", "viewDidLoad"]
+- !private ["13ProyectoFinal34TableViewControllerActividadesCultC", "Indice"]
+- !private ["So21UIAppearanceContainerP", "Indice"]
+- !private ["So21UIAppearanceContainerP", "butBienestar"]
+- !private ["So21UIAppearanceContainerP", "butCalidad"]
+- !private ["So21UIAppearanceContainerP", "butDerechosHumanos"]
+- !private ["So21UIAppearanceContainerP", "butGeriantria"]
+- !private ["So21UIAppearanceContainerP", "butInclusion"]
+- !private ["So21UIAppearanceContainerP", "butNewTecnologia"]
+- !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So18UIContentContainerP", "Indice"]
+- !private ["So18UIContentContainerP", "butBienestar"]
+- !private ["So18UIContentContainerP", "butCalidad"]
+- !private ["So18UIContentContainerP", "butDerechosHumanos"]
+- !private ["So18UIContentContainerP", "butGeriantria"]
+- !private ["So18UIContentContainerP", "butInclusion"]
+- !private ["So18UIContentContainerP", "butNewTecnologia"]
+- !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- ["So18UIContentContainerP", ""]
+- !private ["So18UIFocusEnvironmentP", "Indice"]
+- !private ["So18UIFocusEnvironmentP", "butBienestar"]
+- !private ["So18UIFocusEnvironmentP", "butCalidad"]
+- !private ["So18UIFocusEnvironmentP", "butDerechosHumanos"]
+- !private ["So18UIFocusEnvironmentP", "butGeriantria"]
+- !private ["So18UIFocusEnvironmentP", "butInclusion"]
+- !private ["So18UIFocusEnvironmentP", "butNewTecnologia"]
+- !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "Indice"]
+- !private ["So30UIPasteConfigurationSupportingP", "butBienestar"]
+- !private ["So30UIPasteConfigurationSupportingP", "butCalidad"]
+- !private ["So30UIPasteConfigurationSupportingP", "butDerechosHumanos"]
+- !private ["So30UIPasteConfigurationSupportingP", "butGeriantria"]
+- !private ["So30UIPasteConfigurationSupportingP", "butInclusion"]
+- !private ["So30UIPasteConfigurationSupportingP", "butNewTecnologia"]
+- !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So11UIResponderC", "Indice"]
+- !private ["So11UIResponderC", "TableViewControllerActividadesCult"]
+- ["So11UIResponderC", "UIButton"]
+- ["So11UIResponderC", "UIStoryboardSegue"]
+- ["So11UIResponderC", "butBienestar"]
+- ["So11UIResponderC", "butCalidad"]
+- ["So11UIResponderC", "butDerechosHumanos"]
+- ["So11UIResponderC", "butGeriantria"]
+- ["So11UIResponderC", "butInclusion"]
+- ["So11UIResponderC", "butNewTecnologia"]
+- ["So11UIResponderC", "didReceiveMemoryWarning"]
+- ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "prepare"]
+- ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "Indice"]
+- !private ["So30UIResponderStandardEditActionsP", "butBienestar"]
+- !private ["So30UIResponderStandardEditActionsP", "butCalidad"]
+- !private ["So30UIResponderStandardEditActionsP", "butDerechosHumanos"]
+- !private ["So30UIResponderStandardEditActionsP", "butGeriantria"]
+- !private ["So30UIResponderStandardEditActionsP", "butInclusion"]
+- !private ["So30UIResponderStandardEditActionsP", "butNewTecnologia"]
+- !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So20UIScrollViewDelegateP", "Indice"]
+- !private ["So16UIStateRestoringP", "Indice"]
+- !private ["So16UIStateRestoringP", "butBienestar"]
+- !private ["So16UIStateRestoringP", "butCalidad"]
+- !private ["So16UIStateRestoringP", "butDerechosHumanos"]
+- !private ["So16UIStateRestoringP", "butGeriantria"]
+- !private ["So16UIStateRestoringP", "butInclusion"]
+- !private ["So16UIStateRestoringP", "butNewTecnologia"]
+- !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So17UIStoryboardSegueC", "destination"]
+- !private ["So21UITableViewControllerC", "Indice"]
+- !private ["So21UITableViewDataSourceP", "Indice"]
+- !private ["So19UITableViewDelegateP", "Indice"]
+- !private ["So18UITraitEnvironmentP", "Indice"]
+- !private ["So18UITraitEnvironmentP", "butBienestar"]
+- !private ["So18UITraitEnvironmentP", "butCalidad"]
+- !private ["So18UITraitEnvironmentP", "butDerechosHumanos"]
+- !private ["So18UITraitEnvironmentP", "butGeriantria"]
+- !private ["So18UITraitEnvironmentP", "butInclusion"]
+- !private ["So18UITraitEnvironmentP", "butNewTecnologia"]
+- !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So16UIViewControllerC", "Indice"]
+- !private ["So16UIViewControllerC", "TableViewControllerActividadesCult"]
+- ["So16UIViewControllerC", "UIButton"]
+- ["So16UIViewControllerC", "UIStoryboardSegue"]
+- ["So16UIViewControllerC", "butBienestar"]
+- ["So16UIViewControllerC", "butCalidad"]
+- ["So16UIViewControllerC", "butDerechosHumanos"]
+- ["So16UIViewControllerC", "butGeriantria"]
+- ["So16UIViewControllerC", "butInclusion"]
+- ["So16UIViewControllerC", "butNewTecnologia"]
+- ["So16UIViewControllerC", "didReceiveMemoryWarning"]
+- ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "prepare"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- ["So16UIViewControllerC", ""]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Indice"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "butBienestar"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "butCalidad"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "butDerechosHumanos"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "butGeriantria"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "butInclusion"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "butNewTecnologia"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "destination"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveMemoryWarning"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+depends-nominal:
+- !private "Sb"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- "So8NSCodingP"
+- "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "13ProyectoFinal20SecondViewControllerC"
+- !private "13ProyectoFinal34TableViewControllerActividadesCultC"
+- "So21UIAppearanceContainerP"
+- "So18UIContentContainerP"
+- "So18UIFocusEnvironmentP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "So20UIScrollViewDelegateP"
+- "So16UIStateRestoringP"
+- !private "So17UIStoryboardSegueC"
+- !private "So21UITableViewControllerC"
+- !private "So21UITableViewDataSourceP"
+- !private "So19UITableViewDelegateP"
+- "So18UITraitEnvironmentP"
+- "So16UIViewControllerC"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/Firebase/Core/Sources/module.modulemap"
+interface-hash: "2af2d7371c56dc4e1485dc3cdbfb228c"
