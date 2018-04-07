@@ -15,7 +15,7 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         primerView.layer.borderWidth=1.5
-        primerView.layer.borderColor=UIColor.init(red: 37.0, green: 141.0, blue: 254.0, alpha: 1.0).cgColor
+        primerView.layer.borderColor=UIColor.blue.cgColor
         primerView.layer.cornerRadius=8.0
         
         
