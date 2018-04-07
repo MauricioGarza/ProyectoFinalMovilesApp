@@ -42,9 +42,9 @@ class TableViewControllerActividadesCult: UITableViewController {
             case 2?:
                 butTitle.text = "Actividades Culturales"
                 Handle = self.FireBaseRef?.child("ActividadesCulturales").observe(.childAdded, with:{(DataSnapshot) in
-                    if let item = DataSnapshot.value as? String
+                    if let item = DataSnapshot.key as? String
                     {
-                        self.arrActividadesCulturales.append(item)
+                        self.arrActividadesCulturales.append(String(describing: item))
                         self.tableView.reloadData()
                     }
                 })
@@ -60,6 +60,18 @@ class TableViewControllerActividadesCult: UITableViewController {
             switch FinalIndice{
             case 0:
                 butTitle.text = "Actividades Eje Derechos Humanos"
+                
+              
+               /* self.arrActDerHumanos.append(self.FireBaseRef?.child("Ejes").child("DerechosHumanos").child("Evento1").value(forKey: "Nombre") as! String)
+                self.tableView.reloadData() */
+                
+                Handle = self.FireBaseRef?.child("Ejes").observe(.childAdded,with:{(DataSnapshot) in
+                    if let item = DataSnapshot.key as? String {
+                        self.arrDerHumanos.append(String(describing: item))
+                        self.tableView.reloadData()
+                    }
+                })
+                
             case 1:
                 butTitle.text = "Actividades Eje arrActBienestar"
             case 2:

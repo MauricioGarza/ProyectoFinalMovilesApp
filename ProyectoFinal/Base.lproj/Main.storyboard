@@ -67,9 +67,10 @@
                                     </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="2m0-ae-xFG" firstAttribute="centerY" secondItem="7E4-OK-h7y" secondAttribute="centerY" id="G6L-6W-KMj"/>
                                     <constraint firstItem="2m0-ae-xFG" firstAttribute="width" secondItem="7E4-OK-h7y" secondAttribute="width" id="IXG-tT-n15"/>
-                                    <constraint firstItem="2m0-ae-xFG" firstAttribute="height" secondItem="7E4-OK-h7y" secondAttribute="height" id="fMo-h1-T6Q"/>
                                     <constraint firstItem="2m0-ae-xFG" firstAttribute="top" secondItem="7E4-OK-h7y" secondAttribute="top" id="gxL-IY-wOn"/>
+                                    <constraint firstAttribute="height" constant="1280" id="i9w-Ol-JZO"/>
                                     <constraint firstAttribute="bottom" secondItem="2m0-ae-xFG" secondAttribute="bottom" id="qhb-mp-x9m"/>
                                     <constraint firstItem="2m0-ae-xFG" firstAttribute="leading" secondItem="7E4-OK-h7y" secondAttribute="leading" id="t74-Zg-tWl"/>
                                     <constraint firstAttribute="trailing" secondItem="2m0-ae-xFG" secondAttribute="trailing" id="v1x-2T-iJi"/>
@@ -78,10 +79,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="7E4-OK-h7y" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="3Bd-3m-jnP"/>
-                            <constraint firstItem="7E4-OK-h7y" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="H0b-Kw-od9"/>
-                            <constraint firstItem="7E4-OK-h7y" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="m4G-2a-ixk"/>
-                            <constraint firstItem="7E4-OK-h7y" firstAttribute="height" secondItem="tsR-hK-woN" secondAttribute="height" id="tQ4-2U-56Z"/>
+                            <constraint firstAttribute="bottom" secondItem="7E4-OK-h7y" secondAttribute="bottom" id="CEB-IQ-KwK"/>
+                            <constraint firstItem="7E4-OK-h7y" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="Rb8-4X-Y3h"/>
+                            <constraint firstItem="7E4-OK-h7y" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="WWk-cs-agb"/>
+                            <constraint firstItem="7E4-OK-h7y" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="rGC-zR-bP8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
@@ -630,6 +631,6 @@
         <image name="unchecked" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="x69-QL-JhF"/>
+        <segue reference="edU-Ux-sK0"/>
     </inferredMetricsTieBreakers>
 </document>
