@@ -40,11 +40,11 @@ class TableViewControllerActividadesCult: UITableViewController {
             butRegresar.isEnabled = false
             switch tabBarController?.selectedIndex{
             case 2?:
-                butTitle.text = "Actividades Culturales"
+                butTitle.text = "Actividades Culturales"                
                 Handle = self.FireBaseRef?.child("ActividadesCulturales").observe(.childAdded, with:{(DataSnapshot) in
-                    if let item = DataSnapshot.key as? String
+                    if let item = DataSnapshot.childSnapshot(forPath: "Nombre") as? DataSnapshot
                     {
-                        self.arrActividadesCulturales.append(String(describing: item))
+                        self.arrDatos.append(item.value as! String)
                         self.tableView.reloadData()
                     }
                 })
@@ -151,7 +151,7 @@ class TableViewControllerActividadesCult: UITableViewController {
                 cell.detailTextLabel?.text = "Descripcion breve pabellon"
             case 2?:
                 cell.textLabel?.text = arrDatos[indexPath.row]
-                cell.detailTextLabel?.text = "Descripción breve actividad"
+                cell.detailTextLabel?.text = ""
             default:
                 break
             }
