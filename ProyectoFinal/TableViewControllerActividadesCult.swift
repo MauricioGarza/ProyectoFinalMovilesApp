@@ -26,8 +26,8 @@ class TableViewControllerActividadesCult: UITableViewController {
     var Indice : Int!
     var FinalIndice : Int!
     
-    var Handle:DatabaseHandle?
-    var FireBaseRef:DatabaseReference?
+    var Handle:DatabaseHandle!
+    var FireBaseRef:DatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +41,7 @@ class TableViewControllerActividadesCult: UITableViewController {
             switch tabBarController?.selectedIndex{
             case 2?:
                 butTitle.text = "Actividades Culturales"
-                Handle = FireBaseRef?.observe(.childAdded, with:{(DataSnapshot) in
+                Handle = self.FireBaseRef?.child("ActividadesCulturales").observe(.childAdded, with:{(DataSnapshot) in
                     if let item = DataSnapshot.value as? String
                     {
                         self.arrActividadesCulturales.append(item)
