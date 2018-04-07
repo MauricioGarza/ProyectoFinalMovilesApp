@@ -201,11 +201,15 @@ SWIFT_CLASS("_TtC13ProyectoFinal11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIView;
+@class UILabel;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC13ProyectoFinal19FirstViewController")
 @interface FirstViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified primerView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lbPrimerView;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -255,7 +259,6 @@ SWIFT_CLASS("_TtC13ProyectoFinal16TabBarController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UILabel;
 @class UITableView;
 @class UITableViewCell;
 

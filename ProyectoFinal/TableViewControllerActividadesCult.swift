@@ -14,7 +14,7 @@ class TableViewControllerActividadesCult: UITableViewController {
     @IBOutlet weak var butFiltrar: UIButton!
     @IBOutlet weak var butTitle: UILabel!
 
-    var arrActividadesCulturales : [String] = []
+    var arrDatos : [String] = []
     var arrActDerHumanos : [String] = []
     var arrDerHumanos : [String] = []
     var arrCalidadVida : [String] = []
@@ -42,14 +42,21 @@ class TableViewControllerActividadesCult: UITableViewController {
             case 2?:
                 butTitle.text = "Actividades Culturales"
                 Handle = self.FireBaseRef?.child("ActividadesCulturales").observe(.childAdded, with:{(DataSnapshot) in
-                    if let item = DataSnapshot.value as? String
+                    if let item = DataSnapshot.key as? String
                     {
-                        self.arrActividadesCulturales.append(item)
+                        self.arrDatos.append(item)
                         self.tableView.reloadData()
                     }
                 })
             case 3?:
             butTitle.text = "Pabellones"
+            Handle = self.FireBaseRef?.child("Pabellones").observe(.childAdded, with:{(DataSnapshot) in
+                if let item = DataSnapshot.key as? String
+                {
+                    self.arrDatos.append(item)
+                    self.tableView.reloadData()
+                }
+            })
             default:
                 break
             }
@@ -60,6 +67,13 @@ class TableViewControllerActividadesCult: UITableViewController {
             switch FinalIndice{
             case 0:
                 butTitle.text = "Actividades Eje Derechos Humanos"
+                Handle = self.FireBaseRef?.child("Ejes").child("DerechosHumanos").queryOrdered(byChild: "Nombre").observe(.childAdded, with: {(DataSnapshot) in
+                    if let item = DataSnapshot.key as? String
+                    {
+                        self.arrDatos.append(item)
+                        self.tableView.reloadData()
+                    }
+                })
             case 1:
                 butTitle.text = "Actividades Eje arrActBienestar"
             case 2:
@@ -92,9 +106,9 @@ class TableViewControllerActividadesCult: UITableViewController {
         if tabBarController?.selectedIndex != nil{
             switch tabBarController?.selectedIndex {
             case 3?:
-                return arrActDerHumanos.count
+                return arrDatos.count
             case 2?:
-                return arrActividadesCulturales.count
+                return arrDatos.count
             default:
                 break
             }
@@ -103,7 +117,7 @@ class TableViewControllerActividadesCult: UITableViewController {
         else {
             switch FinalIndice{
             case 0:
-                return arrDerHumanos.count
+                return arrDatos.count
             case 1:
                 return arrActBienestar.count
             case 2:
@@ -128,10 +142,10 @@ class TableViewControllerActividadesCult: UITableViewController {
         if tabBarController?.selectedIndex != nil{
             switch tabBarController?.selectedIndex {
             case 3?:
-                cell.textLabel?.text = arrActDerHumanos[indexPath.row]
+                cell.textLabel?.text = arrDatos[indexPath.row]
                 cell.detailTextLabel?.text = "Descripcion breve pabellon"
             case 2?:
-                cell.textLabel?.text = arrActividadesCulturales[indexPath.row]
+                cell.textLabel?.text = arrDatos[indexPath.row]
                 cell.detailTextLabel?.text = "Descripción breve actividad"
             default:
                 break
@@ -141,7 +155,7 @@ class TableViewControllerActividadesCult: UITableViewController {
         else {
             switch FinalIndice{
             case 0:
-                cell.textLabel?.text = self.arrDerHumanos[indexPath.row]
+                cell.textLabel?.text = self.arrDatos[indexPath.row]
                 cell.detailTextLabel?.text = "Descripcion act derechos humanos"
             case 1:
                 cell.textLabel?.text = arrActBienestar[indexPath.row]
@@ -216,7 +230,7 @@ class TableViewControllerActividadesCult: UITableViewController {
                     dest.titulo = arrActDerHumanos[(indice?.row)!]
                     dest.descripcion = "Descripcion de los pabellones"
                 case 2?:
-                    dest.titulo = arrActividadesCulturales[(indice?.row)!]
+                    dest.titulo = arrDatos[(indice?.row)!]
                     dest.descripcion = "Descripcion de actividades culturales"
                 default:
                     break
