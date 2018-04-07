@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		01CF7B70CB75EED72AB16CA0 /* Pods_ProyectoFinal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3603347AEBC61785E105364D /* Pods_ProyectoFinal.framework */; };
 		EC413D1F2078585F00CCDD58 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC413D1E2078585F00CCDD58 /* GoogleService-Info.plist */; };
-		EC49475F20756EDB00F7EDA4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = EC49475E20756EDB00F7EDA4 /* .gitignore */; };
 		EC80EB34205ADAA000C080E3 /* ViewControllerInfoActividad.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80EB33205ADAA000C080E3 /* ViewControllerInfoActividad.swift */; };
 		ECF3914820584D220044BDCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF3914720584D220044BDCD /* AppDelegate.swift */; };
 		ECF3914A20584D220044BDCD /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF3914920584D220044BDCD /* FirstViewController.swift */; };
@@ -28,7 +27,6 @@
 		3603347AEBC61785E105364D /* Pods_ProyectoFinal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProyectoFinal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97C6DB2C50138CE3F611667 /* Pods-ProyectoFinal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProyectoFinal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProyectoFinal/Pods-ProyectoFinal.debug.xcconfig"; sourceTree = "<group>"; };
 		EC413D1E2078585F00CCDD58 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		EC49475E20756EDB00F7EDA4 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		EC80EB33205ADAA000C080E3 /* ViewControllerInfoActividad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInfoActividad.swift; sourceTree = "<group>"; };
 		ECF3914420584D220044BDCD /* ProyectoFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF3914720584D220044BDCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,14 +71,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		EC49475D20756EC500F7EDA4 /* Git */ = {
-			isa = PBXGroup;
-			children = (
-				EC49475E20756EDB00F7EDA4 /* .gitignore */,
-			);
-			path = Git;
-			sourceTree = "<group>";
-		};
 		ECF3913B20584D220044BDCD = {
 			isa = PBXGroup;
 			children = (
@@ -115,7 +105,6 @@
 				ECF3915020584D220044BDCD /* Assets.xcassets */,
 				ECF3915220584D220044BDCD /* LaunchScreen.storyboard */,
 				ECF3915520584D220044BDCD /* Info.plist */,
-				EC49475D20756EC500F7EDA4 /* Git */,
 			);
 			path = ProyectoFinal;
 			sourceTree = "<group>";
@@ -181,7 +170,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC49475F20756EDB00F7EDA4 /* .gitignore in Resources */,
 				ECF3915420584D220044BDCD /* LaunchScreen.storyboard in Resources */,
 				EC413D1F2078585F00CCDD58 /* GoogleService-Info.plist in Resources */,
 				ECF3915120584D220044BDCD /* Assets.xcassets in Resources */,
