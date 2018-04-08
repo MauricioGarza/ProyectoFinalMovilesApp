@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		01CF7B70CB75EED72AB16CA0 /* Pods_ProyectoFinal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3603347AEBC61785E105364D /* Pods_ProyectoFinal.framework */; };
 		EC413D1F2078585F00CCDD58 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC413D1E2078585F00CCDD58 /* GoogleService-Info.plist */; };
+		EC413D262079BE2E00CCDD58 /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC413D252079BE2E00CCDD58 /* Evento.swift */; };
 		EC80EB34205ADAA000C080E3 /* ViewControllerInfoActividad.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80EB33205ADAA000C080E3 /* ViewControllerInfoActividad.swift */; };
 		ECF3914820584D220044BDCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF3914720584D220044BDCD /* AppDelegate.swift */; };
 		ECF3914A20584D220044BDCD /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF3914920584D220044BDCD /* FirstViewController.swift */; };
@@ -27,6 +28,7 @@
 		3603347AEBC61785E105364D /* Pods_ProyectoFinal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProyectoFinal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97C6DB2C50138CE3F611667 /* Pods-ProyectoFinal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProyectoFinal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProyectoFinal/Pods-ProyectoFinal.debug.xcconfig"; sourceTree = "<group>"; };
 		EC413D1E2078585F00CCDD58 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EC413D252079BE2E00CCDD58 /* Evento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evento.swift; sourceTree = "<group>"; };
 		EC80EB33205ADAA000C080E3 /* ViewControllerInfoActividad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInfoActividad.swift; sourceTree = "<group>"; };
 		ECF3914420584D220044BDCD /* ProyectoFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF3914720584D220044BDCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				ECF39169205872620044BDCD /* TabBarController.swift */,
 				EC413D1E2078585F00CCDD58 /* GoogleService-Info.plist */,
 				ECF39163205869460044BDCD /* TableViewControllerActividadesCult.swift */,
+				EC413D252079BE2E00CCDD58 /* Evento.swift */,
 				ECF39161205851CC0044BDCD /* InfoViewController.swift */,
 				ECF3915020584D220044BDCD /* Assets.xcassets */,
 				ECF3915220584D220044BDCD /* LaunchScreen.storyboard */,
@@ -233,6 +236,7 @@
 				ECF39164205869460044BDCD /* TableViewControllerActividadesCult.swift in Sources */,
 				ECF39172205ACF230044BDCD /* ViewControllerFiltrar.swift in Sources */,
 				ECF3916A205872620044BDCD /* TabBarController.swift in Sources */,
+				EC413D262079BE2E00CCDD58 /* Evento.swift in Sources */,
 				ECF3914A20584D220044BDCD /* FirstViewController.swift in Sources */,
 				ECF39162205851CC0044BDCD /* InfoViewController.swift in Sources */,
 			);

@@ -173,6 +173,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if __has_feature(modules)
 @import UIKit;
+@import ObjectiveC;
 @import MessageUI;
 @import Foundation;
 #endif
@@ -198,6 +199,12 @@ SWIFT_CLASS("_TtC13ProyectoFinal11AppDelegate")
 - (void)applicationWillEnterForeground:(UIApplication * _Nonnull)application;
 - (void)applicationDidBecomeActive:(UIApplication * _Nonnull)application;
 - (void)applicationWillTerminate:(UIApplication * _Nonnull)application;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC13ProyectoFinal6Evento")
+@interface Evento : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
