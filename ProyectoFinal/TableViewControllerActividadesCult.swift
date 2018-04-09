@@ -16,13 +16,6 @@ class TableViewControllerActividadesCult: UITableViewController {
 
     var arrDatos : [String] = []
     var arrEventos : [Evento] = []
-    var arrActDerHumanos : [String] = []
-    var arrDerHumanos : [String] = []
-    var arrCalidadVida : [String] = []
-    var arrActGeriatria : [String] = []
-    var arrActInclusion : [String] = []
-    var arrActTecnologia : [String] = []
-    var arrActBienestar : [String] = []
     
     var Indice : Int!
     var FinalIndice : Int!
@@ -46,14 +39,14 @@ class TableViewControllerActividadesCult: UITableViewController {
                 llenarEvento(ref: refActividadesCulturales!)
 
             case 3?:
-            butTitle.text = "Pabellones"
-            Handle = self.FireBaseRef?.child("Pabellones").observe(.childAdded, with:{(DataSnapshot) in
+                butTitle.text = "Pabellones"
+                Handle = self.FireBaseRef?.child("Pabellones").observe(.childAdded, with:{(DataSnapshot) in
                 if let item = DataSnapshot.key as? String
-                {
-                    self.arrDatos.append(item)
-                    self.tableView.reloadData()
-                }
-            })
+                    {
+                        self.arrDatos.append(item)
+                        self.tableView.reloadData()
+                    }
+                })
             default:
                 break
             }
@@ -213,39 +206,29 @@ class TableViewControllerActividadesCult: UITableViewController {
             if tabBarController?.selectedIndex != nil{
                 switch tabBarController?.selectedIndex {
                 case 3?:
-                    dest.titulo = arrActDerHumanos[(indice?.row)!]
+                    dest.titulo = arrDatos[(indice?.row)!]
                     dest.descripcion = "Descripcion de los pabellones"
                 case 2?:
-                    dest.titulo = arrDatos[(indice?.row)!]
-                    dest.descripcion = "Descripcion de actividades culturales"
+                    dest.titulo = arrEventos[(indice?.row)!].sNombre
+                    dest.descripcion = arrEventos[(indice?.row)!].sDescripcion
+                    dest.Fecha = arrEventos[(indice?.row)!].sFecha
+                    dest.Hora = arrEventos[(indice?.row)!].sHora
+                    dest.Expositor = arrEventos[(indice?.row)!].sExpositor
+                    dest.Categoria = arrEventos[(indice?.row)!].sCategoria
+                    dest.Lugar = arrEventos[(indice?.row)!].sLugar
                 default:
                     break
                 }
                 
             }
             else {
-                switch FinalIndice{
-                case 0:
-                    dest.titulo = arrDerHumanos[(indice?.row)!]
-                    dest.descripcion = "Descripcion act derechos humanos"
-                case 1:
-                    dest.titulo =  arrActBienestar[(indice?.row)!]
-                    dest.descripcion = "Descripcion act arrActBienestar"
-                case 2:
-                    dest.titulo = arrCalidadVida[(indice?.row)!]
-                    dest.descripcion = "Descripcion actividades calidad vida"
-                case 3:
-                    dest.titulo = arrActGeriatria[(indice?.row)!]
-                    dest.descripcion = "Descripcion actividades eje geriantria"
-                case 4:
-                    dest.titulo = arrActInclusion[(indice?.row)!]
-                    dest.descripcion = "Descripcion de actividades eje    inclusion"
-                case 5:
-                    dest.titulo = arrActTecnologia[(indice?.row)!]
-                    dest.descripcion = "Descripcion actividades eje tecnologias"
-                default:
-                    break
-                }
+                dest.titulo = arrEventos[(indice?.row)!].sNombre
+                dest.descripcion = arrEventos[(indice?.row)!].sDescripcion
+                dest.Fecha = arrEventos[(indice?.row)!].sFecha
+                dest.Hora = arrEventos[(indice?.row)!].sHora
+                dest.Expositor = arrEventos[(indice?.row)!].sExpositor
+                dest.Categoria = arrEventos[(indice?.row)!].sCategoria
+                dest.Lugar = arrEventos[(indice?.row)!].sLugar
             }
         }
         else{

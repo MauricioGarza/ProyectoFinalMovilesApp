@@ -13,13 +13,29 @@ class ViewControllerInfoActividad: UIViewController {
 
     @IBOutlet weak var descActividad: UILabel!
     @IBOutlet weak var labTitulo: UILabel!
+    @IBOutlet weak var labExpositor: UILabel!
+    @IBOutlet weak var labFecha: UILabel!
+    @IBOutlet weak var labHora: UILabel!
+    @IBOutlet weak var labLugar: UILabel!
+    @IBOutlet weak var labCategoría: UILabel!
     
     var titulo : String!
     var descripcion : String!
+    var Expositor : String!
+    var Hora : String!
+    var Lugar : String!
+    var Categoria : String!
+    var Fecha : String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         descActividad.text = descripcion
         labTitulo.text = titulo
+        labExpositor.text = Expositor
+        labHora.text = Hora
+        labFecha.text = Fecha
+        labLugar.text = Lugar
+        labCategoría.text = Categoria
     }
 
     override func didReceiveMemoryWarning() {

@@ -311,6 +311,11 @@ SWIFT_CLASS("_TtC13ProyectoFinal27ViewControllerInfoActividad")
 @interface ViewControllerInfoActividad : UIViewController
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified descActividad;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified labTitulo;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified labExpositor;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified labFecha;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified labHora;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified labLugar;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified labCategoría;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (IBAction)butRegresar:(UIButton * _Nonnull)sender;
