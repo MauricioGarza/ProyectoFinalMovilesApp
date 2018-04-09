@@ -20,7 +20,12 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        butDerechosHumanos.layer.cornerRadius=8
+        butBienestar.layer.cornerRadius=8
+        butCalidad.layer.cornerRadius=8
+        butGeriantria.layer.cornerRadius=8
+        butInclusion.layer.cornerRadius=8
+        butNewTecnologia.layer.cornerRadius=8
         // Do any additional setup after loading the view, typically from a nib.
     }
 

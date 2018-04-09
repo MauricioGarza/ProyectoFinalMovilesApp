@@ -11,9 +11,10 @@ import MessageUI
 
 class InfoViewController: UIViewController, MFMailComposeViewControllerDelegate {
 
+    @IBOutlet weak var btRegresar: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        btRegresar.layer.cornerRadius=8
         // Do any additional setup after loading the view.
     }
 
