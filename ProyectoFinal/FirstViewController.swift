@@ -20,13 +20,13 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         primerView.layer.borderWidth=1.5
-        primerView.layer.borderColor=UIColor.green.cgColor
+        primerView.layer.borderColor=UIColor.init(red: 52/255, green: 137/255, blue: 1, alpha: 1).cgColor
         primerView.layer.cornerRadius=8.0
         segundoView.layer.borderWidth=1.5
         segundoView.layer.borderColor=UIColor.white.cgColor
         segundoView.layer.cornerRadius=8.0
         tercerView.layer.borderWidth=1.5
-        tercerView.layer.borderColor=UIColor.green.cgColor
+        tercerView.layer.borderColor=UIColor.init(red: 52/255, green: 137/255, blue: 1, alpha: 1).cgColor
         tercerView.layer.cornerRadius=8.0
         
         
