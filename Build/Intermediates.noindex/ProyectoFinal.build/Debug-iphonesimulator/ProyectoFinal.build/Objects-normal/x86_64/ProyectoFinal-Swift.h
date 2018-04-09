@@ -205,7 +205,7 @@ SWIFT_CLASS("_TtC13ProyectoFinal11AppDelegate")
 
 SWIFT_CLASS("_TtC13ProyectoFinal6Evento")
 @interface Evento : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
 @end
 
 @class UIView;

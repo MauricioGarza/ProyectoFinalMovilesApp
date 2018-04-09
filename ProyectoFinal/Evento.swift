@@ -10,28 +10,23 @@ import UIKit
 
 class Evento: NSObject {
 
-    var sCategoria:String!
-    var sDescripcion:String!
-    var sExpositor:String!
-    var sHora:String!
-    var sLugar:String!
-    var sNombre:String!
+    var sCategoria:String = ""
+    var sDescripcion:String = ""
+    var sExpositor:String = ""
+    var sHora:String = ""
+    var sLugar:String = ""
+    var sNombre:String = ""
+    var sFecha:String = ""
     
-    init(sCategoria : String, sDescripcion : String, sExpositor : String, sHora : String, sLugar : String, sNombre:String) {
+    init(sCategoria : String, sDescripcion : String, sExpositor : String, sHora : String, sLugar : String, sNombre:String, sFecha:String) {
         self.sCategoria = sCategoria
         self.sDescripcion = sDescripcion
         self.sExpositor = sExpositor
         self.sHora = sHora
         self.sLugar = sLugar
         self.sNombre = sNombre
+        self.sFecha = sFecha
     }
     
-    init(sNombre:String) {
-        self.sCategoria = nil
-        self.sDescripcion = nil
-        self.sExpositor = nil
-        self.sHora = nil
-        self.sLugar = nil
-        self.sNombre = sNombre
-    }
+
 }

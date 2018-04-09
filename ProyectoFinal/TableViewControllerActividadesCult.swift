@@ -15,6 +15,7 @@ class TableViewControllerActividadesCult: UITableViewController {
     @IBOutlet weak var butTitle: UILabel!
 
     var arrDatos : [String] = []
+    var arrEventos : [Evento] = []
     var arrActDerHumanos : [String] = []
     var arrDerHumanos : [String] = []
     var arrCalidadVida : [String] = []
@@ -41,13 +42,9 @@ class TableViewControllerActividadesCult: UITableViewController {
             switch tabBarController?.selectedIndex{
             case 2?:
                 butTitle.text = "Actividades Culturales"                
-                Handle = self.FireBaseRef?.child("ActividadesCulturales").observe(.childAdded, with:{(DataSnapshot) in
-                    if let item = DataSnapshot.childSnapshot(forPath: "Nombre") as? DataSnapshot
-                    {
-                        self.arrDatos.append(item.value as! String)
-                        self.tableView.reloadData()
-                    }
-                })
+                let refActividadesCulturales = self.FireBaseRef?.child("ActividadesCulturales")
+                llenarEvento(ref: refActividadesCulturales!)
+
             case 3?:
             butTitle.text = "Pabellones"
             Handle = self.FireBaseRef?.child("Pabellones").observe(.childAdded, with:{(DataSnapshot) in
@@ -67,28 +64,29 @@ class TableViewControllerActividadesCult: UITableViewController {
             switch FinalIndice{
             case 0:
                 butTitle.text = "Actividades Eje Derechos Humanos"
-                
-              
-               /* self.arrActDerHumanos.append(self.FireBaseRef?.child("Ejes").child("DerechosHumanos").child("Evento1").value(forKey: "Nombre") as! String)
-                self.tableView.reloadData() */
-                
-                Handle = self.FireBaseRef?.child("Ejes").observe(.childAdded,with:{(DataSnapshot) in
-                    if let item = DataSnapshot.key as? String {
-                        self.arrDerHumanos.append(String(describing: item))
-                        self.tableView.reloadData()
-                    }
-                })
+                let refAct = self.FireBaseRef?.child("Ejes").child("DerechosHumanos")
+                llenarEvento(ref: refAct!)
                 
             case 1:
-                butTitle.text = "Actividades Eje arrActBienestar"
+                butTitle.text = "Actividades Eje Bienestar"
+                let refAct = self.FireBaseRef?.child("Ejes").child("Bienestar")
+                llenarEvento(ref: refAct!)
             case 2:
                 butTitle.text = "Actividades Eje Calidad de Vida"
+                let refAct = self.FireBaseRef?.child("Ejes").child("CalidadVida")
+                llenarEvento(ref: refAct!)
             case 3:
                 butTitle.text = "Actividades Eje Geriantría"
+                let refAct = self.FireBaseRef?.child("Ejes").child("Geriatria")
+                llenarEvento(ref: refAct!)
             case 4:
                 butTitle.text = "Actividades Eje Inclusion Intergeneracional"
+                let refAct = self.FireBaseRef?.child("Ejes").child("Inclusion")
+                llenarEvento(ref: refAct!)
             case 5:
                 butTitle.text = "Actividades Eje Nueva Tecnología"
+                let refAct = self.FireBaseRef?.child("Ejes").child("Tecnologia")
+                llenarEvento(ref: refAct!)
             default:
                 break
             }
@@ -113,29 +111,14 @@ class TableViewControllerActividadesCult: UITableViewController {
             case 3?:
                 return arrDatos.count
             case 2?:
-                return arrDatos.count
+                return arrEventos.count
             default:
                 break
             }
             
         }
         else {
-            switch FinalIndice{
-            case 0:
-                return arrDatos.count
-            case 1:
-                return arrActBienestar.count
-            case 2:
-                return arrCalidadVida.count
-            case 3:
-                return arrActGeriatria.count
-            case 4:
-                return arrActInclusion.count
-            case 5:
-                return arrActTecnologia.count
-            default:
-                break
-            }
+            return arrEventos.count
         }
         return 0
 
@@ -150,42 +133,40 @@ class TableViewControllerActividadesCult: UITableViewController {
                 cell.textLabel?.text = arrDatos[indexPath.row]
                 cell.detailTextLabel?.text = "Descripcion breve pabellon"
             case 2?:
-                cell.textLabel?.text = arrDatos[indexPath.row]
-                cell.detailTextLabel?.text = ""
+                cell.textLabel?.text = arrEventos[indexPath.row].sNombre
+                cell.detailTextLabel?.text = arrEventos[indexPath.row].sDescripcion
             default:
                 break
             }
 
         }
         else {
-            switch FinalIndice{
-            case 0:
-                cell.textLabel?.text = self.arrDatos[indexPath.row]
-                cell.detailTextLabel?.text = "Descripcion act derechos humanos"
-            case 1:
-                cell.textLabel?.text = arrActBienestar[indexPath.row]
-                cell.detailTextLabel?.text = "Descripcion act arrActBienestar"
-            case 2:
-                cell.textLabel?.text = arrCalidadVida[indexPath.row]
-                cell.detailTextLabel?.text = "Descripcion actividades calidad vida"
-            case 3:
-                cell.textLabel?.text = arrActGeriatria[indexPath.row]
-                cell.detailTextLabel?.text = "Descripcion actividades eje geriantria"
-            case 4:
-                cell.textLabel?.text = arrActInclusion[indexPath.row]
-                cell.detailTextLabel?.text = "Descripcion de actividades eje    inclusion"
-            case 5:
-                cell.textLabel?.text = arrActTecnologia[indexPath.row]
-                cell.detailTextLabel?.text = "Descripcion actividades eje tecnologias"
-            default:
-                print("Norby me la pela")
-            }
+            cell.textLabel?.text = self.arrEventos[indexPath.row].sNombre
+            cell.detailTextLabel?.text = self.arrEventos[indexPath.row].sDescripcion
         }
 
 
         return cell
     }
     
+    func llenarEvento(ref:DatabaseReference){
+        ref.observeSingleEvent(of: .value, with:{ DataSnapshot in
+            for child in DataSnapshot.children{
+                let snap = child as! DataSnapshot
+                let dict = snap.value as! [String:Any]
+                let nom = dict["Nombre"] as! String
+                let desc = dict["Descripcion"] as! String
+                let cat = dict["Categoria"] as! String
+                let Expos = dict["Expositor"] as! String
+                let Fecha = dict["Fecha"] as! String
+                let Hora = dict["Hora"] as! String
+                let lugar = dict["Lugar"] as! String
+                let Event = Evento(sCategoria: cat, sDescripcion: desc, sExpositor: Expos, sHora: Hora, sLugar: lugar, sNombre: nom, sFecha: Fecha)
+                self.arrEventos.append(Event)
+                self.tableView.reloadData()
+            }
+        })
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
