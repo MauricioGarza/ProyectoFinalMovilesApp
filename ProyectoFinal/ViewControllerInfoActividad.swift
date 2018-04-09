@@ -81,7 +81,7 @@ class ViewControllerInfoActividad: UIViewController {
                 event.startDate=fechaEvent
                 event.endDate=Calendar.current.date(byAdding: dateComponent, to: fechaEvent!)
                 event.notes="Lugar: "+self.Lugar
-                
+                event.addAlarm(EKAlarm.init(relativeOffset: -3600))
                 event.calendar=eventStore.defaultCalendarForNewEvents
                 do{
                     try eventStore.save(event, span: .thisEvent)
