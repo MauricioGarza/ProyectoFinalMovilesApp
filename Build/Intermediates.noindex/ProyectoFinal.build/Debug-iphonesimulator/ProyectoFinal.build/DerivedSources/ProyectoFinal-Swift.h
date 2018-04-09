@@ -217,6 +217,10 @@ SWIFT_CLASS("_TtC13ProyectoFinal19FirstViewController")
 @interface FirstViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified primerView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lbPrimerView;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified segundoView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lbSegundoView;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified tercerView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lbTercerView;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -229,6 +233,7 @@ SWIFT_CLASS("_TtC13ProyectoFinal19FirstViewController")
 
 SWIFT_CLASS("_TtC13ProyectoFinal18InfoViewController")
 @interface InfoViewController : UIViewController <MFMailComposeViewControllerDelegate>
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btRegresar;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (IBAction)butonRegroso:(UIButton * _Nonnull)sender;
@@ -279,6 +284,7 @@ SWIFT_CLASS("_TtC13ProyectoFinal34TableViewControllerActividadesCult")
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString * _Nonnull)identifier sender:(id _Nullable)sender SWIFT_WARN_UNUSED_RESULT;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (IBAction)butRegresar:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
@@ -316,6 +322,7 @@ SWIFT_CLASS("_TtC13ProyectoFinal27ViewControllerInfoActividad")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified labHora;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified labLugar;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified labCategoría;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btAgregarCalendario;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (IBAction)butRegresar:(UIButton * _Nonnull)sender;

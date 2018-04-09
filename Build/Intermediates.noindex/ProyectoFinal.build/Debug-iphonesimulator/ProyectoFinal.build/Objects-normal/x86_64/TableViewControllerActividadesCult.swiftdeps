@@ -12,11 +12,16 @@ provides-dynamic-lookup:
 - "didReceiveMemoryWarning"
 - "numberOfSections"
 - "prepare"
+- "shouldPerformSegue"
 - "tableView"
 - "viewDidLoad"
 depends-top-level:
 - !private "!="
+- !private "&&"
+- !private "=="
+- !private ">"
 - "AssignmentPrecedence"
+- "Bool"
 - !private "BooleanLiteralType"
 - "CastingPrecedence"
 - !private "DataSnapshot"
@@ -27,20 +32,23 @@ depends-top-level:
 - "IndexPath"
 - "Int"
 - "String"
-- !private "StringLiteralType"
+- "StringLiteralType"
 - "TableViewControllerActividadesCult"
 - "UIButton"
 - "UILabel"
+- !private "UIStoryboard"
 - "UIStoryboardSegue"
 - "UITableView"
 - "UITableViewCell"
 - "UITableViewController"
 - !private "ViewControllerFiltrar"
 - !private "ViewControllerInfoActividad"
+- !private "print"
 - !private "~="
 depends-member:
 - !private ["Sa", "append"]
 - !private ["Sa", "count"]
+- !private ["Sa", "removeAll"]
 - !private ["Sa", "subscript"]
 - !private ["s10ArraySliceV", "sCategoria"]
 - !private ["s10ArraySliceV", "sDescripcion"]
@@ -51,7 +59,8 @@ depends-member:
 - !private ["s10ArraySliceV", "sNombre"]
 - !private ["s23BidirectionalCollectionP", "append"]
 - !private ["s23BidirectionalCollectionP", "count"]
-- !private ["s23BidirectionalCollectionP", "init"]
+- ["s23BidirectionalCollectionP", "init"]
+- !private ["s23BidirectionalCollectionP", "removeAll"]
 - !private ["s23BidirectionalCollectionP", "row"]
 - !private ["s23BidirectionalCollectionP", "sCategoria"]
 - !private ["s23BidirectionalCollectionP", "sDescripcion"]
@@ -81,6 +90,8 @@ depends-member:
 - !private ["s7CVarArgP", "Hora"]
 - !private ["s7CVarArgP", "Indice"]
 - !private ["s7CVarArgP", "Lugar"]
+- !private ["s7CVarArgP", "NombrePabellon"]
+- !private ["s7CVarArgP", "UIStoryboard"]
 - !private ["s7CVarArgP", "append"]
 - !private ["s7CVarArgP", "arrDatos"]
 - !private ["s7CVarArgP", "arrEventos"]
@@ -99,15 +110,20 @@ depends-member:
 - !private ["s7CVarArgP", "dismiss"]
 - !private ["s7CVarArgP", "identifier"]
 - !private ["s7CVarArgP", "indexPathForSelectedRow"]
-- !private ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "instantiateViewController"]
 - !private ["s7CVarArgP", "isEnabled"]
 - !private ["s7CVarArgP", "key"]
 - !private ["s7CVarArgP", "llenarEvento"]
 - !private ["s7CVarArgP", "navigationController"]
 - !private ["s7CVarArgP", "observe"]
 - !private ["s7CVarArgP", "observeSingleEvent"]
+- !private ["s7CVarArgP", "performSegue"]
+- !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "pushViewController"]
 - !private ["s7CVarArgP", "reference"]
 - !private ["s7CVarArgP", "reloadData"]
+- !private ["s7CVarArgP", "removeAll"]
 - !private ["s7CVarArgP", "sCategoria"]
 - !private ["s7CVarArgP", "sDescripcion"]
 - !private ["s7CVarArgP", "sExpositor"]
@@ -129,7 +145,8 @@ depends-member:
 - ["s7CVarArgP", ""]
 - !private ["s10CollectionP", "append"]
 - !private ["s10CollectionP", "count"]
-- !private ["s10CollectionP", "init"]
+- ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "removeAll"]
 - !private ["s10CollectionP", "row"]
 - !private ["s10CollectionP", "sCategoria"]
 - !private ["s10CollectionP", "sDescripcion"]
@@ -139,7 +156,7 @@ depends-member:
 - !private ["s10CollectionP", "sLugar"]
 - !private ["s10CollectionP", "sNombre"]
 - !private ["s10CollectionP", "subscript"]
-- !private ["s10ComparableP", "init"]
+- ["s10ComparableP", "init"]
 - !private ["s10ComparableP", "row"]
 - !private ["s28CustomDebugStringConvertibleP", "Categoria"]
 - !private ["s28CustomDebugStringConvertibleP", "Database"]
@@ -152,6 +169,8 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "Hora"]
 - !private ["s28CustomDebugStringConvertibleP", "Indice"]
 - !private ["s28CustomDebugStringConvertibleP", "Lugar"]
+- !private ["s28CustomDebugStringConvertibleP", "NombrePabellon"]
+- !private ["s28CustomDebugStringConvertibleP", "UIStoryboard"]
 - !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "arrDatos"]
 - !private ["s28CustomDebugStringConvertibleP", "arrEventos"]
@@ -170,15 +189,20 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "dismiss"]
 - !private ["s28CustomDebugStringConvertibleP", "identifier"]
 - !private ["s28CustomDebugStringConvertibleP", "indexPathForSelectedRow"]
-- !private ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "instantiateViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "isEnabled"]
 - !private ["s28CustomDebugStringConvertibleP", "key"]
 - !private ["s28CustomDebugStringConvertibleP", "llenarEvento"]
 - !private ["s28CustomDebugStringConvertibleP", "navigationController"]
 - !private ["s28CustomDebugStringConvertibleP", "observe"]
 - !private ["s28CustomDebugStringConvertibleP", "observeSingleEvent"]
+- !private ["s28CustomDebugStringConvertibleP", "performSegue"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "pushViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "reference"]
 - !private ["s28CustomDebugStringConvertibleP", "reloadData"]
+- !private ["s28CustomDebugStringConvertibleP", "removeAll"]
 - !private ["s28CustomDebugStringConvertibleP", "row"]
 - !private ["s28CustomDebugStringConvertibleP", "sCategoria"]
 - !private ["s28CustomDebugStringConvertibleP", "sDescripcion"]
@@ -200,11 +224,12 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
-- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "count"]
-- !private ["s17CustomReflectableP", "init"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "removeAll"]
 - !private ["s17CustomReflectableP", "row"]
 - !private ["s17CustomReflectableP", "sCategoria"]
 - !private ["s17CustomReflectableP", "sDescripcion"]
@@ -225,6 +250,8 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "Hora"]
 - !private ["s23CustomStringConvertibleP", "Indice"]
 - !private ["s23CustomStringConvertibleP", "Lugar"]
+- !private ["s23CustomStringConvertibleP", "NombrePabellon"]
+- !private ["s23CustomStringConvertibleP", "UIStoryboard"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "append"]
 - !private ["s23CustomStringConvertibleP", "arrDatos"]
@@ -244,15 +271,20 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "dismiss"]
 - !private ["s23CustomStringConvertibleP", "identifier"]
 - !private ["s23CustomStringConvertibleP", "indexPathForSelectedRow"]
-- !private ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "instantiateViewController"]
 - !private ["s23CustomStringConvertibleP", "isEnabled"]
 - !private ["s23CustomStringConvertibleP", "key"]
 - !private ["s23CustomStringConvertibleP", "llenarEvento"]
 - !private ["s23CustomStringConvertibleP", "navigationController"]
 - !private ["s23CustomStringConvertibleP", "observe"]
 - !private ["s23CustomStringConvertibleP", "observeSingleEvent"]
+- !private ["s23CustomStringConvertibleP", "performSegue"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "pushViewController"]
 - !private ["s23CustomStringConvertibleP", "reference"]
 - !private ["s23CustomStringConvertibleP", "reloadData"]
+- !private ["s23CustomStringConvertibleP", "removeAll"]
 - !private ["s23CustomStringConvertibleP", "row"]
 - !private ["s23CustomStringConvertibleP", "sCategoria"]
 - !private ["s23CustomStringConvertibleP", "sDescripcion"]
@@ -289,14 +321,16 @@ depends-member:
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "append"]
 - !private ["s9DecodableP", "count"]
-- !private ["s9DecodableP", "init"]
+- ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "removeAll"]
 - !private ["s9DecodableP", "row"]
 - !private ["s9DecodableP", "subscript"]
 - !private ["s10DictionaryV", "subscript"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - !private ["s9EncodableP", "append"]
 - !private ["s9EncodableP", "count"]
-- !private ["s9EncodableP", "init"]
+- ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "removeAll"]
 - !private ["s9EncodableP", "row"]
 - !private ["s9EncodableP", "subscript"]
 - !private ["s9EquatableP", "Categoria"]
@@ -310,6 +344,8 @@ depends-member:
 - !private ["s9EquatableP", "Hora"]
 - !private ["s9EquatableP", "Indice"]
 - !private ["s9EquatableP", "Lugar"]
+- !private ["s9EquatableP", "NombrePabellon"]
+- !private ["s9EquatableP", "UIStoryboard"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "arrDatos"]
 - !private ["s9EquatableP", "arrEventos"]
@@ -328,7 +364,8 @@ depends-member:
 - !private ["s9EquatableP", "dismiss"]
 - !private ["s9EquatableP", "identifier"]
 - !private ["s9EquatableP", "indexPathForSelectedRow"]
-- !private ["s9EquatableP", "init"]
+- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "instantiateViewController"]
 - !private ["s9EquatableP", "isEnabled"]
 - !private ["s9EquatableP", "key"]
 - !private ["s9EquatableP", "llenarEvento"]
@@ -336,6 +373,9 @@ depends-member:
 - !private ["s9EquatableP", "normal"]
 - !private ["s9EquatableP", "observe"]
 - !private ["s9EquatableP", "observeSingleEvent"]
+- !private ["s9EquatableP", "performSegue"]
+- !private ["s9EquatableP", "print"]
+- !private ["s9EquatableP", "pushViewController"]
 - !private ["s9EquatableP", "reference"]
 - !private ["s9EquatableP", "reloadData"]
 - !private ["s9EquatableP", "row"]
@@ -368,6 +408,7 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "normal"]
+- !private ["s25ExpressibleByArrayLiteralP", "removeAll"]
 - !private ["s25ExpressibleByArrayLiteralP", "row"]
 - !private ["s25ExpressibleByArrayLiteralP", "sCategoria"]
 - !private ["s25ExpressibleByArrayLiteralP", "sDescripcion"]
@@ -379,9 +420,9 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s26ExpressibleByStringLiteralP", "init"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s8HashableP", "Categoria"]
 - !private ["s8HashableP", "Database"]
 - !private ["s8HashableP", "Evento"]
@@ -393,6 +434,8 @@ depends-member:
 - !private ["s8HashableP", "Hora"]
 - !private ["s8HashableP", "Indice"]
 - !private ["s8HashableP", "Lugar"]
+- !private ["s8HashableP", "NombrePabellon"]
+- !private ["s8HashableP", "UIStoryboard"]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
 - !private ["s8HashableP", "arrDatos"]
 - !private ["s8HashableP", "arrEventos"]
@@ -411,13 +454,17 @@ depends-member:
 - !private ["s8HashableP", "dismiss"]
 - !private ["s8HashableP", "identifier"]
 - !private ["s8HashableP", "indexPathForSelectedRow"]
-- !private ["s8HashableP", "init"]
+- ["s8HashableP", "init"]
+- !private ["s8HashableP", "instantiateViewController"]
 - !private ["s8HashableP", "isEnabled"]
 - !private ["s8HashableP", "key"]
 - !private ["s8HashableP", "llenarEvento"]
 - !private ["s8HashableP", "navigationController"]
 - !private ["s8HashableP", "observe"]
 - !private ["s8HashableP", "observeSingleEvent"]
+- !private ["s8HashableP", "performSegue"]
+- !private ["s8HashableP", "print"]
+- !private ["s8HashableP", "pushViewController"]
 - !private ["s8HashableP", "reference"]
 - !private ["s8HashableP", "reloadData"]
 - !private ["s8HashableP", "row"]
@@ -441,8 +488,8 @@ depends-member:
 - ["s8HashableP", ""]
 - !private ["10Foundation9IndexPathV", "row"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
-- !private ["s25LosslessStringConvertibleP", "init"]
-- !private ["s10MirrorPathP", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s10MirrorPathP", "init"]
 - !private ["s25MutableBidirectionalSliceV", "sCategoria"]
 - !private ["s25MutableBidirectionalSliceV", "sDescripcion"]
 - !private ["s25MutableBidirectionalSliceV", "sExpositor"]
@@ -452,6 +499,7 @@ depends-member:
 - !private ["s25MutableBidirectionalSliceV", "sNombre"]
 - !private ["s17MutableCollectionP", "append"]
 - !private ["s17MutableCollectionP", "count"]
+- !private ["s17MutableCollectionP", "removeAll"]
 - !private ["s17MutableCollectionP", "row"]
 - !private ["s17MutableCollectionP", "sCategoria"]
 - !private ["s17MutableCollectionP", "sDescripcion"]
@@ -486,6 +534,8 @@ depends-member:
 - !private ["So8NSCodingP", "Hora"]
 - !private ["So8NSCodingP", "Indice"]
 - !private ["So8NSCodingP", "Lugar"]
+- !private ["So8NSCodingP", "NombrePabellon"]
+- !private ["So8NSCodingP", "UIStoryboard"]
 - !private ["So8NSCodingP", "arrDatos"]
 - !private ["So8NSCodingP", "arrEventos"]
 - !private ["So8NSCodingP", "butFiltrar"]
@@ -497,10 +547,13 @@ depends-member:
 - !private ["So8NSCodingP", "didReceiveMemoryWarning"]
 - !private ["So8NSCodingP", "dismiss"]
 - !private ["So8NSCodingP", "indexPathForSelectedRow"]
-- !private ["So8NSCodingP", "init"]
+- ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "isEnabled"]
 - !private ["So8NSCodingP", "llenarEvento"]
 - !private ["So8NSCodingP", "navigationController"]
+- !private ["So8NSCodingP", "performSegue"]
+- !private ["So8NSCodingP", "print"]
+- !private ["So8NSCodingP", "pushViewController"]
 - !private ["So8NSCodingP", "reloadData"]
 - !private ["So8NSCodingP", "selectedIndex"]
 - !private ["So8NSCodingP", "setNavigationBarHidden"]
@@ -512,7 +565,7 @@ depends-member:
 - !private ["So8NSCodingP", "titulo"]
 - !private ["So8NSCodingP", "viewDidLoad"]
 - ["So8NSCodingP", ""]
-- !private ["So9NSCopyingP", "init"]
+- ["So9NSCopyingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "Categoria"]
 - !private ["So26NSExtensionRequestHandlingP", "Database"]
 - !private ["So26NSExtensionRequestHandlingP", "Evento"]
@@ -524,6 +577,8 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "Hora"]
 - !private ["So26NSExtensionRequestHandlingP", "Indice"]
 - !private ["So26NSExtensionRequestHandlingP", "Lugar"]
+- !private ["So26NSExtensionRequestHandlingP", "NombrePabellon"]
+- !private ["So26NSExtensionRequestHandlingP", "UIStoryboard"]
 - !private ["So26NSExtensionRequestHandlingP", "arrDatos"]
 - !private ["So26NSExtensionRequestHandlingP", "arrEventos"]
 - !private ["So26NSExtensionRequestHandlingP", "butFiltrar"]
@@ -535,6 +590,9 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "llenarEvento"]
 - !private ["So26NSExtensionRequestHandlingP", "navigationController"]
+- !private ["So26NSExtensionRequestHandlingP", "performSegue"]
+- !private ["So26NSExtensionRequestHandlingP", "print"]
+- !private ["So26NSExtensionRequestHandlingP", "pushViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "selectedIndex"]
 - !private ["So26NSExtensionRequestHandlingP", "setNavigationBarHidden"]
 - !private ["So26NSExtensionRequestHandlingP", "tabBarController"]
@@ -542,9 +600,10 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "titulo"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - ["So26NSExtensionRequestHandlingP", ""]
-- !private ["So21NSItemProviderReadingP", "init"]
-- !private ["So21NSItemProviderWritingP", "init"]
-- !private ["So16NSMutableCopyingP", "init"]
+- ["So21NSItemProviderReadingP", "init"]
+- ["So21NSItemProviderWritingP", "init"]
+- ["So16NSMutableCopyingP", "init"]
+- ["So8NSObjectC", "Bool"]
 - !private ["So8NSObjectC", "Categoria"]
 - !private ["So8NSObjectC", "DataSnapshot"]
 - !private ["So8NSObjectC", "Database"]
@@ -561,9 +620,11 @@ depends-member:
 - ["So8NSObjectC", "Indice"]
 - ["So8NSObjectC", "Int"]
 - !private ["So8NSObjectC", "Lugar"]
+- ["So8NSObjectC", "NombrePabellon"]
 - ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "UIButton"]
 - ["So8NSObjectC", "UILabel"]
+- !private ["So8NSObjectC", "UIStoryboard"]
 - ["So8NSObjectC", "UIStoryboardSegue"]
 - ["So8NSObjectC", "UITableView"]
 - ["So8NSObjectC", "UITableViewCell"]
@@ -586,6 +647,7 @@ depends-member:
 - !private ["So8NSObjectC", "identifier"]
 - !private ["So8NSObjectC", "indexPathForSelectedRow"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "instantiateViewController"]
 - !private ["So8NSObjectC", "isEnabled"]
 - !private ["So8NSObjectC", "key"]
 - ["So8NSObjectC", "llenarEvento"]
@@ -593,7 +655,10 @@ depends-member:
 - ["So8NSObjectC", "numberOfSections"]
 - !private ["So8NSObjectC", "observe"]
 - !private ["So8NSObjectC", "observeSingleEvent"]
+- !private ["So8NSObjectC", "performSegue"]
 - ["So8NSObjectC", "prepare"]
+- !private ["So8NSObjectC", "print"]
+- !private ["So8NSObjectC", "pushViewController"]
 - !private ["So8NSObjectC", "reference"]
 - !private ["So8NSObjectC", "reloadData"]
 - !private ["So8NSObjectC", "sCategoria"]
@@ -606,6 +671,7 @@ depends-member:
 - !private ["So8NSObjectC", "selectedIndex"]
 - !private ["So8NSObjectC", "setNavigationBarHidden"]
 - !private ["So8NSObjectC", "setTitle"]
+- ["So8NSObjectC", "shouldPerformSegue"]
 - !private ["So8NSObjectC", "tabBarController"]
 - ["So8NSObjectC", "tableView"]
 - !private ["So8NSObjectC", "text"]
@@ -624,6 +690,8 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "Hora"]
 - !private ["So16NSObjectProtocolP", "Indice"]
 - !private ["So16NSObjectProtocolP", "Lugar"]
+- !private ["So16NSObjectProtocolP", "NombrePabellon"]
+- !private ["So16NSObjectProtocolP", "UIStoryboard"]
 - !private ["So16NSObjectProtocolP", "arrDatos"]
 - !private ["So16NSObjectProtocolP", "arrEventos"]
 - !private ["So16NSObjectProtocolP", "butFiltrar"]
@@ -640,13 +708,17 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "dismiss"]
 - !private ["So16NSObjectProtocolP", "identifier"]
 - !private ["So16NSObjectProtocolP", "indexPathForSelectedRow"]
-- !private ["So16NSObjectProtocolP", "init"]
+- ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "instantiateViewController"]
 - !private ["So16NSObjectProtocolP", "isEnabled"]
 - !private ["So16NSObjectProtocolP", "key"]
 - !private ["So16NSObjectProtocolP", "llenarEvento"]
 - !private ["So16NSObjectProtocolP", "navigationController"]
 - !private ["So16NSObjectProtocolP", "observe"]
 - !private ["So16NSObjectProtocolP", "observeSingleEvent"]
+- !private ["So16NSObjectProtocolP", "performSegue"]
+- !private ["So16NSObjectProtocolP", "print"]
+- !private ["So16NSObjectProtocolP", "pushViewController"]
 - !private ["So16NSObjectProtocolP", "reference"]
 - !private ["So16NSObjectProtocolP", "reloadData"]
 - !private ["So16NSObjectProtocolP", "sCategoria"]
@@ -667,11 +739,12 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "value"]
 - !private ["So16NSObjectProtocolP", "viewDidLoad"]
 - ["So16NSObjectProtocolP", ""]
-- !private ["So14NSSecureCodingP", "init"]
-- !private ["So8NSStringC", "init"]
+- ["So14NSSecureCodingP", "init"]
+- ["So8NSStringC", "init"]
 - !private ["s9OptionSetP", "normal"]
 - !private ["s22RandomAccessCollectionP", "append"]
 - !private ["s22RandomAccessCollectionP", "count"]
+- !private ["s22RandomAccessCollectionP", "removeAll"]
 - !private ["s22RandomAccessCollectionP", "row"]
 - !private ["s22RandomAccessCollectionP", "sCategoria"]
 - !private ["s22RandomAccessCollectionP", "sDescripcion"]
@@ -683,7 +756,8 @@ depends-member:
 - !private ["s22RandomAccessCollectionP", "subscript"]
 - !private ["s26RangeReplaceableCollectionP", "append"]
 - !private ["s26RangeReplaceableCollectionP", "count"]
-- !private ["s26RangeReplaceableCollectionP", "init"]
+- ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "removeAll"]
 - !private ["s26RangeReplaceableCollectionP", "sCategoria"]
 - !private ["s26RangeReplaceableCollectionP", "sDescripcion"]
 - !private ["s26RangeReplaceableCollectionP", "sExpositor"]
@@ -705,7 +779,8 @@ depends-member:
 - !private ["10Foundation20ReferenceConvertibleP", "row"]
 - !private ["s8SequenceP", "append"]
 - !private ["s8SequenceP", "count"]
-- !private ["s8SequenceP", "init"]
+- ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "removeAll"]
 - !private ["s8SequenceP", "row"]
 - !private ["s8SequenceP", "sCategoria"]
 - !private ["s8SequenceP", "sDescripcion"]
@@ -716,8 +791,9 @@ depends-member:
 - !private ["s8SequenceP", "sNombre"]
 - !private ["s8SequenceP", "subscript"]
 - !private ["s10SetAlgebraP", "normal"]
-- !private ["SS", "init"]
-- !private ["s14StringProtocolP", "init"]
+- ["SS", "init"]
+- ["s14StringProtocolP", "init"]
+- ["13ProyectoFinal34TableViewControllerActividadesCultC", "Bool"]
 - !private ["13ProyectoFinal34TableViewControllerActividadesCultC", "DataSnapshot"]
 - !private ["13ProyectoFinal34TableViewControllerActividadesCultC", "Database"]
 - ["13ProyectoFinal34TableViewControllerActividadesCultC", "DatabaseHandle"]
@@ -729,9 +805,11 @@ depends-member:
 - ["13ProyectoFinal34TableViewControllerActividadesCultC", "IndexPath"]
 - ["13ProyectoFinal34TableViewControllerActividadesCultC", "Indice"]
 - ["13ProyectoFinal34TableViewControllerActividadesCultC", "Int"]
+- ["13ProyectoFinal34TableViewControllerActividadesCultC", "NombrePabellon"]
 - ["13ProyectoFinal34TableViewControllerActividadesCultC", "String"]
 - ["13ProyectoFinal34TableViewControllerActividadesCultC", "UIButton"]
 - ["13ProyectoFinal34TableViewControllerActividadesCultC", "UILabel"]
+- !private ["13ProyectoFinal34TableViewControllerActividadesCultC", "UIStoryboard"]
 - ["13ProyectoFinal34TableViewControllerActividadesCultC", "UIStoryboardSegue"]
 - ["13ProyectoFinal34TableViewControllerActividadesCultC", "UITableView"]
 - ["13ProyectoFinal34TableViewControllerActividadesCultC", "UITableViewCell"]
@@ -749,12 +827,15 @@ depends-member:
 - ["13ProyectoFinal34TableViewControllerActividadesCultC", "llenarEvento"]
 - !private ["13ProyectoFinal34TableViewControllerActividadesCultC", "navigationController"]
 - ["13ProyectoFinal34TableViewControllerActividadesCultC", "numberOfSections"]
+- !private ["13ProyectoFinal34TableViewControllerActividadesCultC", "performSegue"]
 - ["13ProyectoFinal34TableViewControllerActividadesCultC", "prepare"]
+- !private ["13ProyectoFinal34TableViewControllerActividadesCultC", "print"]
+- ["13ProyectoFinal34TableViewControllerActividadesCultC", "shouldPerformSegue"]
 - !private ["13ProyectoFinal34TableViewControllerActividadesCultC", "tabBarController"]
 - ["13ProyectoFinal34TableViewControllerActividadesCultC", "tableView"]
 - ["13ProyectoFinal34TableViewControllerActividadesCultC", "viewDidLoad"]
-- !private ["s16TextOutputStreamP", "init"]
-- !private ["s20TextOutputStreamableP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "isEnabled"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "setTitle"]
 - !private ["So29UIAccessibilityIdentificationP", "dequeueReusableCell"]
@@ -784,6 +865,8 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "Hora"]
 - !private ["So21UIAppearanceContainerP", "Indice"]
 - !private ["So21UIAppearanceContainerP", "Lugar"]
+- !private ["So21UIAppearanceContainerP", "NombrePabellon"]
+- !private ["So21UIAppearanceContainerP", "UIStoryboard"]
 - !private ["So21UIAppearanceContainerP", "arrDatos"]
 - !private ["So21UIAppearanceContainerP", "arrEventos"]
 - !private ["So21UIAppearanceContainerP", "butFiltrar"]
@@ -799,6 +882,9 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "isEnabled"]
 - !private ["So21UIAppearanceContainerP", "llenarEvento"]
 - !private ["So21UIAppearanceContainerP", "navigationController"]
+- !private ["So21UIAppearanceContainerP", "performSegue"]
+- !private ["So21UIAppearanceContainerP", "print"]
+- !private ["So21UIAppearanceContainerP", "pushViewController"]
 - !private ["So21UIAppearanceContainerP", "reloadData"]
 - !private ["So21UIAppearanceContainerP", "selectedIndex"]
 - !private ["So21UIAppearanceContainerP", "setNavigationBarHidden"]
@@ -823,6 +909,8 @@ depends-member:
 - !private ["So18UIContentContainerP", "Hora"]
 - !private ["So18UIContentContainerP", "Indice"]
 - !private ["So18UIContentContainerP", "Lugar"]
+- !private ["So18UIContentContainerP", "NombrePabellon"]
+- !private ["So18UIContentContainerP", "UIStoryboard"]
 - !private ["So18UIContentContainerP", "arrDatos"]
 - !private ["So18UIContentContainerP", "arrEventos"]
 - !private ["So18UIContentContainerP", "butFiltrar"]
@@ -834,6 +922,9 @@ depends-member:
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "llenarEvento"]
 - !private ["So18UIContentContainerP", "navigationController"]
+- !private ["So18UIContentContainerP", "performSegue"]
+- !private ["So18UIContentContainerP", "print"]
+- !private ["So18UIContentContainerP", "pushViewController"]
 - !private ["So18UIContentContainerP", "selectedIndex"]
 - !private ["So18UIContentContainerP", "setNavigationBarHidden"]
 - !private ["So18UIContentContainerP", "tabBarController"]
@@ -875,6 +966,8 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "Hora"]
 - !private ["So18UIFocusEnvironmentP", "Indice"]
 - !private ["So18UIFocusEnvironmentP", "Lugar"]
+- !private ["So18UIFocusEnvironmentP", "NombrePabellon"]
+- !private ["So18UIFocusEnvironmentP", "UIStoryboard"]
 - !private ["So18UIFocusEnvironmentP", "arrDatos"]
 - !private ["So18UIFocusEnvironmentP", "arrEventos"]
 - !private ["So18UIFocusEnvironmentP", "butFiltrar"]
@@ -890,6 +983,9 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "isEnabled"]
 - !private ["So18UIFocusEnvironmentP", "llenarEvento"]
 - !private ["So18UIFocusEnvironmentP", "navigationController"]
+- !private ["So18UIFocusEnvironmentP", "performSegue"]
+- !private ["So18UIFocusEnvironmentP", "print"]
+- !private ["So18UIFocusEnvironmentP", "pushViewController"]
 - !private ["So18UIFocusEnvironmentP", "reloadData"]
 - !private ["So18UIFocusEnvironmentP", "selectedIndex"]
 - !private ["So18UIFocusEnvironmentP", "setNavigationBarHidden"]
@@ -912,6 +1008,7 @@ depends-member:
 - !private ["So27UIGestureRecognizerDelegateP", "detailTextLabel"]
 - !private ["So27UIGestureRecognizerDelegateP", "textLabel"]
 - !private ["So7UILabelC", "text"]
+- !private ["So22UINavigationControllerC", "pushViewController"]
 - !private ["So22UINavigationControllerC", "setNavigationBarHidden"]
 - !private ["So30UIPasteConfigurationSupportingP", "Categoria"]
 - !private ["So30UIPasteConfigurationSupportingP", "Database"]
@@ -924,6 +1021,8 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "Hora"]
 - !private ["So30UIPasteConfigurationSupportingP", "Indice"]
 - !private ["So30UIPasteConfigurationSupportingP", "Lugar"]
+- !private ["So30UIPasteConfigurationSupportingP", "NombrePabellon"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIStoryboard"]
 - !private ["So30UIPasteConfigurationSupportingP", "arrDatos"]
 - !private ["So30UIPasteConfigurationSupportingP", "arrEventos"]
 - !private ["So30UIPasteConfigurationSupportingP", "butFiltrar"]
@@ -939,6 +1038,9 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "isEnabled"]
 - !private ["So30UIPasteConfigurationSupportingP", "llenarEvento"]
 - !private ["So30UIPasteConfigurationSupportingP", "navigationController"]
+- !private ["So30UIPasteConfigurationSupportingP", "performSegue"]
+- !private ["So30UIPasteConfigurationSupportingP", "print"]
+- !private ["So30UIPasteConfigurationSupportingP", "pushViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "reloadData"]
 - !private ["So30UIPasteConfigurationSupportingP", "selectedIndex"]
 - !private ["So30UIPasteConfigurationSupportingP", "setNavigationBarHidden"]
@@ -950,6 +1052,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "titulo"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So30UIPasteConfigurationSupportingP", ""]
+- ["So11UIResponderC", "Bool"]
 - !private ["So11UIResponderC", "Categoria"]
 - !private ["So11UIResponderC", "DataSnapshot"]
 - !private ["So11UIResponderC", "Database"]
@@ -966,9 +1069,11 @@ depends-member:
 - ["So11UIResponderC", "Indice"]
 - ["So11UIResponderC", "Int"]
 - !private ["So11UIResponderC", "Lugar"]
+- ["So11UIResponderC", "NombrePabellon"]
 - ["So11UIResponderC", "String"]
 - ["So11UIResponderC", "UIButton"]
 - ["So11UIResponderC", "UILabel"]
+- !private ["So11UIResponderC", "UIStoryboard"]
 - ["So11UIResponderC", "UIStoryboardSegue"]
 - ["So11UIResponderC", "UITableView"]
 - ["So11UIResponderC", "UITableViewCell"]
@@ -990,11 +1095,15 @@ depends-member:
 - ["So11UIResponderC", "llenarEvento"]
 - !private ["So11UIResponderC", "navigationController"]
 - ["So11UIResponderC", "numberOfSections"]
+- !private ["So11UIResponderC", "performSegue"]
 - ["So11UIResponderC", "prepare"]
+- !private ["So11UIResponderC", "print"]
+- !private ["So11UIResponderC", "pushViewController"]
 - !private ["So11UIResponderC", "reloadData"]
 - !private ["So11UIResponderC", "selectedIndex"]
 - !private ["So11UIResponderC", "setNavigationBarHidden"]
 - !private ["So11UIResponderC", "setTitle"]
+- ["So11UIResponderC", "shouldPerformSegue"]
 - !private ["So11UIResponderC", "tabBarController"]
 - ["So11UIResponderC", "tableView"]
 - !private ["So11UIResponderC", "text"]
@@ -1012,6 +1121,8 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "Hora"]
 - !private ["So30UIResponderStandardEditActionsP", "Indice"]
 - !private ["So30UIResponderStandardEditActionsP", "Lugar"]
+- !private ["So30UIResponderStandardEditActionsP", "NombrePabellon"]
+- !private ["So30UIResponderStandardEditActionsP", "UIStoryboard"]
 - !private ["So30UIResponderStandardEditActionsP", "arrDatos"]
 - !private ["So30UIResponderStandardEditActionsP", "arrEventos"]
 - !private ["So30UIResponderStandardEditActionsP", "butFiltrar"]
@@ -1027,6 +1138,9 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "isEnabled"]
 - !private ["So30UIResponderStandardEditActionsP", "llenarEvento"]
 - !private ["So30UIResponderStandardEditActionsP", "navigationController"]
+- !private ["So30UIResponderStandardEditActionsP", "performSegue"]
+- !private ["So30UIResponderStandardEditActionsP", "print"]
+- !private ["So30UIResponderStandardEditActionsP", "pushViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "reloadData"]
 - !private ["So30UIResponderStandardEditActionsP", "selectedIndex"]
 - !private ["So30UIResponderStandardEditActionsP", "setNavigationBarHidden"]
@@ -1047,6 +1161,8 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "FireBaseRef"]
 - !private ["So20UIScrollViewDelegateP", "Handle"]
 - !private ["So20UIScrollViewDelegateP", "Indice"]
+- !private ["So20UIScrollViewDelegateP", "NombrePabellon"]
+- !private ["So20UIScrollViewDelegateP", "UIStoryboard"]
 - !private ["So20UIScrollViewDelegateP", "arrDatos"]
 - !private ["So20UIScrollViewDelegateP", "arrEventos"]
 - !private ["So20UIScrollViewDelegateP", "butFiltrar"]
@@ -1057,6 +1173,8 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "init"]
 - !private ["So20UIScrollViewDelegateP", "llenarEvento"]
 - !private ["So20UIScrollViewDelegateP", "navigationController"]
+- !private ["So20UIScrollViewDelegateP", "performSegue"]
+- !private ["So20UIScrollViewDelegateP", "print"]
 - !private ["So20UIScrollViewDelegateP", "tabBarController"]
 - !private ["So20UIScrollViewDelegateP", "tableView"]
 - !private ["So20UIScrollViewDelegateP", "viewDidLoad"]
@@ -1077,6 +1195,8 @@ depends-member:
 - !private ["So16UIStateRestoringP", "Hora"]
 - !private ["So16UIStateRestoringP", "Indice"]
 - !private ["So16UIStateRestoringP", "Lugar"]
+- !private ["So16UIStateRestoringP", "NombrePabellon"]
+- !private ["So16UIStateRestoringP", "UIStoryboard"]
 - !private ["So16UIStateRestoringP", "arrDatos"]
 - !private ["So16UIStateRestoringP", "arrEventos"]
 - !private ["So16UIStateRestoringP", "butFiltrar"]
@@ -1088,6 +1208,9 @@ depends-member:
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "llenarEvento"]
 - !private ["So16UIStateRestoringP", "navigationController"]
+- !private ["So16UIStateRestoringP", "performSegue"]
+- !private ["So16UIStateRestoringP", "print"]
+- !private ["So16UIStateRestoringP", "pushViewController"]
 - !private ["So16UIStateRestoringP", "selectedIndex"]
 - !private ["So16UIStateRestoringP", "setNavigationBarHidden"]
 - !private ["So16UIStateRestoringP", "tabBarController"]
@@ -1095,6 +1218,8 @@ depends-member:
 - !private ["So16UIStateRestoringP", "titulo"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - ["So16UIStateRestoringP", ""]
+- !private ["So12UIStoryboardC", "init"]
+- !private ["So12UIStoryboardC", "instantiateViewController"]
 - !private ["So17UIStoryboardSegueC", "destination"]
 - !private ["So17UIStoryboardSegueC", "identifier"]
 - !private ["So18UITabBarControllerC", "selectedIndex"]
@@ -1104,6 +1229,7 @@ depends-member:
 - !private ["So11UITableViewC", "reloadData"]
 - !private ["So15UITableViewCellC", "detailTextLabel"]
 - !private ["So15UITableViewCellC", "textLabel"]
+- ["So21UITableViewControllerC", "Bool"]
 - !private ["So21UITableViewControllerC", "DataSnapshot"]
 - !private ["So21UITableViewControllerC", "Database"]
 - ["So21UITableViewControllerC", "DatabaseHandle"]
@@ -1115,9 +1241,11 @@ depends-member:
 - ["So21UITableViewControllerC", "IndexPath"]
 - ["So21UITableViewControllerC", "Indice"]
 - ["So21UITableViewControllerC", "Int"]
+- ["So21UITableViewControllerC", "NombrePabellon"]
 - ["So21UITableViewControllerC", "String"]
 - ["So21UITableViewControllerC", "UIButton"]
 - ["So21UITableViewControllerC", "UILabel"]
+- !private ["So21UITableViewControllerC", "UIStoryboard"]
 - ["So21UITableViewControllerC", "UIStoryboardSegue"]
 - ["So21UITableViewControllerC", "UITableView"]
 - ["So21UITableViewControllerC", "UITableViewCell"]
@@ -1134,7 +1262,10 @@ depends-member:
 - ["So21UITableViewControllerC", "llenarEvento"]
 - !private ["So21UITableViewControllerC", "navigationController"]
 - ["So21UITableViewControllerC", "numberOfSections"]
+- !private ["So21UITableViewControllerC", "performSegue"]
 - ["So21UITableViewControllerC", "prepare"]
+- !private ["So21UITableViewControllerC", "print"]
+- ["So21UITableViewControllerC", "shouldPerformSegue"]
 - !private ["So21UITableViewControllerC", "tabBarController"]
 - ["So21UITableViewControllerC", "tableView"]
 - ["So21UITableViewControllerC", "viewDidLoad"]
@@ -1145,6 +1276,8 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "FireBaseRef"]
 - !private ["So21UITableViewDataSourceP", "Handle"]
 - !private ["So21UITableViewDataSourceP", "Indice"]
+- !private ["So21UITableViewDataSourceP", "NombrePabellon"]
+- !private ["So21UITableViewDataSourceP", "UIStoryboard"]
 - !private ["So21UITableViewDataSourceP", "arrDatos"]
 - !private ["So21UITableViewDataSourceP", "arrEventos"]
 - !private ["So21UITableViewDataSourceP", "butFiltrar"]
@@ -1155,6 +1288,8 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "init"]
 - !private ["So21UITableViewDataSourceP", "llenarEvento"]
 - !private ["So21UITableViewDataSourceP", "navigationController"]
+- !private ["So21UITableViewDataSourceP", "performSegue"]
+- !private ["So21UITableViewDataSourceP", "print"]
 - !private ["So21UITableViewDataSourceP", "tabBarController"]
 - !private ["So21UITableViewDataSourceP", "tableView"]
 - !private ["So21UITableViewDataSourceP", "viewDidLoad"]
@@ -1165,6 +1300,8 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "FireBaseRef"]
 - !private ["So19UITableViewDelegateP", "Handle"]
 - !private ["So19UITableViewDelegateP", "Indice"]
+- !private ["So19UITableViewDelegateP", "NombrePabellon"]
+- !private ["So19UITableViewDelegateP", "UIStoryboard"]
 - !private ["So19UITableViewDelegateP", "arrDatos"]
 - !private ["So19UITableViewDelegateP", "arrEventos"]
 - !private ["So19UITableViewDelegateP", "butFiltrar"]
@@ -1175,6 +1312,8 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "init"]
 - !private ["So19UITableViewDelegateP", "llenarEvento"]
 - !private ["So19UITableViewDelegateP", "navigationController"]
+- !private ["So19UITableViewDelegateP", "performSegue"]
+- !private ["So19UITableViewDelegateP", "print"]
 - !private ["So19UITableViewDelegateP", "tabBarController"]
 - !private ["So19UITableViewDelegateP", "tableView"]
 - !private ["So19UITableViewDelegateP", "viewDidLoad"]
@@ -1190,6 +1329,8 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "Hora"]
 - !private ["So18UITraitEnvironmentP", "Indice"]
 - !private ["So18UITraitEnvironmentP", "Lugar"]
+- !private ["So18UITraitEnvironmentP", "NombrePabellon"]
+- !private ["So18UITraitEnvironmentP", "UIStoryboard"]
 - !private ["So18UITraitEnvironmentP", "arrDatos"]
 - !private ["So18UITraitEnvironmentP", "arrEventos"]
 - !private ["So18UITraitEnvironmentP", "butFiltrar"]
@@ -1205,6 +1346,9 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "isEnabled"]
 - !private ["So18UITraitEnvironmentP", "llenarEvento"]
 - !private ["So18UITraitEnvironmentP", "navigationController"]
+- !private ["So18UITraitEnvironmentP", "performSegue"]
+- !private ["So18UITraitEnvironmentP", "print"]
+- !private ["So18UITraitEnvironmentP", "pushViewController"]
 - !private ["So18UITraitEnvironmentP", "reloadData"]
 - !private ["So18UITraitEnvironmentP", "selectedIndex"]
 - !private ["So18UITraitEnvironmentP", "setNavigationBarHidden"]
@@ -1224,6 +1368,7 @@ depends-member:
 - !private ["So6UIViewC", "setTitle"]
 - !private ["So6UIViewC", "text"]
 - !private ["So6UIViewC", "textLabel"]
+- ["So16UIViewControllerC", "Bool"]
 - !private ["So16UIViewControllerC", "Categoria"]
 - !private ["So16UIViewControllerC", "DataSnapshot"]
 - !private ["So16UIViewControllerC", "Database"]
@@ -1240,9 +1385,11 @@ depends-member:
 - ["So16UIViewControllerC", "Indice"]
 - ["So16UIViewControllerC", "Int"]
 - !private ["So16UIViewControllerC", "Lugar"]
+- ["So16UIViewControllerC", "NombrePabellon"]
 - ["So16UIViewControllerC", "String"]
 - ["So16UIViewControllerC", "UIButton"]
 - ["So16UIViewControllerC", "UILabel"]
+- !private ["So16UIViewControllerC", "UIStoryboard"]
 - ["So16UIViewControllerC", "UIStoryboardSegue"]
 - ["So16UIViewControllerC", "UITableView"]
 - ["So16UIViewControllerC", "UITableViewCell"]
@@ -1260,9 +1407,13 @@ depends-member:
 - ["So16UIViewControllerC", "llenarEvento"]
 - !private ["So16UIViewControllerC", "navigationController"]
 - ["So16UIViewControllerC", "numberOfSections"]
+- !private ["So16UIViewControllerC", "performSegue"]
 - ["So16UIViewControllerC", "prepare"]
+- !private ["So16UIViewControllerC", "print"]
+- !private ["So16UIViewControllerC", "pushViewController"]
 - !private ["So16UIViewControllerC", "selectedIndex"]
 - !private ["So16UIViewControllerC", "setNavigationBarHidden"]
+- ["So16UIViewControllerC", "shouldPerformSegue"]
 - !private ["So16UIViewControllerC", "tabBarController"]
 - ["So16UIViewControllerC", "tableView"]
 - !private ["So16UIViewControllerC", "titulo"]
@@ -1276,6 +1427,7 @@ depends-member:
 - !private ["13ProyectoFinal27ViewControllerInfoActividadC", "titulo"]
 - !private ["s14_ArrayProtocolP", "append"]
 - !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "removeAll"]
 - !private ["s14_ArrayProtocolP", "sCategoria"]
 - !private ["s14_ArrayProtocolP", "sDescripcion"]
 - !private ["s14_ArrayProtocolP", "sExpositor"]
@@ -1286,7 +1438,8 @@ depends-member:
 - !private ["s14_ArrayProtocolP", "subscript"]
 - !private ["s23_BidirectionalIndexableP", "append"]
 - !private ["s23_BidirectionalIndexableP", "count"]
-- !private ["s23_BidirectionalIndexableP", "init"]
+- ["s23_BidirectionalIndexableP", "init"]
+- !private ["s23_BidirectionalIndexableP", "removeAll"]
 - !private ["s23_BidirectionalIndexableP", "row"]
 - !private ["s23_BidirectionalIndexableP", "sCategoria"]
 - !private ["s23_BidirectionalIndexableP", "sDescripcion"]
@@ -1306,6 +1459,7 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "textLabel"]
 - !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "removeAll"]
 - !private ["s24_DestructorSafeContainerP", "sCategoria"]
 - !private ["s24_DestructorSafeContainerP", "sDescripcion"]
 - !private ["s24_DestructorSafeContainerP", "sExpositor"]
@@ -1315,15 +1469,16 @@ depends-member:
 - !private ["s24_DestructorSafeContainerP", "sNombre"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s10_IndexableP", "append"]
 - !private ["s10_IndexableP", "count"]
-- !private ["s10_IndexableP", "init"]
+- ["s10_IndexableP", "init"]
+- !private ["s10_IndexableP", "removeAll"]
 - !private ["s10_IndexableP", "row"]
 - !private ["s10_IndexableP", "sCategoria"]
 - !private ["s10_IndexableP", "sDescripcion"]
@@ -1335,7 +1490,8 @@ depends-member:
 - !private ["s10_IndexableP", "subscript"]
 - !private ["s14_IndexableBaseP", "append"]
 - !private ["s14_IndexableBaseP", "count"]
-- !private ["s14_IndexableBaseP", "init"]
+- ["s14_IndexableBaseP", "init"]
+- !private ["s14_IndexableBaseP", "removeAll"]
 - !private ["s14_IndexableBaseP", "row"]
 - !private ["s14_IndexableBaseP", "sCategoria"]
 - !private ["s14_IndexableBaseP", "sDescripcion"]
@@ -1356,6 +1512,8 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Hora"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Indice"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Lugar"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NombrePabellon"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIStoryboard"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "arrDatos"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "arrEventos"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "butFiltrar"]
@@ -1372,13 +1530,17 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dismiss"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "identifier"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "indexPathForSelectedRow"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isEnabled"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "key"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "llenarEvento"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "observe"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "observeSingleEvent"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "performSegue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "pushViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "reference"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "reloadData"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "sCategoria"]
@@ -1401,6 +1563,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["s17_MutableIndexableP", "append"]
 - !private ["s17_MutableIndexableP", "count"]
+- !private ["s17_MutableIndexableP", "removeAll"]
 - !private ["s17_MutableIndexableP", "row"]
 - !private ["s17_MutableIndexableP", "sCategoria"]
 - !private ["s17_MutableIndexableP", "sDescripcion"]
@@ -1413,11 +1576,13 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
-- !private ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "removeAll"]
 - !private ["s21_ObjectiveCBridgeableP", "row"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s22_RandomAccessIndexableP", "append"]
 - !private ["s22_RandomAccessIndexableP", "count"]
+- !private ["s22_RandomAccessIndexableP", "removeAll"]
 - !private ["s22_RandomAccessIndexableP", "row"]
 - !private ["s22_RandomAccessIndexableP", "sCategoria"]
 - !private ["s22_RandomAccessIndexableP", "sDescripcion"]
@@ -1429,7 +1594,8 @@ depends-member:
 - !private ["s22_RandomAccessIndexableP", "subscript"]
 - !private ["s26_RangeReplaceableIndexableP", "append"]
 - !private ["s26_RangeReplaceableIndexableP", "count"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
+- ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "removeAll"]
 - !private ["s26_RangeReplaceableIndexableP", "sCategoria"]
 - !private ["s26_RangeReplaceableIndexableP", "sDescripcion"]
 - !private ["s26_RangeReplaceableIndexableP", "sExpositor"]
@@ -1438,67 +1604,67 @@ depends-member:
 - !private ["s26_RangeReplaceableIndexableP", "sLugar"]
 - !private ["s26_RangeReplaceableIndexableP", "sNombre"]
 - !private ["s26_RangeReplaceableIndexableP", "subscript"]
-- !private ["s16_SwiftStringViewP", "init"]
+- ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "Sa"
 - !private "s10ArraySliceV"
-- !private "s23BidirectionalCollectionP"
+- "s23BidirectionalCollectionP"
 - !private "Sb"
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
-- !private "s10CollectionP"
-- !private "s10ComparableP"
+- "s10CollectionP"
+- "s10ComparableP"
 - "s28CustomDebugStringConvertibleP"
-- !private "s29CustomPlaygroundQuickLookableP"
-- !private "s17CustomReflectableP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - !private "SC13DataEventTypeO"
 - !private "So12DataSnapshotC"
 - !private "So8DatabaseC"
 - !private "So13DatabaseQueryC"
 - !private "So17DatabaseReferenceC"
-- !private "s9DecodableP"
+- "s9DecodableP"
 - !private "s10DictionaryV"
-- !private "s9EncodableP"
+- "s9EncodableP"
 - "s9EquatableP"
 - !private "13ProyectoFinal6EventoC"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s30ExpressibleByDictionaryLiteralP"
-- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
-- !private "s26ExpressibleByStringLiteralP"
-- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
 - "s8HashableP"
 - !private "10Foundation9IndexPathV"
-- !private "s25LosslessStringConvertibleP"
-- !private "s10MirrorPathP"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
 - !private "s25MutableBidirectionalSliceV"
 - !private "s17MutableCollectionP"
 - !private "s24MutableRandomAccessSliceV"
 - !private "s12MutableSliceV"
 - "So8NSCodingP"
-- !private "So9NSCopyingP"
+- "So9NSCopyingP"
 - "So26NSExtensionRequestHandlingP"
-- !private "So21NSItemProviderReadingP"
-- !private "So21NSItemProviderWritingP"
-- !private "So16NSMutableCopyingP"
+- "So21NSItemProviderReadingP"
+- "So21NSItemProviderWritingP"
+- "So16NSMutableCopyingP"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
-- !private "So14NSSecureCodingP"
-- !private "So8NSStringC"
+- "So14NSSecureCodingP"
+- "So8NSStringC"
 - !private "s9OptionSetP"
 - !private "s22RandomAccessCollectionP"
-- !private "s26RangeReplaceableCollectionP"
+- "s26RangeReplaceableCollectionP"
 - !private "s21RangeReplaceableSliceV"
 - !private "s16RawRepresentableP"
 - !private "10Foundation20ReferenceConvertibleP"
-- !private "s8SequenceP"
+- "s8SequenceP"
 - !private "s10SetAlgebraP"
-- !private "SS"
-- !private "s14StringProtocolP"
+- "SS"
+- "s14StringProtocolP"
 - "13ProyectoFinal34TableViewControllerActividadesCultC"
-- !private "s16TextOutputStreamP"
-- !private "s20TextOutputStreamableP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
@@ -1523,6 +1689,7 @@ depends-nominal:
 - "So20UIScrollViewDelegateP"
 - !private "So35UISpringLoadedInteractionSupportingP"
 - "So16UIStateRestoringP"
+- !private "So12UIStoryboardC"
 - !private "So17UIStoryboardSegueC"
 - !private "So18UITabBarControllerC"
 - !private "So16UITabBarDelegateP"
@@ -1536,24 +1703,24 @@ depends-nominal:
 - "So16UIViewControllerC"
 - !private "13ProyectoFinal27ViewControllerInfoActividadC"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
+- "s23_BidirectionalIndexableP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
-- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-- !private "s34_ExpressibleByBuiltinStringLiteralP"
-- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
-- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
-- !private "s33_ExpressibleByStringInterpolationP"
-- !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- "s10_IndexableP"
+- "s14_IndexableBaseP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s17_MutableIndexableP"
-- !private "s21_ObjectiveCBridgeableP"
+- "s21_ObjectiveCBridgeableP"
 - !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
-- !private "s16_SwiftStringViewP"
+- "s26_RangeReplaceableIndexableP"
+- "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
@@ -1570,38 +1737,39 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/Firebase/Core/Sources/Firebase.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
 - "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/Firebase/Core/Sources/module.modulemap"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-interface-hash: "d08b9cecd7936d97c87d8d672415065f"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+interface-hash: "839e186e5c4841386ca83f1e694177d9"

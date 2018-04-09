@@ -38,13 +38,18 @@ depends-member:
 - ["s23BidirectionalCollectionP", "init"]
 - !private ["s23BidirectionalCollectionP", "subscript"]
 - !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So7CALayerC", "cornerRadius"]
 - !private ["So15CALayerDelegateP", "dataSource"]
 - !private ["So15CALayerDelegateP", "delegate"]
 - !private ["So15CALayerDelegateP", "image"]
 - !private ["So15CALayerDelegateP", "imageView"]
+- !private ["So15CALayerDelegateP", "layer"]
 - !private ["So15CALayerDelegateP", "setImage"]
+- !private ["So13CAMediaTimingP", "cornerRadius"]
 - !private ["s7CVarArgP", "Categorias"]
 - !private ["s7CVarArgP", "Edades"]
+- !private ["s7CVarArgP", "butFiltrar"]
+- !private ["s7CVarArgP", "cornerRadius"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "dataSource"]
 - !private ["s7CVarArgP", "delegate"]
@@ -53,6 +58,7 @@ depends-member:
 - !private ["s7CVarArgP", "image"]
 - !private ["s7CVarArgP", "imageView"]
 - ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "layer"]
 - ["s7CVarArgP", "numberOfComponents"]
 - ["s7CVarArgP", "numberOfComponentsInPickerView"]
 - !private ["s7CVarArgP", "pickerCategorias"]
@@ -68,6 +74,8 @@ depends-member:
 - ["s10ComparableP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "Categorias"]
 - !private ["s28CustomDebugStringConvertibleP", "Edades"]
+- !private ["s28CustomDebugStringConvertibleP", "butFiltrar"]
+- !private ["s28CustomDebugStringConvertibleP", "cornerRadius"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "dataSource"]
 - !private ["s28CustomDebugStringConvertibleP", "delegate"]
@@ -76,6 +84,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "image"]
 - !private ["s28CustomDebugStringConvertibleP", "imageView"]
 - ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "layer"]
 - ["s28CustomDebugStringConvertibleP", "numberOfComponents"]
 - ["s28CustomDebugStringConvertibleP", "numberOfComponentsInPickerView"]
 - !private ["s28CustomDebugStringConvertibleP", "pickerCategorias"]
@@ -94,6 +103,8 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "Categorias"]
 - !private ["s23CustomStringConvertibleP", "Edades"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "butFiltrar"]
+- !private ["s23CustomStringConvertibleP", "cornerRadius"]
 - !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "dataSource"]
 - !private ["s23CustomStringConvertibleP", "delegate"]
@@ -102,6 +113,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "image"]
 - !private ["s23CustomStringConvertibleP", "imageView"]
 - ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "layer"]
 - ["s23CustomStringConvertibleP", "numberOfComponents"]
 - ["s23CustomStringConvertibleP", "numberOfComponentsInPickerView"]
 - !private ["s23CustomStringConvertibleP", "pickerCategorias"]
@@ -122,6 +134,8 @@ depends-member:
 - !private ["s9EquatableP", "Categorias"]
 - !private ["s9EquatableP", "Edades"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "butFiltrar"]
+- !private ["s9EquatableP", "cornerRadius"]
 - !private ["s9EquatableP", "dataSource"]
 - !private ["s9EquatableP", "delegate"]
 - !private ["s9EquatableP", "didReceiveMemoryWarning"]
@@ -129,6 +143,7 @@ depends-member:
 - !private ["s9EquatableP", "image"]
 - !private ["s9EquatableP", "imageView"]
 - ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "layer"]
 - !private ["s9EquatableP", "normal"]
 - ["s9EquatableP", "numberOfComponents"]
 - ["s9EquatableP", "numberOfComponentsInPickerView"]
@@ -148,6 +163,8 @@ depends-member:
 - !private ["s8HashableP", "Categorias"]
 - !private ["s8HashableP", "Edades"]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "butFiltrar"]
+- !private ["s8HashableP", "cornerRadius"]
 - !private ["s8HashableP", "dataSource"]
 - !private ["s8HashableP", "delegate"]
 - !private ["s8HashableP", "didReceiveMemoryWarning"]
@@ -155,6 +172,7 @@ depends-member:
 - !private ["s8HashableP", "image"]
 - !private ["s8HashableP", "imageView"]
 - ["s8HashableP", "init"]
+- !private ["s8HashableP", "layer"]
 - ["s8HashableP", "numberOfComponents"]
 - ["s8HashableP", "numberOfComponentsInPickerView"]
 - !private ["s8HashableP", "pickerCategorias"]
@@ -170,6 +188,8 @@ depends-member:
 - !private ["s17MutableCollectionP", "subscript"]
 - !private ["So8NSCodingP", "Categorias"]
 - !private ["So8NSCodingP", "Edades"]
+- !private ["So8NSCodingP", "butFiltrar"]
+- !private ["So8NSCodingP", "cornerRadius"]
 - !private ["So8NSCodingP", "dataSource"]
 - !private ["So8NSCodingP", "delegate"]
 - !private ["So8NSCodingP", "didReceiveMemoryWarning"]
@@ -177,6 +197,7 @@ depends-member:
 - !private ["So8NSCodingP", "image"]
 - !private ["So8NSCodingP", "imageView"]
 - ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "layer"]
 - ["So8NSCodingP", "numberOfComponents"]
 - ["So8NSCodingP", "numberOfComponentsInPickerView"]
 - !private ["So8NSCodingP", "pickerCategorias"]
@@ -188,6 +209,7 @@ depends-member:
 - ["So9NSCopyingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "Categorias"]
 - !private ["So26NSExtensionRequestHandlingP", "Edades"]
+- !private ["So26NSExtensionRequestHandlingP", "butFiltrar"]
 - !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
 - !private ["So26NSExtensionRequestHandlingP", "dismiss"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
@@ -211,6 +233,7 @@ depends-member:
 - ["So8NSObjectC", "butFiltrar"]
 - ["So8NSObjectC", "butRegresar"]
 - ["So8NSObjectC", "checkButon"]
+- !private ["So8NSObjectC", "cornerRadius"]
 - !private ["So8NSObjectC", "dataSource"]
 - ["So8NSObjectC", "datePicker"]
 - !private ["So8NSObjectC", "delegate"]
@@ -219,6 +242,7 @@ depends-member:
 - !private ["So8NSObjectC", "image"]
 - !private ["So8NSObjectC", "imageView"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "layer"]
 - ["So8NSObjectC", "numberOfComponents"]
 - ["So8NSObjectC", "numberOfComponentsInPickerView"]
 - ["So8NSObjectC", "pickerCategorias"]
@@ -228,6 +252,8 @@ depends-member:
 - ["So8NSObjectC", "viewDidLoad"]
 - !private ["So16NSObjectProtocolP", "Categorias"]
 - !private ["So16NSObjectProtocolP", "Edades"]
+- !private ["So16NSObjectProtocolP", "butFiltrar"]
+- !private ["So16NSObjectProtocolP", "cornerRadius"]
 - !private ["So16NSObjectProtocolP", "dataSource"]
 - !private ["So16NSObjectProtocolP", "delegate"]
 - !private ["So16NSObjectProtocolP", "didReceiveMemoryWarning"]
@@ -235,6 +261,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "image"]
 - !private ["So16NSObjectProtocolP", "imageView"]
 - ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "layer"]
 - ["So16NSObjectProtocolP", "numberOfComponents"]
 - ["So16NSObjectProtocolP", "numberOfComponentsInPickerView"]
 - !private ["So16NSObjectProtocolP", "pickerCategorias"]
@@ -243,6 +270,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "setImage"]
 - !private ["So16NSObjectProtocolP", "viewDidLoad"]
 - ["So16NSObjectProtocolP", ""]
+- !private ["So14NSSecureCodingP", "cornerRadius"]
 - ["So14NSSecureCodingP", "init"]
 - ["So8NSStringC", "init"]
 - !private ["s9OptionSetP", "normal"]
@@ -262,19 +290,23 @@ depends-member:
 - ["s20TextOutputStreamableP", "init"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "image"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "imageView"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "layer"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "setImage"]
 - !private ["So29UIAccessibilityIdentificationP", "dataSource"]
 - !private ["So29UIAccessibilityIdentificationP", "delegate"]
 - !private ["So29UIAccessibilityIdentificationP", "image"]
 - !private ["So29UIAccessibilityIdentificationP", "imageView"]
+- !private ["So29UIAccessibilityIdentificationP", "layer"]
 - !private ["So29UIAccessibilityIdentificationP", "setImage"]
 - !private ["So12UIAppearanceP", "dataSource"]
 - !private ["So12UIAppearanceP", "delegate"]
 - !private ["So12UIAppearanceP", "image"]
 - !private ["So12UIAppearanceP", "imageView"]
+- !private ["So12UIAppearanceP", "layer"]
 - !private ["So12UIAppearanceP", "setImage"]
 - !private ["So21UIAppearanceContainerP", "Categorias"]
 - !private ["So21UIAppearanceContainerP", "Edades"]
+- !private ["So21UIAppearanceContainerP", "butFiltrar"]
 - !private ["So21UIAppearanceContainerP", "dataSource"]
 - !private ["So21UIAppearanceContainerP", "delegate"]
 - !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
@@ -282,6 +314,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "image"]
 - !private ["So21UIAppearanceContainerP", "imageView"]
 - !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "layer"]
 - ["So21UIAppearanceContainerP", "numberOfComponents"]
 - ["So21UIAppearanceContainerP", "numberOfComponentsInPickerView"]
 - !private ["So21UIAppearanceContainerP", "pickerCategorias"]
@@ -291,9 +324,11 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So8UIButtonC", "imageView"]
+- !private ["So8UIButtonC", "layer"]
 - !private ["So8UIButtonC", "setImage"]
 - !private ["So18UIContentContainerP", "Categorias"]
 - !private ["So18UIContentContainerP", "Edades"]
+- !private ["So18UIContentContainerP", "butFiltrar"]
 - !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
 - !private ["So18UIContentContainerP", "dismiss"]
 - !private ["So18UIContentContainerP", "init"]
@@ -305,20 +340,24 @@ depends-member:
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - ["So18UIContentContainerP", ""]
 - !private ["So9UIControlC", "imageView"]
+- !private ["So9UIControlC", "layer"]
 - !private ["So9UIControlC", "setImage"]
 - !private ["SC14UIControlStateV", "normal"]
 - !private ["So17UICoordinateSpaceP", "dataSource"]
 - !private ["So17UICoordinateSpaceP", "delegate"]
 - !private ["So17UICoordinateSpaceP", "image"]
 - !private ["So17UICoordinateSpaceP", "imageView"]
+- !private ["So17UICoordinateSpaceP", "layer"]
 - !private ["So17UICoordinateSpaceP", "setImage"]
 - !private ["So13UIDynamicItemP", "dataSource"]
 - !private ["So13UIDynamicItemP", "delegate"]
 - !private ["So13UIDynamicItemP", "image"]
 - !private ["So13UIDynamicItemP", "imageView"]
+- !private ["So13UIDynamicItemP", "layer"]
 - !private ["So13UIDynamicItemP", "setImage"]
 - !private ["So18UIFocusEnvironmentP", "Categorias"]
 - !private ["So18UIFocusEnvironmentP", "Edades"]
+- !private ["So18UIFocusEnvironmentP", "butFiltrar"]
 - !private ["So18UIFocusEnvironmentP", "dataSource"]
 - !private ["So18UIFocusEnvironmentP", "delegate"]
 - !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
@@ -326,6 +365,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "image"]
 - !private ["So18UIFocusEnvironmentP", "imageView"]
 - !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "layer"]
 - ["So18UIFocusEnvironmentP", "numberOfComponents"]
 - ["So18UIFocusEnvironmentP", "numberOfComponentsInPickerView"]
 - !private ["So18UIFocusEnvironmentP", "pickerCategorias"]
@@ -338,10 +378,12 @@ depends-member:
 - !private ["So11UIFocusItemP", "delegate"]
 - !private ["So11UIFocusItemP", "image"]
 - !private ["So11UIFocusItemP", "imageView"]
+- !private ["So11UIFocusItemP", "layer"]
 - !private ["So11UIFocusItemP", "setImage"]
 - !private ["So11UIImageViewC", "image"]
 - !private ["So30UIPasteConfigurationSupportingP", "Categorias"]
 - !private ["So30UIPasteConfigurationSupportingP", "Edades"]
+- !private ["So30UIPasteConfigurationSupportingP", "butFiltrar"]
 - !private ["So30UIPasteConfigurationSupportingP", "dataSource"]
 - !private ["So30UIPasteConfigurationSupportingP", "delegate"]
 - !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
@@ -349,6 +391,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "image"]
 - !private ["So30UIPasteConfigurationSupportingP", "imageView"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "layer"]
 - ["So30UIPasteConfigurationSupportingP", "numberOfComponents"]
 - ["So30UIPasteConfigurationSupportingP", "numberOfComponentsInPickerView"]
 - !private ["So30UIPasteConfigurationSupportingP", "pickerCategorias"]
@@ -361,6 +404,7 @@ depends-member:
 - !private ["So12UIPickerViewC", "delegate"]
 - !private ["So22UIPickerViewDataSourceP", "Categorias"]
 - !private ["So22UIPickerViewDataSourceP", "Edades"]
+- !private ["So22UIPickerViewDataSourceP", "butFiltrar"]
 - !private ["So22UIPickerViewDataSourceP", "dismiss"]
 - ["So22UIPickerViewDataSourceP", "numberOfComponents"]
 - ["So22UIPickerViewDataSourceP", "numberOfComponentsInPickerView"]
@@ -370,6 +414,7 @@ depends-member:
 - ["So22UIPickerViewDataSourceP", ""]
 - !private ["So20UIPickerViewDelegateP", "Categorias"]
 - !private ["So20UIPickerViewDelegateP", "Edades"]
+- !private ["So20UIPickerViewDelegateP", "butFiltrar"]
 - !private ["So20UIPickerViewDelegateP", "dismiss"]
 - ["So20UIPickerViewDelegateP", "numberOfComponents"]
 - ["So20UIPickerViewDelegateP", "numberOfComponentsInPickerView"]
@@ -395,6 +440,7 @@ depends-member:
 - !private ["So11UIResponderC", "image"]
 - !private ["So11UIResponderC", "imageView"]
 - ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "layer"]
 - ["So11UIResponderC", "numberOfComponents"]
 - ["So11UIResponderC", "numberOfComponentsInPickerView"]
 - ["So11UIResponderC", "pickerCategorias"]
@@ -404,6 +450,7 @@ depends-member:
 - ["So11UIResponderC", "viewDidLoad"]
 - !private ["So30UIResponderStandardEditActionsP", "Categorias"]
 - !private ["So30UIResponderStandardEditActionsP", "Edades"]
+- !private ["So30UIResponderStandardEditActionsP", "butFiltrar"]
 - !private ["So30UIResponderStandardEditActionsP", "dataSource"]
 - !private ["So30UIResponderStandardEditActionsP", "delegate"]
 - !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
@@ -411,6 +458,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "image"]
 - !private ["So30UIResponderStandardEditActionsP", "imageView"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "layer"]
 - ["So30UIResponderStandardEditActionsP", "numberOfComponents"]
 - ["So30UIResponderStandardEditActionsP", "numberOfComponentsInPickerView"]
 - !private ["So30UIResponderStandardEditActionsP", "pickerCategorias"]
@@ -420,9 +468,11 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So35UISpringLoadedInteractionSupportingP", "imageView"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "layer"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "setImage"]
 - !private ["So16UIStateRestoringP", "Categorias"]
 - !private ["So16UIStateRestoringP", "Edades"]
+- !private ["So16UIStateRestoringP", "butFiltrar"]
 - !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
 - !private ["So16UIStateRestoringP", "dismiss"]
 - !private ["So16UIStateRestoringP", "init"]
@@ -435,6 +485,7 @@ depends-member:
 - ["So16UIStateRestoringP", ""]
 - !private ["So18UITraitEnvironmentP", "Categorias"]
 - !private ["So18UITraitEnvironmentP", "Edades"]
+- !private ["So18UITraitEnvironmentP", "butFiltrar"]
 - !private ["So18UITraitEnvironmentP", "dataSource"]
 - !private ["So18UITraitEnvironmentP", "delegate"]
 - !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
@@ -442,6 +493,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "image"]
 - !private ["So18UITraitEnvironmentP", "imageView"]
 - !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "layer"]
 - ["So18UITraitEnvironmentP", "numberOfComponents"]
 - ["So18UITraitEnvironmentP", "numberOfComponentsInPickerView"]
 - !private ["So18UITraitEnvironmentP", "pickerCategorias"]
@@ -454,6 +506,7 @@ depends-member:
 - !private ["So6UIViewC", "delegate"]
 - !private ["So6UIViewC", "image"]
 - !private ["So6UIViewC", "imageView"]
+- !private ["So6UIViewC", "layer"]
 - !private ["So6UIViewC", "setImage"]
 - ["So16UIViewControllerC", "Categorias"]
 - ["So16UIViewControllerC", "Edades"]
@@ -506,6 +559,7 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "delegate"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "image"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "imageView"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "layer"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setImage"]
 - !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
@@ -524,6 +578,8 @@ depends-member:
 - !private ["s14_IndexableBaseP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Categorias"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Edades"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "butFiltrar"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cornerRadius"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dataSource"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveMemoryWarning"]
@@ -531,6 +587,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "image"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "imageView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "numberOfComponents"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "numberOfComponentsInPickerView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "pickerCategorias"]
@@ -555,7 +612,9 @@ depends-nominal:
 - !private "Sa"
 - "s23BidirectionalCollectionP"
 - !private "Sb"
+- !private "So7CALayerC"
 - !private "So15CALayerDelegateP"
+- !private "So13CAMediaTimingP"
 - "s7CVarArgP"
 - "s10CollectionP"
 - "s10ComparableP"
@@ -655,38 +714,39 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/Firebase/Core/Sources/Firebase.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
 - "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/Firebase/Core/Sources/module.modulemap"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 interface-hash: "42a8851a31f4d2dc5e589f6b37a88037"

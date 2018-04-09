@@ -1,13 +1,13 @@
 version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
-options: "205e87b998f1b701fdbbb274acb81cd4"
-build_time: [1523236265, 192023000]
+options: "31ed4fb130f9138205f69bfff284d65f"
+build_time: [1523300592, 36478000]
 inputs:
-  "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/ProyectoFinal/ViewControllerInfoActividad.swift": [1523235945, 0]
-  "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/ProyectoFinal/SecondViewController.swift": [1523153998, 0]
-  "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/ProyectoFinal/AppDelegate.swift": [1523153998, 0]
-  "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/ProyectoFinal/TableViewControllerActividadesCult.swift": [1523236241, 0]
-  "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/ProyectoFinal/ViewControllerFiltrar.swift": [1523153998, 0]
-  "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/ProyectoFinal/TabBarController.swift": [1523153998, 0]
-  "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/ProyectoFinal/Evento.swift": [1523230834, 0]
-  "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/ProyectoFinal/FirstViewController.swift": [1523153998, 0]
-  "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/ProyectoFinal/InfoViewController.swift": [1523153998, 0]
+  "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/ProyectoFinal/ViewControllerInfoActividad.swift": [1523280274, 0]
+  "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/ProyectoFinal/SecondViewController.swift": [1523280274, 0]
+  "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/ProyectoFinal/AppDelegate.swift": [1523153998, 0]
+  "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/ProyectoFinal/TableViewControllerActividadesCult.swift": [1523300588, 0]
+  "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/ProyectoFinal/ViewControllerFiltrar.swift": [1523280274, 0]
+  "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/ProyectoFinal/TabBarController.swift": [1523153998, 0]
+  "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/ProyectoFinal/Evento.swift": [1523281969, 0]
+  "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/ProyectoFinal/FirstViewController.swift": [1523280274, 0]
+  "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/ProyectoFinal/InfoViewController.swift": [1523280274, 0]

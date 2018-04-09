@@ -19,6 +19,7 @@ class TableViewControllerActividadesCult: UITableViewController {
     
     var Indice : Int!
     var FinalIndice : Int!
+    var NombrePabellon : String = ""
     
     var Handle:DatabaseHandle!
     var FireBaseRef:DatabaseReference!
@@ -28,8 +29,9 @@ class TableViewControllerActividadesCult: UITableViewController {
         //Conecta a la base datos Firebase
             FireBaseRef = Database.database().reference()
         FinalIndice = Indice
+        print(NombrePabellon)
         navigationController?.setNavigationBarHidden(true, animated: false)
-        if tabBarController?.selectedIndex != nil {
+        if tabBarController?.selectedIndex != nil && NombrePabellon == "" {
             butRegresar.setTitle("", for: .normal)
             butRegresar.isEnabled = false
             switch tabBarController?.selectedIndex{
@@ -45,38 +47,45 @@ class TableViewControllerActividadesCult: UITableViewController {
                     {
                         self.arrDatos.append(item)
                         self.tableView.reloadData()
+                        print(self.arrDatos.count)
                     }
                 })
             default:
                 break
             }
         }
+        else if NombrePabellon != ""{
+            butTitle.text = NombrePabellon
+            let refAct = self.FireBaseRef?.child("Pabellones").child(NombrePabellon)
+            llenarEvento(ref: refAct!)
+        }
         else{
+            print("Prueba")
             butFiltrar.setTitle("", for: .normal)
             butFiltrar.isEnabled = false
             switch FinalIndice{
-            case 0:
+            case 0?:
                 butTitle.text = "Eje Derechos Humanos"
                 let refAct = self.FireBaseRef?.child("Ejes").child("DerechosHumanos")
                 llenarEvento(ref: refAct!)
                 
-            case 1:
+            case 1?:
                 butTitle.text = "Eje Bienestar"
                 let refAct = self.FireBaseRef?.child("Ejes").child("Bienestar")
                 llenarEvento(ref: refAct!)
-            case 2:
+            case 2?:
                 butTitle.text = "Eje Calidad de Vida"
                 let refAct = self.FireBaseRef?.child("Ejes").child("CalidadVida")
                 llenarEvento(ref: refAct!)
-            case 3:
+            case 3?:
                 butTitle.text = "Eje Geriantría"
                 let refAct = self.FireBaseRef?.child("Ejes").child("Geriatria")
                 llenarEvento(ref: refAct!)
-            case 4:
+            case 4?:
                 butTitle.text = "Eje Inclusion Intergeneracional"
                 let refAct = self.FireBaseRef?.child("Ejes").child("Inclusion")
                 llenarEvento(ref: refAct!)
-            case 5:
+            case 5?:
                 butTitle.text = "Eje Nueva Tecnología"
                 let refAct = self.FireBaseRef?.child("Ejes").child("Tecnologia")
                 llenarEvento(ref: refAct!)
@@ -84,6 +93,7 @@ class TableViewControllerActividadesCult: UITableViewController {
                 break
             }
         }
+        print(arrDatos.count)
     }
 
     override func didReceiveMemoryWarning() {
@@ -99,7 +109,7 @@ class TableViewControllerActividadesCult: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if tabBarController?.selectedIndex != nil{
+        if tabBarController?.selectedIndex != nil && arrDatos.count > 0{
             switch tabBarController?.selectedIndex {
             case 3?:
                 return arrDatos.count
@@ -120,11 +130,11 @@ class TableViewControllerActividadesCult: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        if tabBarController?.selectedIndex != nil{
+        if tabBarController?.selectedIndex != nil && arrDatos.count > 0{
             switch tabBarController?.selectedIndex {
             case 3?:
                 cell.textLabel?.text = arrDatos[indexPath.row]
-                cell.detailTextLabel?.text = "Descripcion breve pabellon"
+                cell.detailTextLabel?.text = ""
             case 2?:
                 cell.textLabel?.text = arrEventos[indexPath.row].sNombre
                 cell.detailTextLabel?.text = arrEventos[indexPath.row].sDescripcion
@@ -197,39 +207,45 @@ class TableViewControllerActividadesCult: UITableViewController {
 
     
     // MARK: - Navigation
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+            let ident = identifier
+            if ident == "infoactividad" && arrDatos.count > 0{
+                let indice = tableView.indexPathForSelectedRow
+                NombrePabellon = arrDatos[(indice?.row)!]
+                arrDatos.removeAll()
+                butTitle.text = NombrePabellon
+                let refAct = self.FireBaseRef?.child("Pabellones").child(NombrePabellon)
+                llenarEvento(ref: refAct!)
+                return false
+            }
+        return true
+    }
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier != "filtrar"{
+        if segue.identifier != "filtrar" && arrDatos.count == 0{
             let dest = segue.destination as! ViewControllerInfoActividad
             let indice = tableView.indexPathForSelectedRow
-            if tabBarController?.selectedIndex != nil{
-                switch tabBarController?.selectedIndex {
-                case 3?:
-                    dest.titulo = arrDatos[(indice?.row)!]
-                    dest.descripcion = "Descripcion de los pabellones"
-                case 2?:
-                    dest.titulo = arrEventos[(indice?.row)!].sNombre
-                    dest.descripcion = arrEventos[(indice?.row)!].sDescripcion
-                    dest.Fecha = arrEventos[(indice?.row)!].sFecha
-                    dest.Hora = arrEventos[(indice?.row)!].sHora
-                    dest.Expositor = arrEventos[(indice?.row)!].sExpositor
-                    dest.Categoria = arrEventos[(indice?.row)!].sCategoria
-                    dest.Lugar = arrEventos[(indice?.row)!].sLugar
-                default:
-                    break
-                }
                 
-            }
-            else {
-                dest.titulo = arrEventos[(indice?.row)!].sNombre
-                dest.descripcion = arrEventos[(indice?.row)!].sDescripcion
-                dest.Fecha = arrEventos[(indice?.row)!].sFecha
-                dest.Hora = arrEventos[(indice?.row)!].sHora
-                dest.Expositor = arrEventos[(indice?.row)!].sExpositor
-                dest.Categoria = arrEventos[(indice?.row)!].sCategoria
-                dest.Lugar = arrEventos[(indice?.row)!].sLugar
-            }
+            dest.titulo = arrEventos[(indice?.row)!].sNombre
+            dest.descripcion = arrEventos[(indice?.row)!].sDescripcion
+            dest.Fecha = arrEventos[(indice?.row)!].sFecha
+            dest.Hora = arrEventos[(indice?.row)!].sHora
+            dest.Expositor = arrEventos[(indice?.row)!].sExpositor
+            dest.Categoria = arrEventos[(indice?.row)!].sCategoria
+            dest.Lugar = arrEventos[(indice?.row)!].sLugar
+
+
+        }
+        else if segue.identifier != "filtrar" && arrDatos.count > 0{
+            let indice = tableView.indexPathForSelectedRow
+            NombrePabellon = arrDatos[(indice?.row)!]
+            arrDatos.removeAll()
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let tvc = storyboard.instantiateViewController(withIdentifier: "TableViewController")
+            self.navigationController?.pushViewController(tvc, animated: true)
+            performSegue(withIdentifier: "infoactividad", sender: nil)
         }
         else{
            _ = segue.destination as! ViewControllerFiltrar

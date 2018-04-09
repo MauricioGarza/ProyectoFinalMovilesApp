@@ -473,7 +473,7 @@
         <!--Root View Controller-->
         <scene sceneID="9cY-Yy-MQP">
             <objects>
-                <tableViewController id="mdI-SV-wKd" customClass="TableViewControllerActividadesCult" customModule="ProyectoFinal" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="TableViewController" id="mdI-SV-wKd" customClass="TableViewControllerActividadesCult" customModule="ProyectoFinal" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="mQg-8B-KbV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -542,7 +542,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <segue destination="aei-PF-N5d" kind="presentation" identifier="actvidaddescripcion" id="hmH-XB-JFs"/>
+                                    <segue destination="aei-PF-N5d" kind="presentation" identifier="infoactividad" id="UjG-0a-s2f"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -747,6 +747,6 @@
         <image name="unchecked" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="spG-zJ-eaq"/>
+        <segue reference="sPh-Ur-ri5"/>
     </inferredMetricsTieBreakers>
 </document>
