@@ -238,15 +238,8 @@ class TableViewControllerActividadesCult: UITableViewController {
 
 
         }
-        else if segue.identifier != "filtrar" && arrDatos.count > 0{
-            let indice = tableView.indexPathForSelectedRow
-            NombrePabellon = arrDatos[(indice?.row)!]
-            arrDatos.removeAll()
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let tvc = storyboard.instantiateViewController(withIdentifier: "TableViewController")
-            self.navigationController?.pushViewController(tvc, animated: true)
-            performSegue(withIdentifier: "infoactividad", sender: nil)
-        }
+
+        
         else{
            _ = segue.destination as! ViewControllerFiltrar
         }
