@@ -21,6 +21,7 @@ class ViewControllerFiltrar: UIViewController, UIPickerViewDataSource, UIPickerV
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        butFiltrar.layer.cornerRadius=8
         pickerEdades.dataSource = self
         pickerEdades.delegate = self
         pickerCategorias.dataSource = self

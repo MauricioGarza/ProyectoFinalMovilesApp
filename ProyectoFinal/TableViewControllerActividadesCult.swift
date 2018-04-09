@@ -56,28 +56,28 @@ class TableViewControllerActividadesCult: UITableViewController {
             butFiltrar.isEnabled = false
             switch FinalIndice{
             case 0:
-                butTitle.text = "Actividades Eje Derechos Humanos"
+                butTitle.text = "Eje Derechos Humanos"
                 let refAct = self.FireBaseRef?.child("Ejes").child("DerechosHumanos")
                 llenarEvento(ref: refAct!)
                 
             case 1:
-                butTitle.text = "Actividades Eje Bienestar"
+                butTitle.text = "Eje Bienestar"
                 let refAct = self.FireBaseRef?.child("Ejes").child("Bienestar")
                 llenarEvento(ref: refAct!)
             case 2:
-                butTitle.text = "Actividades Eje Calidad de Vida"
+                butTitle.text = "Eje Calidad de Vida"
                 let refAct = self.FireBaseRef?.child("Ejes").child("CalidadVida")
                 llenarEvento(ref: refAct!)
             case 3:
-                butTitle.text = "Actividades Eje Geriantría"
+                butTitle.text = "Eje Geriantría"
                 let refAct = self.FireBaseRef?.child("Ejes").child("Geriatria")
                 llenarEvento(ref: refAct!)
             case 4:
-                butTitle.text = "Actividades Eje Inclusion Intergeneracional"
+                butTitle.text = "Eje Inclusion Intergeneracional"
                 let refAct = self.FireBaseRef?.child("Ejes").child("Inclusion")
                 llenarEvento(ref: refAct!)
             case 5:
-                butTitle.text = "Actividades Eje Nueva Tecnología"
+                butTitle.text = "Eje Nueva Tecnología"
                 let refAct = self.FireBaseRef?.child("Ejes").child("Tecnologia")
                 llenarEvento(ref: refAct!)
             default:
