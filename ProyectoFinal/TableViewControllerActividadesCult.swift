@@ -20,9 +20,25 @@ class TableViewControllerActividadesCult: UITableViewController {
     var Indice : Int!
     var FinalIndice : Int!
     var NombrePabellon : String = ""
+    var viewHappened : Bool = false
     
     var Handle:DatabaseHandle!
     var FireBaseRef:DatabaseReference!
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if viewHappened == false && tabBarController?.selectedIndex == 3{
+            butTitle.text = "Pabellones"
+            arrEventos.removeAll()
+            Handle = self.FireBaseRef?.child("Pabellones").observe(.childAdded, with:{(DataSnapshot) in
+                if let item = DataSnapshot.key as? String
+                {
+                    self.arrDatos.append(item)
+                    self.tableView.reloadData()
+                    print(self.arrDatos.count)
+                }
+            })
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -93,6 +109,7 @@ class TableViewControllerActividadesCult: UITableViewController {
                 break
             }
         }
+        viewHappened = true
         print(arrDatos.count)
     }
 
@@ -217,6 +234,7 @@ class TableViewControllerActividadesCult: UITableViewController {
                 butTitle.text = NombrePabellon
                 let refAct = self.FireBaseRef?.child("Pabellones").child(NombrePabellon)
                 llenarEvento(ref: refAct!)
+                viewHappened = false
                 return false
             }
         return true

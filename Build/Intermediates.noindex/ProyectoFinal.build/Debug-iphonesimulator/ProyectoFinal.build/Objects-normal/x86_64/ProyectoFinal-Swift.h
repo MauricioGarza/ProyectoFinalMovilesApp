@@ -279,6 +279,7 @@ SWIFT_CLASS("_TtC13ProyectoFinal34TableViewControllerActividadesCult")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified butRegresar;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified butFiltrar;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified butTitle;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;

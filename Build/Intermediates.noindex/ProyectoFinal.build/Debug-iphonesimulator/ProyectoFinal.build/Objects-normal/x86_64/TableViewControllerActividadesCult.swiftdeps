@@ -14,6 +14,7 @@ provides-dynamic-lookup:
 - "prepare"
 - "shouldPerformSegue"
 - "tableView"
+- "viewDidAppear"
 - "viewDidLoad"
 depends-top-level:
 - !private "!="
@@ -22,7 +23,7 @@ depends-top-level:
 - !private ">"
 - "AssignmentPrecedence"
 - "Bool"
-- !private "BooleanLiteralType"
+- "BooleanLiteralType"
 - "CastingPrecedence"
 - !private "DataSnapshot"
 - !private "Database"
@@ -137,6 +138,7 @@ depends-member:
 - !private ["s7CVarArgP", "titulo"]
 - !private ["s7CVarArgP", "value"]
 - !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["s7CVarArgP", "viewHappened"]
 - ["s7CVarArgP", ""]
 - !private ["s10CollectionP", "append"]
 - !private ["s10CollectionP", "count"]
@@ -213,6 +215,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "titulo"]
 - !private ["s28CustomDebugStringConvertibleP", "value"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s28CustomDebugStringConvertibleP", "viewHappened"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
@@ -291,6 +294,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "titulo"]
 - !private ["s23CustomStringConvertibleP", "value"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["s23CustomStringConvertibleP", "viewHappened"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["SC13DataEventTypeO", "childAdded"]
 - !private ["SC13DataEventTypeO", "value"]
@@ -379,6 +383,7 @@ depends-member:
 - !private ["s9EquatableP", "titulo"]
 - !private ["s9EquatableP", "value"]
 - !private ["s9EquatableP", "viewDidLoad"]
+- !private ["s9EquatableP", "viewHappened"]
 - ["s9EquatableP", ""]
 - !private ["13ProyectoFinal6EventoC", "init"]
 - !private ["13ProyectoFinal6EventoC", "sCategoria"]
@@ -464,6 +469,7 @@ depends-member:
 - !private ["s8HashableP", "titulo"]
 - !private ["s8HashableP", "value"]
 - !private ["s8HashableP", "viewDidLoad"]
+- !private ["s8HashableP", "viewHappened"]
 - ["s8HashableP", ""]
 - !private ["10Foundation9IndexPathV", "row"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
@@ -540,6 +546,7 @@ depends-member:
 - !private ["So8NSCodingP", "textLabel"]
 - !private ["So8NSCodingP", "titulo"]
 - !private ["So8NSCodingP", "viewDidLoad"]
+- !private ["So8NSCodingP", "viewHappened"]
 - ["So8NSCodingP", ""]
 - ["So9NSCopyingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "Categoria"]
@@ -572,6 +579,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "tableView"]
 - !private ["So26NSExtensionRequestHandlingP", "titulo"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- !private ["So26NSExtensionRequestHandlingP", "viewHappened"]
 - ["So26NSExtensionRequestHandlingP", ""]
 - ["So21NSItemProviderReadingP", "init"]
 - ["So21NSItemProviderWritingP", "init"]
@@ -647,7 +655,9 @@ depends-member:
 - !private ["So8NSObjectC", "textLabel"]
 - !private ["So8NSObjectC", "titulo"]
 - !private ["So8NSObjectC", "value"]
+- ["So8NSObjectC", "viewDidAppear"]
 - ["So8NSObjectC", "viewDidLoad"]
+- ["So8NSObjectC", "viewHappened"]
 - !private ["So16NSObjectProtocolP", "Categoria"]
 - !private ["So16NSObjectProtocolP", "Database"]
 - !private ["So16NSObjectProtocolP", "Evento"]
@@ -703,6 +713,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "titulo"]
 - !private ["So16NSObjectProtocolP", "value"]
 - !private ["So16NSObjectProtocolP", "viewDidLoad"]
+- !private ["So16NSObjectProtocolP", "viewHappened"]
 - ["So16NSObjectProtocolP", ""]
 - ["So14NSSecureCodingP", "init"]
 - ["So8NSStringC", "init"]
@@ -796,7 +807,9 @@ depends-member:
 - ["13ProyectoFinal34TableViewControllerActividadesCultC", "shouldPerformSegue"]
 - !private ["13ProyectoFinal34TableViewControllerActividadesCultC", "tabBarController"]
 - ["13ProyectoFinal34TableViewControllerActividadesCultC", "tableView"]
+- ["13ProyectoFinal34TableViewControllerActividadesCultC", "viewDidAppear"]
 - ["13ProyectoFinal34TableViewControllerActividadesCultC", "viewDidLoad"]
+- ["13ProyectoFinal34TableViewControllerActividadesCultC", "viewHappened"]
 - ["s16TextOutputStreamP", "init"]
 - ["s20TextOutputStreamableP", "init"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "isEnabled"]
@@ -855,6 +868,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "textLabel"]
 - !private ["So21UIAppearanceContainerP", "titulo"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- !private ["So21UIAppearanceContainerP", "viewHappened"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So8UIButtonC", "isEnabled"]
 - !private ["So8UIButtonC", "setTitle"]
@@ -888,6 +902,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "tableView"]
 - !private ["So18UIContentContainerP", "titulo"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
+- !private ["So18UIContentContainerP", "viewHappened"]
 - ["So18UIContentContainerP", ""]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
 - !private ["So9UIControlC", "isEnabled"]
@@ -950,6 +965,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "textLabel"]
 - !private ["So18UIFocusEnvironmentP", "titulo"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- !private ["So18UIFocusEnvironmentP", "viewHappened"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So11UIFocusItemP", "dequeueReusableCell"]
 - !private ["So11UIFocusItemP", "detailTextLabel"]
@@ -1001,6 +1017,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "textLabel"]
 - !private ["So30UIPasteConfigurationSupportingP", "titulo"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewHappened"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - ["So11UIResponderC", "Bool"]
 - !private ["So11UIResponderC", "Categoria"]
@@ -1056,7 +1073,9 @@ depends-member:
 - !private ["So11UIResponderC", "text"]
 - !private ["So11UIResponderC", "textLabel"]
 - !private ["So11UIResponderC", "titulo"]
+- ["So11UIResponderC", "viewDidAppear"]
 - ["So11UIResponderC", "viewDidLoad"]
+- ["So11UIResponderC", "viewHappened"]
 - !private ["So30UIResponderStandardEditActionsP", "Categoria"]
 - !private ["So30UIResponderStandardEditActionsP", "Database"]
 - !private ["So30UIResponderStandardEditActionsP", "Evento"]
@@ -1095,6 +1114,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "textLabel"]
 - !private ["So30UIResponderStandardEditActionsP", "titulo"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "viewHappened"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So12UIScrollViewC", "dequeueReusableCell"]
 - !private ["So12UIScrollViewC", "indexPathForSelectedRow"]
@@ -1120,6 +1140,7 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "tabBarController"]
 - !private ["So20UIScrollViewDelegateP", "tableView"]
 - !private ["So20UIScrollViewDelegateP", "viewDidLoad"]
+- !private ["So20UIScrollViewDelegateP", "viewHappened"]
 - ["So20UIScrollViewDelegateP", ""]
 - !private ["So35UISpringLoadedInteractionSupportingP", "dequeueReusableCell"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "indexPathForSelectedRow"]
@@ -1156,6 +1177,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "tableView"]
 - !private ["So16UIStateRestoringP", "titulo"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
+- !private ["So16UIStateRestoringP", "viewHappened"]
 - ["So16UIStateRestoringP", ""]
 - !private ["So17UIStoryboardSegueC", "destination"]
 - !private ["So17UIStoryboardSegueC", "identifier"]
@@ -1203,7 +1225,9 @@ depends-member:
 - ["So21UITableViewControllerC", "shouldPerformSegue"]
 - !private ["So21UITableViewControllerC", "tabBarController"]
 - ["So21UITableViewControllerC", "tableView"]
+- ["So21UITableViewControllerC", "viewDidAppear"]
 - ["So21UITableViewControllerC", "viewDidLoad"]
+- ["So21UITableViewControllerC", "viewHappened"]
 - ["So21UITableViewControllerC", ""]
 - !private ["So21UITableViewDataSourceP", "Database"]
 - !private ["So21UITableViewDataSourceP", "Evento"]
@@ -1226,6 +1250,7 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "tabBarController"]
 - !private ["So21UITableViewDataSourceP", "tableView"]
 - !private ["So21UITableViewDataSourceP", "viewDidLoad"]
+- !private ["So21UITableViewDataSourceP", "viewHappened"]
 - ["So21UITableViewDataSourceP", ""]
 - !private ["So19UITableViewDelegateP", "Database"]
 - !private ["So19UITableViewDelegateP", "Evento"]
@@ -1248,6 +1273,7 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "tabBarController"]
 - !private ["So19UITableViewDelegateP", "tableView"]
 - !private ["So19UITableViewDelegateP", "viewDidLoad"]
+- !private ["So19UITableViewDelegateP", "viewHappened"]
 - ["So19UITableViewDelegateP", ""]
 - !private ["So18UITraitEnvironmentP", "Categoria"]
 - !private ["So18UITraitEnvironmentP", "Database"]
@@ -1287,6 +1313,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "textLabel"]
 - !private ["So18UITraitEnvironmentP", "titulo"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So18UITraitEnvironmentP", "viewHappened"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So6UIViewC", "dequeueReusableCell"]
 - !private ["So6UIViewC", "detailTextLabel"]
@@ -1342,7 +1369,9 @@ depends-member:
 - !private ["So16UIViewControllerC", "tabBarController"]
 - ["So16UIViewControllerC", "tableView"]
 - !private ["So16UIViewControllerC", "titulo"]
+- ["So16UIViewControllerC", "viewDidAppear"]
 - ["So16UIViewControllerC", "viewDidLoad"]
+- ["So16UIViewControllerC", "viewHappened"]
 - !private ["13ProyectoFinal27ViewControllerInfoActividadC", "Categoria"]
 - !private ["13ProyectoFinal27ViewControllerInfoActividadC", "Expositor"]
 - !private ["13ProyectoFinal27ViewControllerInfoActividadC", "Fecha"]
@@ -1481,6 +1510,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "titulo"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "value"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewHappened"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["s17_MutableIndexableP", "append"]
 - !private ["s17_MutableIndexableP", "count"]
@@ -1692,4 +1722,4 @@ depends-external:
 - "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-interface-hash: "839e186e5c4841386ca83f1e694177d9"
+interface-hash: "92e1d5513a1bb935d973d9fd8e9d88bb"

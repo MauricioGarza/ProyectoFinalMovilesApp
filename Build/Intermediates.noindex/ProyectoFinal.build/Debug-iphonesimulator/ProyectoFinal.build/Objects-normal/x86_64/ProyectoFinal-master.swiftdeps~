@@ -1,11 +1,11 @@
 version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
 options: "31ed4fb130f9138205f69bfff284d65f"
-build_time: [1523300592, 36478000]
+build_time: [1523301315, 519548000]
 inputs:
   "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/ProyectoFinal/ViewControllerInfoActividad.swift": [1523280274, 0]
   "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/ProyectoFinal/SecondViewController.swift": [1523280274, 0]
   "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/ProyectoFinal/AppDelegate.swift": [1523153998, 0]
-  "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/ProyectoFinal/TableViewControllerActividadesCult.swift": [1523300588, 0]
+  "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/ProyectoFinal/TableViewControllerActividadesCult.swift": [1523301311, 0]
   "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/ProyectoFinal/ViewControllerFiltrar.swift": [1523280274, 0]
   "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/ProyectoFinal/TabBarController.swift": [1523153998, 0]
   "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/ProyectoFinal/Evento.swift": [1523281969, 0]
