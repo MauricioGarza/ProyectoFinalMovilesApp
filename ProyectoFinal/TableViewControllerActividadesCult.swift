@@ -25,6 +25,10 @@ class TableViewControllerActividadesCult: UITableViewController {
     var Handle:DatabaseHandle!
     var FireBaseRef:DatabaseReference!
     
+    var fechaFiltrar:Date!
+    var edadFiltrar:String!
+    var categoFiltrar:String!
+    
     override func viewDidAppear(_ animated: Bool) {
         if viewHappened == false && tabBarController?.selectedIndex == 3{
             butTitle.text = "Pabellones"
@@ -263,7 +267,9 @@ class TableViewControllerActividadesCult: UITableViewController {
         }
     }
     
-
+    @IBAction func unwind(unwindSegue:UIStoryboardSegue){
+        
+    }
     
     @IBAction func butRegresar(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)

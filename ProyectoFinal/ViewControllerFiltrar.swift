@@ -10,6 +10,9 @@ import UIKit
 
 class ViewControllerFiltrar: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
+    @IBOutlet weak var btFecha: UIButton!
+    @IBOutlet weak var btEdad: UIButton!
+    @IBOutlet weak var btCategoria: UIButton!
     
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet var pickerEdades: UIPickerView!
@@ -18,6 +21,9 @@ class ViewControllerFiltrar: UIViewController, UIPickerViewDataSource, UIPickerV
     @IBOutlet weak var butFiltrar: UIButton!
     let Edades : [String] = ["Joven","Adulto","Mayor"]
     let Categorias : [String] = ["Folklore","Artes Plasticas y Escenicas","Deporte","Turismo","Acondicionamiento"]
+    
+    var edadEscogida:String!
+    var categoEscogida:String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +59,13 @@ class ViewControllerFiltrar: UIViewController, UIPickerViewDataSource, UIPickerV
         }
         return ""
     }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if pickerView.tag==0{
+            edadEscogida=Edades[row]
+        }else {
+            categoEscogida=Categorias[row]
+        }
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -70,15 +83,27 @@ class ViewControllerFiltrar: UIViewController, UIPickerViewDataSource, UIPickerV
     
     
     
-    /*
+    
      // MARK: - Navigation
      
      // In a storyboard-based application, you will often want to do a little preparation before navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
+        let vistaDestino=segue.destination as! TableViewControllerActividadesCult
+        
+        let dateFormater=DateFormatter()
+        dateFormater.dateFormat="YYYY-MM-dd"
+        if btFecha.currentImage==#imageLiteral(resourceName: "checked"){
+            vistaDestino.fechaFiltrar=datePicker.date
+        }
+        if btEdad.currentImage==#imageLiteral(resourceName: "checked"){
+            vistaDestino.edadFiltrar=edadEscogida
+        }
+        if btCategoria.currentImage==#imageLiteral(resourceName: "checked"){
+            vistaDestino.categoFiltrar=categoEscogida
+        }
+        
      }
-     */
+    
     
     @IBAction func butRegresar(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)

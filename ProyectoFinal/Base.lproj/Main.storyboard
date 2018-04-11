@@ -633,6 +633,9 @@
                                 <state key="normal" title="Filtrar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="yPd-Is-uwe" kind="unwind" unwindAction="unwindWithUnwindSegue:" id="Ahb-5a-N9y"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fecha y Hora" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0AS-nm-kMp">
                                 <rect key="frame" x="54" y="73" width="141" height="21"/>
@@ -684,6 +687,9 @@
                         <viewLayoutGuide key="safeArea" id="leN-tI-v64"/>
                     </view>
                     <connections>
+                        <outlet property="btCategoria" destination="Gy7-Yk-YKP" id="MHa-3V-PhJ"/>
+                        <outlet property="btEdad" destination="mdh-kK-oh5" id="hYy-Mj-99R"/>
+                        <outlet property="btFecha" destination="wFV-Hl-bbq" id="Maq-qa-9G2"/>
                         <outlet property="butFiltrar" destination="FLi-4w-qbT" id="t5R-E1-wdF"/>
                         <outlet property="datePicker" destination="bwa-ws-bw2" id="Cmh-e0-wMj"/>
                         <outlet property="pickerCategorias" destination="gq1-5P-EXx" id="Lep-ou-7nF"/>
@@ -691,6 +697,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Yz-BY-Zxz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="yPd-Is-uwe" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3125.625" y="1001.4084507042254"/>
         </scene>
