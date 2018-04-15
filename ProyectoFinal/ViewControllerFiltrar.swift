@@ -79,6 +79,7 @@ class ViewControllerFiltrar: UIViewController, UIPickerViewDataSource, UIPickerV
         else{
             sender.setImage(#imageLiteral(resourceName: "unchecked"), for: .normal)
         }
+        
     }
     
     
@@ -89,16 +90,15 @@ class ViewControllerFiltrar: UIViewController, UIPickerViewDataSource, UIPickerV
      // In a storyboard-based application, you will often want to do a little preparation before navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vistaDestino=segue.destination as! TableViewControllerActividadesCult
-        
         let dateFormater=DateFormatter()
         dateFormater.dateFormat="YYYY-MM-dd"
-        if btFecha.currentImage==#imageLiteral(resourceName: "checked"){
+        if btFecha.imageView?.image==#imageLiteral(resourceName: "checked"){
             vistaDestino.fechaFiltrar=datePicker.date
         }
-        if btEdad.currentImage==#imageLiteral(resourceName: "checked"){
+        if btEdad.imageView?.image==#imageLiteral(resourceName: "checked"){
             vistaDestino.edadFiltrar=edadEscogida
         }
-        if btCategoria.currentImage==#imageLiteral(resourceName: "checked"){
+        if btCategoria.imageView?.image==#imageLiteral(resourceName: "checked"){
             vistaDestino.categoFiltrar=categoEscogida
         }
         

@@ -37,10 +37,10 @@ class TableViewControllerActividadesCult: UITableViewController {
                 if let item = DataSnapshot.key as? String
                 {
                     self.arrDatos.append(item)
-                    self.tableView.reloadData()
                     print(self.arrDatos.count)
                 }
             })
+            self.tableView.reloadData()
         }
     }
     
@@ -268,7 +268,38 @@ class TableViewControllerActividadesCult: UITableViewController {
     }
     
     @IBAction func unwind(unwindSegue:UIStoryboardSegue){
-        
+        if categoFiltrar != nil || edadFiltrar != nil{
+            arrEventos.removeAll()
+            self.tableView.reloadData()
+            if NombrePabellon==""{
+                switch tabBarController?.selectedIndex{
+                case 2?:
+                    FireBaseRef.child("ActividadesCulturales").observeSingleEvent(of: .value, with:{ DataSnapshot in
+                        for child in DataSnapshot.children{
+                            let snap = child as! DataSnapshot
+                            let dict = snap.value as! [String:Any]
+                            let nom = dict["Nombre"] as! String
+                            let desc = dict["Descripcion"] as! String
+                            let cat = dict["Categoria"] as! String
+                            let Expos = dict["Expositor"] as! String
+                            let Fecha = dict["Fecha"] as! String
+                            let Hora = dict["Hora"] as! String
+                            let lugar = dict["Lugar"] as! String
+                            if cat==self.categoFiltrar{
+                                let Event = Evento(sCategoria: cat, sDescripcion: desc, sExpositor: Expos, sHora: Hora, sLugar: lugar, sNombre: nom, sFecha: Fecha)
+                                self.arrEventos.append(Event)
+                                self.tableView.reloadData()
+                                
+                            }
+                        }
+                    })
+                //case 3?:
+                default:
+                    break;
+                }
+            }
+            
+        }
     }
     
     @IBAction func butRegresar(_ sender: UIButton) {
