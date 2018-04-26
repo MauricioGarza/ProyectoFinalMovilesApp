@@ -33,14 +33,14 @@ class InfoViewController: UIViewController, MFMailComposeViewControllerDelegate 
     
     @IBAction func makeCall(_ sender: Any) {
         print("se armo")
-        let url: NSURL = URL(string: "TEL://9211400080")! as NSURL
+        let url: NSURL = URL(string: "TEL://8129195130")! as NSURL
         UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
     }
     @IBAction func sendEmail(_ sender: Any) {
         let mailCompose=MFMailComposeViewController()
         mailCompose.mailComposeDelegate=self
-        mailCompose.setToRecipients(["reyesmun@hotmail.com"])
-        mailCompose.setSubject("Ayuda")
+        mailCompose.setToRecipients(["info@encuentrosinlimites.mx"])
+        mailCompose.setSubject("Duda Congreso Sin Limites")
         
         if MFMailComposeViewController.canSendMail(){
             self.present(mailCompose, animated: true, completion: nil)
