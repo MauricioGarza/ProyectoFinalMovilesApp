@@ -31,23 +31,6 @@ class TableViewControllerActividadesCult: UITableViewController {
     var edadFiltrar:String!
     var categoFiltrar:String!
     
-   /* override func viewDidAppear(_ animated: Bool) {
-        if viewHappened == false && tabBarController?.selectedIndex == 3{
-            butRegresar.isEnabled = false
-            butRegresar.isHidden = true
-            butTitle.text = "Pabellones"
-            arrEventos.removeAll()
-            arrDatos.removeAll()
-            Handle = self.FireBaseRef?.child("Pabellones").observe(.childAdded, with:{(DataSnapshot) in
-                if let item = DataSnapshot.key as? String
-                {
-                    self.arrDatos.append(item)
-                    self.tableView.reloadData()
-                }
-            })
-            self.tableView.reloadData()
-        }
-    }*/
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,10 +52,14 @@ class TableViewControllerActividadesCult: UITableViewController {
                 llenarEvento(ref: refActividadesCulturales!)
                 butRegresar.isEnabled = true
                 butRegresar.isHidden = true
+                butFiltrar.isHidden = false
+                butFiltrar.isEnabled = true
             case 3?:
                 arrDatos.removeAll()
                 butRegresar.isEnabled = false
                 butRegresar.isHidden = true
+                butFiltrar.isEnabled = false
+                butFiltrar.isHidden = true
                 butTitle.text = "Pabellones"
                 Handle = self.FireBaseRef?.child("Pabellones").observe(.childAdded, with:{(DataSnapshot) in
                 if let item = DataSnapshot.key as? String
@@ -89,6 +76,8 @@ class TableViewControllerActividadesCult: UITableViewController {
             }
         }
         else if NombrePabellon != "" && bFiltrar == false{
+            butFiltrar.isHidden = false
+            butFiltrar.isEnabled = true
             arrEventos.removeAll()
             butTitle.text = NombrePabellon
             let refAct = self.FireBaseRef?.child("Pabellones").child(NombrePabellon)
@@ -232,6 +221,8 @@ class TableViewControllerActividadesCult: UITableViewController {
                 viewHappened = false
                 butRegresar.isEnabled = true
                 butRegresar.isHidden = false
+                butFiltrar.isHidden = false
+                butFiltrar.isEnabled = true
                 return false
             }
         return true
@@ -278,6 +269,10 @@ class TableViewControllerActividadesCult: UITableViewController {
             arrEventos.removeAll()
             arrDatos.removeAll()
             NombrePabellon = ""
+            butRegresar.isHidden = true
+            butRegresar.isEnabled = false
+            butFiltrar.isHidden = true
+            butFiltrar.isEnabled = false
             Handle = self.FireBaseRef?.child("Pabellones").observe(.childAdded, with:{(DataSnapshot) in
                 if let item = DataSnapshot.key as? String
                 {

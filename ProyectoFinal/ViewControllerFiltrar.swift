@@ -131,7 +131,7 @@ class ViewControllerFiltrar: UIViewController, UIPickerViewDataSource, UIPickerV
                 }
             }
         }
-        else if btFecha.imageView?.image == #imageLiteral(resourceName: "checked") && btEdad.imageView?.image == #imageLiteral(resourceName: "checked") && btCategoria.imageView == #imageLiteral(resourceName: "unchecked"){
+        else if btFecha.imageView?.image == #imageLiteral(resourceName: "checked") && btEdad.imageView?.image == #imageLiteral(resourceName: "checked") && btCategoria.imageView?.image == #imageLiteral(resourceName: "unchecked"){
             for event in arrEventos{
                 let date = dateFormater.date(from: event.sFecha)
                 if Calendar.current.isDate(date!, inSameDayAs: datePicker.date) == true{
@@ -139,7 +139,7 @@ class ViewControllerFiltrar: UIViewController, UIPickerViewDataSource, UIPickerV
                 }
             }
         }
-        else if btFecha.imageView?.image == #imageLiteral(resourceName: "checked") && btEdad.imageView?.image == #imageLiteral(resourceName: "unchecked") && btCategoria.imageView == #imageLiteral(resourceName: "checked"){
+        else if btFecha.imageView?.image == #imageLiteral(resourceName: "checked") && btEdad.imageView?.image == #imageLiteral(resourceName: "unchecked") && btCategoria.imageView?.image == #imageLiteral(resourceName: "checked"){
             for event in arrEventos{
                 let date = dateFormater.date(from: event.sFecha)
                 if Calendar.current.isDate(date!, inSameDayAs: datePicker.date) == true  && categoEscogida == event.sCategoria{
@@ -147,14 +147,14 @@ class ViewControllerFiltrar: UIViewController, UIPickerViewDataSource, UIPickerV
                 }
             }
         }
-        else if btFecha.imageView?.image == #imageLiteral(resourceName: "unchecked") && btEdad.imageView?.image == #imageLiteral(resourceName: "checked") && btCategoria.imageView == #imageLiteral(resourceName: "checked"){
+        else if btFecha.imageView?.image == #imageLiteral(resourceName: "unchecked") && btEdad.imageView?.image == #imageLiteral(resourceName: "checked") && btCategoria.imageView?.image == #imageLiteral(resourceName: "checked"){
             for event in arrEventos{
                 if categoEscogida == event.sCategoria{
                     dest.arrEventos.append(event)
                 }
             }
         }
-        else if btFecha.imageView?.image == #imageLiteral(resourceName: "checked") && btEdad.imageView?.image == #imageLiteral(resourceName: "checked") && btCategoria.imageView == #imageLiteral(resourceName: "checked"){
+        else if btFecha.imageView?.image == #imageLiteral(resourceName: "checked") && btEdad.imageView?.image == #imageLiteral(resourceName: "checked") && btCategoria.imageView?.image == #imageLiteral(resourceName: "checked"){
             for event in arrEventos{
                 let date = dateFormater.date(from: event.sFecha)
                 if Calendar.current.isDate(date!, inSameDayAs: datePicker.date) == true && categoEscogida == event.sCategoria{
