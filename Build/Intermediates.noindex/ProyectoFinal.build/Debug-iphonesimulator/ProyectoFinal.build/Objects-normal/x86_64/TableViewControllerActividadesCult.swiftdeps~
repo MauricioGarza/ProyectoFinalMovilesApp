@@ -98,6 +98,8 @@ depends-member:
 - !private ["s7CVarArgP", "Indice"]
 - !private ["s7CVarArgP", "Lugar"]
 - !private ["s7CVarArgP", "NombrePabellon"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "append"]
 - !private ["s7CVarArgP", "arrDatos"]
 - !private ["s7CVarArgP", "arrEventos"]
@@ -152,7 +154,6 @@ depends-member:
 - !private ["s7CVarArgP", "value"]
 - !private ["s7CVarArgP", "viewDidLoad"]
 - !private ["s7CVarArgP", "viewHappened"]
-- ["s7CVarArgP", ""]
 - !private ["s10CollectionP", "append"]
 - !private ["s10CollectionP", "contains"]
 - !private ["s10CollectionP", "count"]
@@ -183,6 +184,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "Indice"]
 - !private ["s28CustomDebugStringConvertibleP", "Lugar"]
 - !private ["s28CustomDebugStringConvertibleP", "NombrePabellon"]
+- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "arrDatos"]
 - !private ["s28CustomDebugStringConvertibleP", "arrEventos"]
@@ -238,7 +240,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "value"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - !private ["s28CustomDebugStringConvertibleP", "viewHappened"]
-- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "contains"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
@@ -270,6 +271,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "Indice"]
 - !private ["s23CustomStringConvertibleP", "Lugar"]
 - !private ["s23CustomStringConvertibleP", "NombrePabellon"]
+- ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "append"]
 - !private ["s23CustomStringConvertibleP", "arrDatos"]
@@ -326,7 +328,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "value"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - !private ["s23CustomStringConvertibleP", "viewHappened"]
-- ["s23CustomStringConvertibleP", ""]
 - !private ["SC13DataEventTypeO", "childAdded"]
 - !private ["SC13DataEventTypeO", "value"]
 - !private ["So12DataSnapshotC", "children"]
@@ -371,7 +372,9 @@ depends-member:
 - !private ["s9EquatableP", "Indice"]
 - !private ["s9EquatableP", "Lugar"]
 - !private ["s9EquatableP", "NombrePabellon"]
+- ["s9EquatableP", ""]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "append"]
 - !private ["s9EquatableP", "arrDatos"]
 - !private ["s9EquatableP", "arrEventos"]
 - !private ["s9EquatableP", "bFiltrar"]
@@ -382,6 +385,7 @@ depends-member:
 - !private ["s9EquatableP", "childAdded"]
 - !private ["s9EquatableP", "children"]
 - !private ["s9EquatableP", "contains"]
+- !private ["s9EquatableP", "count"]
 - !private ["s9EquatableP", "database"]
 - !private ["s9EquatableP", "dequeueReusableCell"]
 - !private ["s9EquatableP", "descripcion"]
@@ -393,6 +397,7 @@ depends-member:
 - !private ["s9EquatableP", "identifier"]
 - !private ["s9EquatableP", "indexPathForSelectedRow"]
 - ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "isEmpty"]
 - !private ["s9EquatableP", "isEnabled"]
 - !private ["s9EquatableP", "isHidden"]
 - !private ["s9EquatableP", "key"]
@@ -405,6 +410,7 @@ depends-member:
 - !private ["s9EquatableP", "reference"]
 - !private ["s9EquatableP", "refreshControl"]
 - !private ["s9EquatableP", "reloadData"]
+- !private ["s9EquatableP", "removeAll"]
 - !private ["s9EquatableP", "row"]
 - !private ["s9EquatableP", "sCategoria"]
 - !private ["s9EquatableP", "sDescripcion"]
@@ -416,6 +422,7 @@ depends-member:
 - !private ["s9EquatableP", "selectedIndex"]
 - !private ["s9EquatableP", "setNavigationBarHidden"]
 - !private ["s9EquatableP", "setTitle"]
+- !private ["s9EquatableP", "subscript"]
 - !private ["s9EquatableP", "tabBarController"]
 - !private ["s9EquatableP", "tableView"]
 - !private ["s9EquatableP", "text"]
@@ -424,7 +431,6 @@ depends-member:
 - !private ["s9EquatableP", "value"]
 - !private ["s9EquatableP", "viewDidLoad"]
 - !private ["s9EquatableP", "viewHappened"]
-- ["s9EquatableP", ""]
 - !private ["13ProyectoFinal6EventoC", "init"]
 - !private ["13ProyectoFinal6EventoC", "sCategoria"]
 - !private ["13ProyectoFinal6EventoC", "sDescripcion"]
@@ -467,6 +473,7 @@ depends-member:
 - !private ["s8HashableP", "Indice"]
 - !private ["s8HashableP", "Lugar"]
 - !private ["s8HashableP", "NombrePabellon"]
+- ["s8HashableP", ""]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
 - !private ["s8HashableP", "arrDatos"]
 - !private ["s8HashableP", "arrEventos"]
@@ -519,20 +526,26 @@ depends-member:
 - !private ["s8HashableP", "value"]
 - !private ["s8HashableP", "viewDidLoad"]
 - !private ["s8HashableP", "viewHappened"]
-- ["s8HashableP", ""]
 - !private ["10Foundation9IndexPathV", "row"]
+- !private ["s22LazyCollectionProtocolP", "sCategoria"]
+- !private ["s22LazyCollectionProtocolP", "sDescripcion"]
+- !private ["s22LazyCollectionProtocolP", "sExpositor"]
+- !private ["s22LazyCollectionProtocolP", "sFecha"]
+- !private ["s22LazyCollectionProtocolP", "sHora"]
+- !private ["s22LazyCollectionProtocolP", "sLugar"]
+- !private ["s22LazyCollectionProtocolP", "sNombre"]
+- !private ["s20LazySequenceProtocolP", "sCategoria"]
+- !private ["s20LazySequenceProtocolP", "sDescripcion"]
+- !private ["s20LazySequenceProtocolP", "sExpositor"]
+- !private ["s20LazySequenceProtocolP", "sFecha"]
+- !private ["s20LazySequenceProtocolP", "sHora"]
+- !private ["s20LazySequenceProtocolP", "sLugar"]
+- !private ["s20LazySequenceProtocolP", "sNombre"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "contains"]
 - ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "contains"]
 - ["s10MirrorPathP", "init"]
-- !private ["s25MutableBidirectionalSliceV", "sCategoria"]
-- !private ["s25MutableBidirectionalSliceV", "sDescripcion"]
-- !private ["s25MutableBidirectionalSliceV", "sExpositor"]
-- !private ["s25MutableBidirectionalSliceV", "sFecha"]
-- !private ["s25MutableBidirectionalSliceV", "sHora"]
-- !private ["s25MutableBidirectionalSliceV", "sLugar"]
-- !private ["s25MutableBidirectionalSliceV", "sNombre"]
 - !private ["s17MutableCollectionP", "append"]
 - !private ["s17MutableCollectionP", "count"]
 - !private ["s17MutableCollectionP", "isEmpty"]
@@ -546,20 +559,6 @@ depends-member:
 - !private ["s17MutableCollectionP", "sLugar"]
 - !private ["s17MutableCollectionP", "sNombre"]
 - !private ["s17MutableCollectionP", "subscript"]
-- !private ["s24MutableRandomAccessSliceV", "sCategoria"]
-- !private ["s24MutableRandomAccessSliceV", "sDescripcion"]
-- !private ["s24MutableRandomAccessSliceV", "sExpositor"]
-- !private ["s24MutableRandomAccessSliceV", "sFecha"]
-- !private ["s24MutableRandomAccessSliceV", "sHora"]
-- !private ["s24MutableRandomAccessSliceV", "sLugar"]
-- !private ["s24MutableRandomAccessSliceV", "sNombre"]
-- !private ["s12MutableSliceV", "sCategoria"]
-- !private ["s12MutableSliceV", "sDescripcion"]
-- !private ["s12MutableSliceV", "sExpositor"]
-- !private ["s12MutableSliceV", "sFecha"]
-- !private ["s12MutableSliceV", "sHora"]
-- !private ["s12MutableSliceV", "sLugar"]
-- !private ["s12MutableSliceV", "sNombre"]
 - !private ["So8NSCodingP", "Categoria"]
 - !private ["So8NSCodingP", "Database"]
 - !private ["So8NSCodingP", "Evento"]
@@ -572,6 +571,7 @@ depends-member:
 - !private ["So8NSCodingP", "Indice"]
 - !private ["So8NSCodingP", "Lugar"]
 - !private ["So8NSCodingP", "NombrePabellon"]
+- ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "arrDatos"]
 - !private ["So8NSCodingP", "arrEventos"]
 - !private ["So8NSCodingP", "bFiltrar"]
@@ -586,7 +586,7 @@ depends-member:
 - !private ["So8NSCodingP", "dismiss"]
 - !private ["So8NSCodingP", "endRefreshing"]
 - !private ["So8NSCodingP", "indexPathForSelectedRow"]
-- ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "isEnabled"]
 - !private ["So8NSCodingP", "isHidden"]
 - !private ["So8NSCodingP", "llenarEvento"]
@@ -604,9 +604,7 @@ depends-member:
 - !private ["So8NSCodingP", "titulo"]
 - !private ["So8NSCodingP", "viewDidLoad"]
 - !private ["So8NSCodingP", "viewHappened"]
-- ["So8NSCodingP", ""]
 - !private ["So9NSCopyingP", "contains"]
-- ["So9NSCopyingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "Categoria"]
 - !private ["So26NSExtensionRequestHandlingP", "Database"]
 - !private ["So26NSExtensionRequestHandlingP", "Evento"]
@@ -619,6 +617,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "Indice"]
 - !private ["So26NSExtensionRequestHandlingP", "Lugar"]
 - !private ["So26NSExtensionRequestHandlingP", "NombrePabellon"]
+- ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "arrDatos"]
 - !private ["So26NSExtensionRequestHandlingP", "arrEventos"]
 - !private ["So26NSExtensionRequestHandlingP", "bFiltrar"]
@@ -640,13 +639,9 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "titulo"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - !private ["So26NSExtensionRequestHandlingP", "viewHappened"]
-- ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So21NSItemProviderReadingP", "contains"]
-- ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderWritingP", "contains"]
-- ["So21NSItemProviderWritingP", "init"]
 - !private ["So16NSMutableCopyingP", "contains"]
-- ["So16NSMutableCopyingP", "init"]
 - ["So8NSObjectC", "Bool"]
 - !private ["So8NSObjectC", "Categoria"]
 - !private ["So8NSObjectC", "DataSnapshot"]
@@ -744,6 +739,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "Indice"]
 - !private ["So16NSObjectProtocolP", "Lugar"]
 - !private ["So16NSObjectProtocolP", "NombrePabellon"]
+- ["So16NSObjectProtocolP", ""]
 - !private ["So16NSObjectProtocolP", "arrDatos"]
 - !private ["So16NSObjectProtocolP", "arrEventos"]
 - !private ["So16NSObjectProtocolP", "bFiltrar"]
@@ -763,7 +759,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "endRefreshing"]
 - !private ["So16NSObjectProtocolP", "identifier"]
 - !private ["So16NSObjectProtocolP", "indexPathForSelectedRow"]
-- ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "isEnabled"]
 - !private ["So16NSObjectProtocolP", "isHidden"]
 - !private ["So16NSObjectProtocolP", "key"]
@@ -793,11 +789,8 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "value"]
 - !private ["So16NSObjectProtocolP", "viewDidLoad"]
 - !private ["So16NSObjectProtocolP", "viewHappened"]
-- ["So16NSObjectProtocolP", ""]
 - !private ["So14NSSecureCodingP", "contains"]
-- ["So14NSSecureCodingP", "init"]
 - !private ["So8NSStringC", "contains"]
-- ["So8NSStringC", "init"]
 - !private ["s9OptionSetP", "normal"]
 - !private ["s22RandomAccessCollectionP", "append"]
 - !private ["s22RandomAccessCollectionP", "count"]
@@ -826,13 +819,6 @@ depends-member:
 - !private ["s26RangeReplaceableCollectionP", "sLugar"]
 - !private ["s26RangeReplaceableCollectionP", "sNombre"]
 - !private ["s26RangeReplaceableCollectionP", "subscript"]
-- !private ["s21RangeReplaceableSliceV", "sCategoria"]
-- !private ["s21RangeReplaceableSliceV", "sDescripcion"]
-- !private ["s21RangeReplaceableSliceV", "sExpositor"]
-- !private ["s21RangeReplaceableSliceV", "sFecha"]
-- !private ["s21RangeReplaceableSliceV", "sHora"]
-- !private ["s21RangeReplaceableSliceV", "sLugar"]
-- !private ["s21RangeReplaceableSliceV", "sNombre"]
 - !private ["s16RawRepresentableP", "childAdded"]
 - !private ["s16RawRepresentableP", "normal"]
 - !private ["s16RawRepresentableP", "value"]
@@ -853,6 +839,13 @@ depends-member:
 - !private ["s8SequenceP", "sNombre"]
 - !private ["s8SequenceP", "subscript"]
 - !private ["s10SetAlgebraP", "normal"]
+- !private ["s5SliceV", "sCategoria"]
+- !private ["s5SliceV", "sDescripcion"]
+- !private ["s5SliceV", "sExpositor"]
+- !private ["s5SliceV", "sFecha"]
+- !private ["s5SliceV", "sHora"]
+- !private ["s5SliceV", "sLugar"]
+- !private ["s5SliceV", "sNombre"]
 - !private ["SS", "contains"]
 - ["SS", "init"]
 - !private ["s14StringProtocolP", "contains"]
@@ -945,6 +938,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "Indice"]
 - !private ["So21UIAppearanceContainerP", "Lugar"]
 - !private ["So21UIAppearanceContainerP", "NombrePabellon"]
+- ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "arrDatos"]
 - !private ["So21UIAppearanceContainerP", "arrEventos"]
 - !private ["So21UIAppearanceContainerP", "bFiltrar"]
@@ -976,7 +970,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "titulo"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - !private ["So21UIAppearanceContainerP", "viewHappened"]
-- ["So21UIAppearanceContainerP", ""]
 - !private ["So8UIButtonC", "isEnabled"]
 - !private ["So8UIButtonC", "isHidden"]
 - !private ["So8UIButtonC", "setTitle"]
@@ -992,6 +985,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "Indice"]
 - !private ["So18UIContentContainerP", "Lugar"]
 - !private ["So18UIContentContainerP", "NombrePabellon"]
+- ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "arrDatos"]
 - !private ["So18UIContentContainerP", "arrEventos"]
 - !private ["So18UIContentContainerP", "bFiltrar"]
@@ -1013,7 +1007,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "titulo"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - !private ["So18UIContentContainerP", "viewHappened"]
-- ["So18UIContentContainerP", ""]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
 - !private ["So9UIControlC", "endRefreshing"]
 - !private ["So9UIControlC", "isEnabled"]
@@ -1055,6 +1048,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "Indice"]
 - !private ["So18UIFocusEnvironmentP", "Lugar"]
 - !private ["So18UIFocusEnvironmentP", "NombrePabellon"]
+- ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "arrDatos"]
 - !private ["So18UIFocusEnvironmentP", "arrEventos"]
 - !private ["So18UIFocusEnvironmentP", "bFiltrar"]
@@ -1086,7 +1080,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "titulo"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - !private ["So18UIFocusEnvironmentP", "viewHappened"]
-- ["So18UIFocusEnvironmentP", ""]
 - !private ["So11UIFocusItemP", "dequeueReusableCell"]
 - !private ["So11UIFocusItemP", "detailTextLabel"]
 - !private ["So11UIFocusItemP", "endRefreshing"]
@@ -1113,6 +1106,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "Indice"]
 - !private ["So30UIPasteConfigurationSupportingP", "Lugar"]
 - !private ["So30UIPasteConfigurationSupportingP", "NombrePabellon"]
+- ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "arrDatos"]
 - !private ["So30UIPasteConfigurationSupportingP", "arrEventos"]
 - !private ["So30UIPasteConfigurationSupportingP", "bFiltrar"]
@@ -1144,7 +1138,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "titulo"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewHappened"]
-- ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So22UIPickerViewDataSourceP", "arrEventos"]
 - !private ["So20UIPickerViewDelegateP", "arrEventos"]
 - !private ["So16UIRefreshControlC", "endRefreshing"]
@@ -1227,6 +1220,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "Indice"]
 - !private ["So30UIResponderStandardEditActionsP", "Lugar"]
 - !private ["So30UIResponderStandardEditActionsP", "NombrePabellon"]
+- ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "arrDatos"]
 - !private ["So30UIResponderStandardEditActionsP", "arrEventos"]
 - !private ["So30UIResponderStandardEditActionsP", "bFiltrar"]
@@ -1258,7 +1252,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "titulo"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - !private ["So30UIResponderStandardEditActionsP", "viewHappened"]
-- ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So12UIScrollViewC", "dequeueReusableCell"]
 - !private ["So12UIScrollViewC", "indexPathForSelectedRow"]
 - !private ["So12UIScrollViewC", "reloadData"]
@@ -1269,6 +1262,7 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "Handle"]
 - !private ["So20UIScrollViewDelegateP", "Indice"]
 - !private ["So20UIScrollViewDelegateP", "NombrePabellon"]
+- ["So20UIScrollViewDelegateP", ""]
 - !private ["So20UIScrollViewDelegateP", "arrDatos"]
 - !private ["So20UIScrollViewDelegateP", "arrEventos"]
 - !private ["So20UIScrollViewDelegateP", "bFiltrar"]
@@ -1286,7 +1280,6 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "tableView"]
 - !private ["So20UIScrollViewDelegateP", "viewDidLoad"]
 - !private ["So20UIScrollViewDelegateP", "viewHappened"]
-- ["So20UIScrollViewDelegateP", ""]
 - !private ["So35UISpringLoadedInteractionSupportingP", "dequeueReusableCell"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "indexPathForSelectedRow"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "isEnabled"]
@@ -1305,6 +1298,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "Indice"]
 - !private ["So16UIStateRestoringP", "Lugar"]
 - !private ["So16UIStateRestoringP", "NombrePabellon"]
+- ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "arrDatos"]
 - !private ["So16UIStateRestoringP", "arrEventos"]
 - !private ["So16UIStateRestoringP", "bFiltrar"]
@@ -1326,7 +1320,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "titulo"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - !private ["So16UIStateRestoringP", "viewHappened"]
-- ["So16UIStateRestoringP", ""]
 - !private ["So17UIStoryboardSegueC", "destination"]
 - !private ["So17UIStoryboardSegueC", "identifier"]
 - !private ["So18UITabBarControllerC", "selectedIndex"]
@@ -1358,6 +1351,7 @@ depends-member:
 - ["So21UITableViewControllerC", "UITableViewCell"]
 - !private ["So21UITableViewControllerC", "ViewControllerFiltrar"]
 - !private ["So21UITableViewControllerC", "ViewControllerInfoActividad"]
+- ["So21UITableViewControllerC", ""]
 - ["So21UITableViewControllerC", "arrDatos"]
 - ["So21UITableViewControllerC", "arrEventos"]
 - ["So21UITableViewControllerC", "arrEventosFiltrados"]
@@ -1384,7 +1378,6 @@ depends-member:
 - ["So21UITableViewControllerC", "viewDidAppear"]
 - ["So21UITableViewControllerC", "viewDidLoad"]
 - ["So21UITableViewControllerC", "viewHappened"]
-- ["So21UITableViewControllerC", ""]
 - !private ["So21UITableViewDataSourceP", "Database"]
 - !private ["So21UITableViewDataSourceP", "Evento"]
 - !private ["So21UITableViewDataSourceP", "FinalIndice"]
@@ -1392,6 +1385,7 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "Handle"]
 - !private ["So21UITableViewDataSourceP", "Indice"]
 - !private ["So21UITableViewDataSourceP", "NombrePabellon"]
+- ["So21UITableViewDataSourceP", ""]
 - !private ["So21UITableViewDataSourceP", "arrDatos"]
 - !private ["So21UITableViewDataSourceP", "arrEventos"]
 - !private ["So21UITableViewDataSourceP", "bFiltrar"]
@@ -1409,7 +1403,6 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "tableView"]
 - !private ["So21UITableViewDataSourceP", "viewDidLoad"]
 - !private ["So21UITableViewDataSourceP", "viewHappened"]
-- ["So21UITableViewDataSourceP", ""]
 - !private ["So19UITableViewDelegateP", "Database"]
 - !private ["So19UITableViewDelegateP", "Evento"]
 - !private ["So19UITableViewDelegateP", "FinalIndice"]
@@ -1417,6 +1410,7 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "Handle"]
 - !private ["So19UITableViewDelegateP", "Indice"]
 - !private ["So19UITableViewDelegateP", "NombrePabellon"]
+- ["So19UITableViewDelegateP", ""]
 - !private ["So19UITableViewDelegateP", "arrDatos"]
 - !private ["So19UITableViewDelegateP", "arrEventos"]
 - !private ["So19UITableViewDelegateP", "bFiltrar"]
@@ -1434,7 +1428,6 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "tableView"]
 - !private ["So19UITableViewDelegateP", "viewDidLoad"]
 - !private ["So19UITableViewDelegateP", "viewHappened"]
-- ["So19UITableViewDelegateP", ""]
 - !private ["So18UITraitEnvironmentP", "Categoria"]
 - !private ["So18UITraitEnvironmentP", "Database"]
 - !private ["So18UITraitEnvironmentP", "Evento"]
@@ -1447,6 +1440,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "Indice"]
 - !private ["So18UITraitEnvironmentP", "Lugar"]
 - !private ["So18UITraitEnvironmentP", "NombrePabellon"]
+- ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "arrDatos"]
 - !private ["So18UITraitEnvironmentP", "arrEventos"]
 - !private ["So18UITraitEnvironmentP", "bFiltrar"]
@@ -1478,7 +1472,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "titulo"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - !private ["So18UITraitEnvironmentP", "viewHappened"]
-- ["So18UITraitEnvironmentP", ""]
 - !private ["So6UIViewC", "dequeueReusableCell"]
 - !private ["So6UIViewC", "detailTextLabel"]
 - !private ["So6UIViewC", "endRefreshing"]
@@ -1566,21 +1559,6 @@ depends-member:
 - !private ["s14_ArrayProtocolP", "sLugar"]
 - !private ["s14_ArrayProtocolP", "sNombre"]
 - !private ["s14_ArrayProtocolP", "subscript"]
-- !private ["s23_BidirectionalIndexableP", "append"]
-- !private ["s23_BidirectionalIndexableP", "contains"]
-- !private ["s23_BidirectionalIndexableP", "count"]
-- ["s23_BidirectionalIndexableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "isEmpty"]
-- !private ["s23_BidirectionalIndexableP", "removeAll"]
-- !private ["s23_BidirectionalIndexableP", "row"]
-- !private ["s23_BidirectionalIndexableP", "sCategoria"]
-- !private ["s23_BidirectionalIndexableP", "sDescripcion"]
-- !private ["s23_BidirectionalIndexableP", "sExpositor"]
-- !private ["s23_BidirectionalIndexableP", "sFecha"]
-- !private ["s23_BidirectionalIndexableP", "sHora"]
-- !private ["s23_BidirectionalIndexableP", "sLugar"]
-- !private ["s23_BidirectionalIndexableP", "sNombre"]
-- !private ["s23_BidirectionalIndexableP", "subscript"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "dequeueReusableCell"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "detailTextLabel"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "endRefreshing"]
@@ -1615,37 +1593,6 @@ depends-member:
 - !private ["s33_ExpressibleByStringInterpolationP", "contains"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "contains"]
-- ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "append"]
-- !private ["s10_IndexableP", "contains"]
-- !private ["s10_IndexableP", "count"]
-- ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "isEmpty"]
-- !private ["s10_IndexableP", "removeAll"]
-- !private ["s10_IndexableP", "row"]
-- !private ["s10_IndexableP", "sCategoria"]
-- !private ["s10_IndexableP", "sDescripcion"]
-- !private ["s10_IndexableP", "sExpositor"]
-- !private ["s10_IndexableP", "sFecha"]
-- !private ["s10_IndexableP", "sHora"]
-- !private ["s10_IndexableP", "sLugar"]
-- !private ["s10_IndexableP", "sNombre"]
-- !private ["s10_IndexableP", "subscript"]
-- !private ["s14_IndexableBaseP", "append"]
-- !private ["s14_IndexableBaseP", "contains"]
-- !private ["s14_IndexableBaseP", "count"]
-- ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "isEmpty"]
-- !private ["s14_IndexableBaseP", "removeAll"]
-- !private ["s14_IndexableBaseP", "row"]
-- !private ["s14_IndexableBaseP", "sCategoria"]
-- !private ["s14_IndexableBaseP", "sDescripcion"]
-- !private ["s14_IndexableBaseP", "sExpositor"]
-- !private ["s14_IndexableBaseP", "sFecha"]
-- !private ["s14_IndexableBaseP", "sHora"]
-- !private ["s14_IndexableBaseP", "sLugar"]
-- !private ["s14_IndexableBaseP", "sNombre"]
-- !private ["s14_IndexableBaseP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Categoria"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Database"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Evento"]
@@ -1658,6 +1605,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Indice"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Lugar"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NombrePabellon"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "arrDatos"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "arrEventos"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "bFiltrar"]
@@ -1677,7 +1625,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "endRefreshing"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "identifier"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "indexPathForSelectedRow"]
-- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isEnabled"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isHidden"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "key"]
@@ -1707,20 +1655,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "value"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewHappened"]
-- ["10Foundation27_KeyValueCodingAndObservingP", ""]
-- !private ["s17_MutableIndexableP", "append"]
-- !private ["s17_MutableIndexableP", "count"]
-- !private ["s17_MutableIndexableP", "isEmpty"]
-- !private ["s17_MutableIndexableP", "removeAll"]
-- !private ["s17_MutableIndexableP", "row"]
-- !private ["s17_MutableIndexableP", "sCategoria"]
-- !private ["s17_MutableIndexableP", "sDescripcion"]
-- !private ["s17_MutableIndexableP", "sExpositor"]
-- !private ["s17_MutableIndexableP", "sFecha"]
-- !private ["s17_MutableIndexableP", "sHora"]
-- !private ["s17_MutableIndexableP", "sLugar"]
-- !private ["s17_MutableIndexableP", "sNombre"]
-- !private ["s17_MutableIndexableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "contains"]
@@ -1730,33 +1664,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "removeAll"]
 - !private ["s21_ObjectiveCBridgeableP", "row"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
-- !private ["s22_RandomAccessIndexableP", "append"]
-- !private ["s22_RandomAccessIndexableP", "count"]
-- !private ["s22_RandomAccessIndexableP", "isEmpty"]
-- !private ["s22_RandomAccessIndexableP", "removeAll"]
-- !private ["s22_RandomAccessIndexableP", "row"]
-- !private ["s22_RandomAccessIndexableP", "sCategoria"]
-- !private ["s22_RandomAccessIndexableP", "sDescripcion"]
-- !private ["s22_RandomAccessIndexableP", "sExpositor"]
-- !private ["s22_RandomAccessIndexableP", "sFecha"]
-- !private ["s22_RandomAccessIndexableP", "sHora"]
-- !private ["s22_RandomAccessIndexableP", "sLugar"]
-- !private ["s22_RandomAccessIndexableP", "sNombre"]
-- !private ["s22_RandomAccessIndexableP", "subscript"]
-- !private ["s26_RangeReplaceableIndexableP", "append"]
-- !private ["s26_RangeReplaceableIndexableP", "contains"]
-- !private ["s26_RangeReplaceableIndexableP", "count"]
-- ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "isEmpty"]
-- !private ["s26_RangeReplaceableIndexableP", "removeAll"]
-- !private ["s26_RangeReplaceableIndexableP", "sCategoria"]
-- !private ["s26_RangeReplaceableIndexableP", "sDescripcion"]
-- !private ["s26_RangeReplaceableIndexableP", "sExpositor"]
-- !private ["s26_RangeReplaceableIndexableP", "sFecha"]
-- !private ["s26_RangeReplaceableIndexableP", "sHora"]
-- !private ["s26_RangeReplaceableIndexableP", "sLugar"]
-- !private ["s26_RangeReplaceableIndexableP", "sNombre"]
-- !private ["s26_RangeReplaceableIndexableP", "subscript"]
 - !private ["s16_SwiftStringViewP", "contains"]
 - ["s16_SwiftStringViewP", "init"]
 depends-nominal:
@@ -1790,30 +1697,29 @@ depends-nominal:
 - "s33ExpressibleByUnicodeScalarLiteralP"
 - "s8HashableP"
 - !private "10Foundation9IndexPathV"
+- !private "s22LazyCollectionProtocolP"
+- !private "s20LazySequenceProtocolP"
 - "s25LosslessStringConvertibleP"
 - "s10MirrorPathP"
-- !private "s25MutableBidirectionalSliceV"
 - !private "s17MutableCollectionP"
-- !private "s24MutableRandomAccessSliceV"
-- !private "s12MutableSliceV"
 - "So8NSCodingP"
-- "So9NSCopyingP"
+- !private "So9NSCopyingP"
 - "So26NSExtensionRequestHandlingP"
-- "So21NSItemProviderReadingP"
-- "So21NSItemProviderWritingP"
-- "So16NSMutableCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
-- "So14NSSecureCodingP"
-- "So8NSStringC"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
 - !private "s9OptionSetP"
 - !private "s22RandomAccessCollectionP"
 - "s26RangeReplaceableCollectionP"
-- !private "s21RangeReplaceableSliceV"
 - !private "s16RawRepresentableP"
 - !private "10Foundation20ReferenceConvertibleP"
 - "s8SequenceP"
 - !private "s10SetAlgebraP"
+- !private "s5SliceV"
 - "SS"
 - "s14StringProtocolP"
 - "13ProyectoFinal34TableViewControllerActividadesCultC"
@@ -1860,7 +1766,6 @@ depends-nominal:
 - !private "13ProyectoFinal21ViewControllerFiltrarC"
 - !private "13ProyectoFinal27ViewControllerInfoActividadC"
 - !private "s14_ArrayProtocolP"
-- "s23_BidirectionalIndexableP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
@@ -1869,14 +1774,9 @@ depends-nominal:
 - "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
-- "s35_HasCustomAnyHashableRepresentationP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s17_MutableIndexableP"
 - "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- "s26_RangeReplaceableIndexableP"
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -1928,4 +1828,17 @@ depends-external:
 - "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-interface-hash: "f609597f097de1dd6ce730e06cbd845c"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/MessageUI.framework/Headers/MessageUI.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/EventKit.framework/Headers/EventKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "1409473dd953201dc45e7a1cdaf5ae72"

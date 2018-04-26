@@ -1,44 +1,44 @@
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/arena.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/block.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/block_builder.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/bloom.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/builder.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/c.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/cache.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/coding.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/comparator.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/crc32c.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/db_impl.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/db_iter.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/dbformat.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/dumpfile.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/env.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/env_posix.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/filename.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/filter_block.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/filter_policy.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/format.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/hash.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/histogram.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/iterator.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/leveldb-library-dummy.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/log_reader.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/log_writer.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/logging.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/memtable.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/merger.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/options.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/port_posix.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/port_posix_sse.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/repair.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/status.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/table.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/table_builder.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/table_cache.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/testharness.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/testutil.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/two_level_iterator.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/version_edit.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/version_set.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/write_batch.o
-/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Móviles IOS/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/leveldb_vers.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/arena.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/block.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/block_builder.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/bloom.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/builder.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/c.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/cache.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/coding.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/comparator.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/crc32c.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/db_impl.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/db_iter.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/dbformat.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/dumpfile.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/env.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/env_posix.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/filename.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/filter_block.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/filter_policy.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/format.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/hash.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/histogram.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/iterator.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/leveldb-library-dummy.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/log_reader.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/log_writer.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/logging.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/memtable.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/merger.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/options.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/port_posix.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/port_posix_sse.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/repair.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/status.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/table.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/table_builder.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/table_cache.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/testharness.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/testutil.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/two_level_iterator.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/version_edit.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/version_set.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/write_batch.o
+/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/Objects-normal/armv7/leveldb_vers.o

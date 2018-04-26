@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -44,9 +44,8 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aGL-Zp-ggK">
                                                 <rect key="frame" x="0.0" y="239" width="320" height="166"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Un encuentro innovador, con apertura a la participaciòn ciudadana y una visiòn demogràfica del futuro" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Czh-Ee-O7W">
-                                                        <rect key="frame" x="34" y="-5" width="252" height="163"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Un encuentro innovador, con apertura a la participación ciudadana y una visión demográfica del futuro" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Czh-Ee-O7W">
+                                                        <rect key="frame" x="8" y="8" width="304" height="150"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <color key="textColor" red="0.20407393700000001" green="0.53739453179999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -56,14 +55,17 @@
                                                 <color key="tintColor" red="0.20407393700000001" green="0.53739453179999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="166" id="0Dd-iv-aIm"/>
+                                                    <constraint firstItem="Czh-Ee-O7W" firstAttribute="leading" secondItem="aGL-Zp-ggK" secondAttribute="leading" constant="8" id="0gv-yD-gT4"/>
+                                                    <constraint firstItem="Czh-Ee-O7W" firstAttribute="top" secondItem="aGL-Zp-ggK" secondAttribute="top" constant="8" id="D7c-6Y-i1J"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Czh-Ee-O7W" secondAttribute="trailing" constant="8" id="HX8-nn-GHW"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Czh-Ee-O7W" secondAttribute="bottom" constant="8" id="e41-DC-iE9"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gun-6L-Cno">
                                                 <rect key="frame" x="0.0" y="523" width="320" height="235"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAr-Z2-sX6">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAr-Z2-sX6">
                                                         <rect key="frame" x="28" y="19" width="265" height="197"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <string key="text">Es el primer encuentro intergeneracional entre experiencia y juventud que impulsa una vida mas plena al trabaja juntos y construir una sociedad mas justa y equilibrada</string>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -74,15 +76,18 @@
                                                 <color key="tintColor" red="0.20407393700000001" green="0.53739453179999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="235" id="7ki-NQ-v38"/>
+                                                    <constraint firstItem="vAr-Z2-sX6" firstAttribute="top" secondItem="Gun-6L-Cno" secondAttribute="top" constant="19" id="hJV-Q0-moE"/>
+                                                    <constraint firstAttribute="bottom" secondItem="vAr-Z2-sX6" secondAttribute="bottom" constant="19" id="ngJ-mw-9FV"/>
+                                                    <constraint firstAttribute="trailing" secondItem="vAr-Z2-sX6" secondAttribute="trailing" constant="27" id="saS-O8-ej2"/>
+                                                    <constraint firstItem="vAr-Z2-sX6" firstAttribute="leading" secondItem="Gun-6L-Cno" secondAttribute="leading" constant="28" id="zcV-5T-mxq"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Q1-Mb-fN3">
                                                 <rect key="frame" x="0.0" y="903" width="320" height="233"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPv-P8-l7z">
-                                                        <rect key="frame" x="33" y="22" width="255" height="191"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <string key="text">Reuniremos a expertos, acadèmicos, representantes de sectores pùblicos, sociales y privados, universitarios e investigadores tecnològicos quienes compartiràn sus propuestas para mejorar la calidad de vida de  las personas mayores</string>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPv-P8-l7z">
+                                                        <rect key="frame" x="8" y="22" width="304" height="191"/>
+                                                        <string key="text">Reuniremos a expertos, académicos, representantes de sectores públicos, sociales y privados, universitarios e investigadores tecnológicos quienes compartirán sus propuestas para mejorar la calidad de vida de  las personas mayores</string>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <color key="textColor" red="0.20407393700000001" green="0.53739453179999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -91,7 +96,11 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" red="0.20407393700000001" green="0.53739453179999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
+                                                    <constraint firstItem="oPv-P8-l7z" firstAttribute="leading" secondItem="8Q1-Mb-fN3" secondAttribute="leading" constant="8" id="2rf-dY-DbS"/>
+                                                    <constraint firstItem="oPv-P8-l7z" firstAttribute="top" secondItem="8Q1-Mb-fN3" secondAttribute="top" constant="22" id="Dwb-o3-vSw"/>
+                                                    <constraint firstAttribute="trailing" secondItem="oPv-P8-l7z" secondAttribute="trailing" constant="8" id="PFv-De-3Vb"/>
                                                     <constraint firstAttribute="height" constant="233" id="kvU-em-Qzh"/>
+                                                    <constraint firstAttribute="bottom" secondItem="oPv-P8-l7z" secondAttribute="bottom" constant="20" id="qMi-st-LnB"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -152,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="542" y="-465"/>
+            <point key="canvasLocation" x="541.875" y="-465.84507042253523"/>
         </scene>
         <!--Info View Controller-->
         <scene sceneID="f8L-Lw-s1I">
@@ -598,7 +607,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Categoría" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0AM-Su-pCX">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Categoría:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0AM-Su-pCX">
                                 <rect key="frame" x="16" y="465" width="107" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -641,13 +650,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Categoría" lineBreakMode="characterWrap" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jGC-Ob-vNQ">
-                                <rect key="frame" x="131" y="463" width="173" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fecha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwg-oj-gXb">
                                 <rect key="frame" x="16" y="368" width="107" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -666,6 +668,13 @@
                                 <rect key="frame" x="128" y="284" width="173" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Categoría" lineBreakMode="characterWrap" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jGC-Ob-vNQ">
+                                <rect key="frame" x="127" y="463" width="173" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1019,6 +1028,6 @@
         <image name="unchecked" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="edU-Ux-sK0"/>
+        <segue reference="x69-QL-JhF"/>
     </inferredMetricsTieBreakers>
 </document>

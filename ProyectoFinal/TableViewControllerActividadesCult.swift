@@ -47,6 +47,7 @@ class TableViewControllerActividadesCult: UITableViewController {
             switch tabBarController?.selectedIndex{
             case 2?:
                 arrEventos.removeAll()
+                self.tableView.reloadData()
                 butTitle.text = "Actividades Culturales"                
                 let refActividadesCulturales = self.FireBaseRef?.child("ActividadesCulturales")
                 llenarEvento(ref: refActividadesCulturales!)
@@ -56,6 +57,7 @@ class TableViewControllerActividadesCult: UITableViewController {
                 butFiltrar.isEnabled = true
             case 3?:
                 arrDatos.removeAll()
+                self.tableView.reloadData()
                 butRegresar.isEnabled = false
                 butRegresar.isHidden = true
                 butFiltrar.isEnabled = false
@@ -79,6 +81,7 @@ class TableViewControllerActividadesCult: UITableViewController {
             butFiltrar.isHidden = false
             butFiltrar.isEnabled = true
             arrEventos.removeAll()
+            self.tableView.reloadData()
             butTitle.text = NombrePabellon
             let refAct = self.FireBaseRef?.child("Pabellones").child(NombrePabellon)
             llenarEvento(ref: refAct!)
@@ -91,6 +94,7 @@ class TableViewControllerActividadesCult: UITableViewController {
             butRegresar.isHidden = false
             butRegresar.isEnabled = true
             arrEventos.removeAll()
+            self.tableView.reloadData()
             switch FinalIndice{
             case 0?:
                 butTitle.text = "Eje Derechos Humanos"
@@ -215,6 +219,7 @@ class TableViewControllerActividadesCult: UITableViewController {
                 let indice = tableView.indexPathForSelectedRow
                 NombrePabellon = arrDatos[(indice?.row)!]
                 arrDatos.removeAll()
+                self.tableView.reloadData()
                 butTitle.text = NombrePabellon
                 let refAct = self.FireBaseRef?.child("Pabellones").child(NombrePabellon)
                 llenarEvento(ref: refAct!)
@@ -268,6 +273,7 @@ class TableViewControllerActividadesCult: UITableViewController {
             butTitle.text = "Pabellones"
             arrEventos.removeAll()
             arrDatos.removeAll()
+            self.tableView.reloadData()
             NombrePabellon = ""
             butRegresar.isHidden = true
             butRegresar.isEnabled = false
