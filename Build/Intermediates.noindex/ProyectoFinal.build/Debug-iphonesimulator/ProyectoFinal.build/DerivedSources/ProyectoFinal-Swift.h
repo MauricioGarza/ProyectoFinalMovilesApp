@@ -279,14 +279,15 @@ SWIFT_CLASS("_TtC13ProyectoFinal34TableViewControllerActividadesCult")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified butRegresar;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified butFiltrar;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified butTitle;
-- (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString * _Nonnull)identifier sender:(id _Nullable)sender SWIFT_WARN_UNUSED_RESULT;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (IBAction)unwindWithUnwindSegue:(UIStoryboardSegue * _Nonnull)unwindSegue;
 - (IBAction)butRegresar:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -298,6 +299,9 @@ SWIFT_CLASS("_TtC13ProyectoFinal34TableViewControllerActividadesCult")
 
 SWIFT_CLASS("_TtC13ProyectoFinal21ViewControllerFiltrar")
 @interface ViewControllerFiltrar : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btFecha;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btEdad;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btCategoria;
 @property (nonatomic, weak) IBOutlet UIDatePicker * _Null_unspecified datePicker;
 @property (nonatomic, strong) IBOutlet UIPickerView * _Null_unspecified pickerEdades;
 @property (nonatomic, strong) IBOutlet UIPickerView * _Null_unspecified pickerCategorias;
@@ -306,8 +310,11 @@ SWIFT_CLASS("_TtC13ProyectoFinal21ViewControllerFiltrar")
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView * _Nonnull)pickerView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)pickerView:(UIPickerView * _Nonnull)pickerView numberOfRowsInComponent:(NSInteger)component SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)pickerView:(UIPickerView * _Nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component SWIFT_WARN_UNUSED_RESULT;
+- (void)pickerView:(UIPickerView * _Nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
 - (void)didReceiveMemoryWarning;
 - (IBAction)checkButon:(UIButton * _Nonnull)sender;
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString * _Nonnull)identifier sender:(id _Nullable)sender SWIFT_WARN_UNUSED_RESULT;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (IBAction)butRegresar:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

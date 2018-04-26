@@ -8,7 +8,11 @@ provides-member:
 provides-dynamic-lookup:
 - "didReceiveMemoryWarning"
 - "lbPrimerView"
+- "lbSegundoView"
+- "lbTercerView"
 - "primerView"
+- "segundoView"
+- "tercerView"
 - "viewDidLoad"
 depends-top-level:
 - "AssignmentPrecedence"
@@ -26,52 +30,64 @@ depends-member:
 - !private ["So13CAMediaTimingP", "borderWidth"]
 - !private ["So13CAMediaTimingP", "cornerRadius"]
 - !private ["s7CVarArgP", "UIColor"]
-- !private ["s7CVarArgP", "blue"]
 - !private ["s7CVarArgP", "borderColor"]
 - !private ["s7CVarArgP", "borderWidth"]
 - !private ["s7CVarArgP", "cgColor"]
 - !private ["s7CVarArgP", "cornerRadius"]
 - !private ["s7CVarArgP", "didReceiveMemoryWarning"]
+- !private ["s7CVarArgP", "green"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "layer"]
 - !private ["s7CVarArgP", "primerView"]
+- !private ["s7CVarArgP", "segundoView"]
+- !private ["s7CVarArgP", "tercerView"]
 - !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["s7CVarArgP", "white"]
 - ["s7CVarArgP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "UIColor"]
-- !private ["s28CustomDebugStringConvertibleP", "blue"]
 - !private ["s28CustomDebugStringConvertibleP", "borderColor"]
 - !private ["s28CustomDebugStringConvertibleP", "borderWidth"]
 - !private ["s28CustomDebugStringConvertibleP", "cgColor"]
 - !private ["s28CustomDebugStringConvertibleP", "cornerRadius"]
 - !private ["s28CustomDebugStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s28CustomDebugStringConvertibleP", "green"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "layer"]
 - !private ["s28CustomDebugStringConvertibleP", "primerView"]
+- !private ["s28CustomDebugStringConvertibleP", "segundoView"]
+- !private ["s28CustomDebugStringConvertibleP", "tercerView"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s28CustomDebugStringConvertibleP", "white"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "UIColor"]
-- !private ["s23CustomStringConvertibleP", "blue"]
 - !private ["s23CustomStringConvertibleP", "borderColor"]
 - !private ["s23CustomStringConvertibleP", "borderWidth"]
 - !private ["s23CustomStringConvertibleP", "cgColor"]
 - !private ["s23CustomStringConvertibleP", "cornerRadius"]
 - !private ["s23CustomStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s23CustomStringConvertibleP", "green"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "layer"]
 - !private ["s23CustomStringConvertibleP", "primerView"]
+- !private ["s23CustomStringConvertibleP", "segundoView"]
+- !private ["s23CustomStringConvertibleP", "tercerView"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["s23CustomStringConvertibleP", "white"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s9EquatableP", "UIColor"]
-- !private ["s9EquatableP", "blue"]
 - !private ["s9EquatableP", "borderColor"]
 - !private ["s9EquatableP", "borderWidth"]
 - !private ["s9EquatableP", "cgColor"]
 - !private ["s9EquatableP", "cornerRadius"]
 - !private ["s9EquatableP", "didReceiveMemoryWarning"]
+- !private ["s9EquatableP", "green"]
 - !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "layer"]
 - !private ["s9EquatableP", "primerView"]
+- !private ["s9EquatableP", "segundoView"]
+- !private ["s9EquatableP", "tercerView"]
 - !private ["s9EquatableP", "viewDidLoad"]
+- !private ["s9EquatableP", "white"]
 - ["s9EquatableP", ""]
 - !private ["13ProyectoFinal19FirstViewControllerC", "UIColor"]
 - ["13ProyectoFinal19FirstViewControllerC", "UILabel"]
@@ -80,75 +96,99 @@ depends-member:
 - ["13ProyectoFinal19FirstViewControllerC", "didReceiveMemoryWarning"]
 - ["13ProyectoFinal19FirstViewControllerC", "init"]
 - ["13ProyectoFinal19FirstViewControllerC", "lbPrimerView"]
+- ["13ProyectoFinal19FirstViewControllerC", "lbSegundoView"]
+- ["13ProyectoFinal19FirstViewControllerC", "lbTercerView"]
 - ["13ProyectoFinal19FirstViewControllerC", "primerView"]
+- ["13ProyectoFinal19FirstViewControllerC", "segundoView"]
+- ["13ProyectoFinal19FirstViewControllerC", "tercerView"]
 - ["13ProyectoFinal19FirstViewControllerC", "viewDidLoad"]
 - !private ["s8HashableP", "UIColor"]
-- !private ["s8HashableP", "blue"]
 - !private ["s8HashableP", "borderColor"]
 - !private ["s8HashableP", "borderWidth"]
 - !private ["s8HashableP", "cgColor"]
 - !private ["s8HashableP", "cornerRadius"]
 - !private ["s8HashableP", "didReceiveMemoryWarning"]
+- !private ["s8HashableP", "green"]
 - !private ["s8HashableP", "init"]
 - !private ["s8HashableP", "layer"]
 - !private ["s8HashableP", "primerView"]
+- !private ["s8HashableP", "segundoView"]
+- !private ["s8HashableP", "tercerView"]
 - !private ["s8HashableP", "viewDidLoad"]
+- !private ["s8HashableP", "white"]
 - ["s8HashableP", ""]
 - !private ["So8NSCodingP", "UIColor"]
-- !private ["So8NSCodingP", "blue"]
 - !private ["So8NSCodingP", "borderColor"]
 - !private ["So8NSCodingP", "borderWidth"]
 - !private ["So8NSCodingP", "cgColor"]
 - !private ["So8NSCodingP", "cornerRadius"]
 - !private ["So8NSCodingP", "didReceiveMemoryWarning"]
+- !private ["So8NSCodingP", "green"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "layer"]
 - !private ["So8NSCodingP", "primerView"]
+- !private ["So8NSCodingP", "segundoView"]
+- !private ["So8NSCodingP", "tercerView"]
 - !private ["So8NSCodingP", "viewDidLoad"]
+- !private ["So8NSCodingP", "white"]
 - ["So8NSCodingP", ""]
-- !private ["So9NSCopyingP", "blue"]
 - !private ["So9NSCopyingP", "cgColor"]
+- !private ["So9NSCopyingP", "green"]
+- !private ["So9NSCopyingP", "white"]
 - !private ["So26NSExtensionRequestHandlingP", "UIColor"]
 - !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "primerView"]
+- !private ["So26NSExtensionRequestHandlingP", "segundoView"]
+- !private ["So26NSExtensionRequestHandlingP", "tercerView"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - ["So26NSExtensionRequestHandlingP", ""]
-- !private ["So21NSItemProviderReadingP", "blue"]
 - !private ["So21NSItemProviderReadingP", "cgColor"]
-- !private ["So21NSItemProviderWritingP", "blue"]
+- !private ["So21NSItemProviderReadingP", "green"]
+- !private ["So21NSItemProviderReadingP", "white"]
 - !private ["So21NSItemProviderWritingP", "cgColor"]
+- !private ["So21NSItemProviderWritingP", "green"]
+- !private ["So21NSItemProviderWritingP", "white"]
 - !private ["So8NSObjectC", "UIColor"]
 - ["So8NSObjectC", "UILabel"]
 - ["So8NSObjectC", "UIView"]
-- !private ["So8NSObjectC", "blue"]
 - !private ["So8NSObjectC", "borderColor"]
 - !private ["So8NSObjectC", "borderWidth"]
 - !private ["So8NSObjectC", "cgColor"]
 - !private ["So8NSObjectC", "cornerRadius"]
 - ["So8NSObjectC", "didReceiveMemoryWarning"]
+- !private ["So8NSObjectC", "green"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "layer"]
 - ["So8NSObjectC", "lbPrimerView"]
+- ["So8NSObjectC", "lbSegundoView"]
+- ["So8NSObjectC", "lbTercerView"]
 - ["So8NSObjectC", "primerView"]
+- ["So8NSObjectC", "segundoView"]
+- ["So8NSObjectC", "tercerView"]
 - ["So8NSObjectC", "viewDidLoad"]
+- !private ["So8NSObjectC", "white"]
 - !private ["So16NSObjectProtocolP", "UIColor"]
-- !private ["So16NSObjectProtocolP", "blue"]
 - !private ["So16NSObjectProtocolP", "borderColor"]
 - !private ["So16NSObjectProtocolP", "borderWidth"]
 - !private ["So16NSObjectProtocolP", "cgColor"]
 - !private ["So16NSObjectProtocolP", "cornerRadius"]
 - !private ["So16NSObjectProtocolP", "didReceiveMemoryWarning"]
+- !private ["So16NSObjectProtocolP", "green"]
 - !private ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "layer"]
 - !private ["So16NSObjectProtocolP", "primerView"]
+- !private ["So16NSObjectProtocolP", "segundoView"]
+- !private ["So16NSObjectProtocolP", "tercerView"]
 - !private ["So16NSObjectProtocolP", "viewDidLoad"]
+- !private ["So16NSObjectProtocolP", "white"]
 - ["So16NSObjectProtocolP", ""]
-- !private ["So14NSSecureCodingP", "blue"]
 - !private ["So14NSSecureCodingP", "borderColor"]
 - !private ["So14NSSecureCodingP", "borderWidth"]
 - !private ["So14NSSecureCodingP", "cgColor"]
 - !private ["So14NSSecureCodingP", "cornerRadius"]
+- !private ["So14NSSecureCodingP", "green"]
+- !private ["So14NSSecureCodingP", "white"]
 - !private ["So29UIAccessibilityIdentificationP", "layer"]
 - !private ["So12UIAppearanceP", "layer"]
 - !private ["So21UIAppearanceContainerP", "UIColor"]
@@ -156,14 +196,19 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "layer"]
 - !private ["So21UIAppearanceContainerP", "primerView"]
+- !private ["So21UIAppearanceContainerP", "segundoView"]
+- !private ["So21UIAppearanceContainerP", "tercerView"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - ["So21UIAppearanceContainerP", ""]
-- !private ["So7UIColorC", "blue"]
 - !private ["So7UIColorC", "cgColor"]
+- !private ["So7UIColorC", "green"]
+- !private ["So7UIColorC", "white"]
 - !private ["So18UIContentContainerP", "UIColor"]
 - !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "primerView"]
+- !private ["So18UIContentContainerP", "segundoView"]
+- !private ["So18UIContentContainerP", "tercerView"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - ["So18UIContentContainerP", ""]
 - !private ["So17UICoordinateSpaceP", "layer"]
@@ -173,6 +218,8 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "layer"]
 - !private ["So18UIFocusEnvironmentP", "primerView"]
+- !private ["So18UIFocusEnvironmentP", "segundoView"]
+- !private ["So18UIFocusEnvironmentP", "tercerView"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So11UIFocusItemP", "layer"]
@@ -181,6 +228,8 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "layer"]
 - !private ["So30UIPasteConfigurationSupportingP", "primerView"]
+- !private ["So30UIPasteConfigurationSupportingP", "segundoView"]
+- !private ["So30UIPasteConfigurationSupportingP", "tercerView"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So11UIResponderC", "UIColor"]
@@ -190,19 +239,27 @@ depends-member:
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "layer"]
 - ["So11UIResponderC", "lbPrimerView"]
+- ["So11UIResponderC", "lbSegundoView"]
+- ["So11UIResponderC", "lbTercerView"]
 - ["So11UIResponderC", "primerView"]
+- ["So11UIResponderC", "segundoView"]
+- ["So11UIResponderC", "tercerView"]
 - ["So11UIResponderC", "viewDidLoad"]
 - !private ["So30UIResponderStandardEditActionsP", "UIColor"]
 - !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "layer"]
 - !private ["So30UIResponderStandardEditActionsP", "primerView"]
+- !private ["So30UIResponderStandardEditActionsP", "segundoView"]
+- !private ["So30UIResponderStandardEditActionsP", "tercerView"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So16UIStateRestoringP", "UIColor"]
 - !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "primerView"]
+- !private ["So16UIStateRestoringP", "segundoView"]
+- !private ["So16UIStateRestoringP", "tercerView"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - ["So16UIStateRestoringP", ""]
 - !private ["So18UITraitEnvironmentP", "UIColor"]
@@ -210,6 +267,8 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "layer"]
 - !private ["So18UITraitEnvironmentP", "primerView"]
+- !private ["So18UITraitEnvironmentP", "segundoView"]
+- !private ["So18UITraitEnvironmentP", "tercerView"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So6UIViewC", "layer"]
@@ -219,23 +278,31 @@ depends-member:
 - ["So16UIViewControllerC", "didReceiveMemoryWarning"]
 - ["So16UIViewControllerC", "init"]
 - ["So16UIViewControllerC", "lbPrimerView"]
+- ["So16UIViewControllerC", "lbSegundoView"]
+- ["So16UIViewControllerC", "lbTercerView"]
 - ["So16UIViewControllerC", "primerView"]
+- ["So16UIViewControllerC", "segundoView"]
+- ["So16UIViewControllerC", "tercerView"]
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", ""]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "layer"]
-- !private ["s26_ExpressibleByColorLiteralP", "blue"]
 - !private ["s26_ExpressibleByColorLiteralP", "cgColor"]
+- !private ["s26_ExpressibleByColorLiteralP", "green"]
+- !private ["s26_ExpressibleByColorLiteralP", "white"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "blue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "borderColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "borderWidth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cgColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cornerRadius"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveMemoryWarning"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "green"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "primerView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "segundoView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tercerView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "white"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 depends-nominal:
 - !private "So7CALayerC"
@@ -290,38 +357,39 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/Firebase/Core/Sources/Firebase.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
 - "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/Firebase/Core/Sources/module.modulemap"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
-- "/Users/mauriciogarza/Documents/ITESM/Semestre 6/Desarrollo Aplicaciones Mo\u0301viles IOS/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-interface-hash: "e54127b5c3dd1e8a471b896a74e04e7d"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+interface-hash: "424deeefcb14426cb16ea2eed4f0b513"

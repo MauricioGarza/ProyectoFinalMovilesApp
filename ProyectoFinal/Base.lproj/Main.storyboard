@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -853,7 +853,7 @@
                                 <color key="textColor" red="0.20407393700000001" green="0.53739453179999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="bwa-ws-bw2">
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="bwa-ws-bw2">
                                 <rect key="frame" x="0.0" y="83" width="320" height="110"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="542820709.92723501">
@@ -885,10 +885,10 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="yPd-Is-uwe" kind="unwind" unwindAction="unwindWithUnwindSegue:" id="IT8-BD-XxK"/>
+                                    <segue destination="yPd-Is-uwe" kind="unwind" unwindAction="unwindWithUnwindSegue:" id="Rmd-HT-8Nr"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fecha y Hora" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0AS-nm-kMp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fecha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0AS-nm-kMp">
                                 <rect key="frame" x="54" y="73" width="141" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -941,7 +941,6 @@
                         <outlet property="btCategoria" destination="Gy7-Yk-YKP" id="MHa-3V-PhJ"/>
                         <outlet property="btEdad" destination="mdh-kK-oh5" id="hYy-Mj-99R"/>
                         <outlet property="btFecha" destination="wFV-Hl-bbq" id="Maq-qa-9G2"/>
-                        <outlet property="butFiltrar" destination="FLi-4w-qbT" id="t5R-E1-wdF"/>
                         <outlet property="datePicker" destination="bwa-ws-bw2" id="Cmh-e0-wMj"/>
                         <outlet property="pickerCategorias" destination="gq1-5P-EXx" id="Lep-ou-7nF"/>
                         <outlet property="pickerEdades" destination="Ct3-65-pac" id="JWx-HE-tRM"/>
@@ -1020,6 +1019,6 @@
         <image name="unchecked" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="HWR-wX-cPE"/>
+        <segue reference="edU-Ux-sK0"/>
     </inferredMetricsTieBreakers>
 </document>

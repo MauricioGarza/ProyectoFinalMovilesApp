@@ -16,11 +16,13 @@ class TableViewControllerActividadesCult: UITableViewController {
 
     var arrDatos : [String] = []
     var arrEventos : [Evento] = []
+    var arrEventosFiltrados : [Evento] = []
     
     var Indice : Int!
     var FinalIndice : Int!
     var NombrePabellon : String = ""
     var viewHappened : Bool = false
+    var bFiltrar = false
     
     var Handle:DatabaseHandle!
     var FireBaseRef:DatabaseReference!
@@ -29,60 +31,77 @@ class TableViewControllerActividadesCult: UITableViewController {
     var edadFiltrar:String!
     var categoFiltrar:String!
     
-    override func viewDidAppear(_ animated: Bool) {
+   /* override func viewDidAppear(_ animated: Bool) {
         if viewHappened == false && tabBarController?.selectedIndex == 3{
+            butRegresar.isEnabled = false
+            butRegresar.isHidden = true
             butTitle.text = "Pabellones"
             arrEventos.removeAll()
+            arrDatos.removeAll()
             Handle = self.FireBaseRef?.child("Pabellones").observe(.childAdded, with:{(DataSnapshot) in
                 if let item = DataSnapshot.key as? String
                 {
                     self.arrDatos.append(item)
-                    print(self.arrDatos.count)
+                    self.tableView.reloadData()
                 }
             })
             self.tableView.reloadData()
         }
-    }
+    }*/
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         //Conecta a la base datos Firebase
             FireBaseRef = Database.database().reference()
         FinalIndice = Indice
-        print(NombrePabellon)
         navigationController?.setNavigationBarHidden(true, animated: false)
-        if tabBarController?.selectedIndex != nil && NombrePabellon == "" {
+        if tabBarController?.selectedIndex != nil && NombrePabellon == "" && viewHappened == false && bFiltrar == false {
             butRegresar.setTitle("", for: .normal)
             butRegresar.isEnabled = false
             switch tabBarController?.selectedIndex{
             case 2?:
+                arrEventos.removeAll()
                 butTitle.text = "Actividades Culturales"                
                 let refActividadesCulturales = self.FireBaseRef?.child("ActividadesCulturales")
                 llenarEvento(ref: refActividadesCulturales!)
-
+                butRegresar.isEnabled = true
+                butRegresar.isHidden = true
             case 3?:
+                arrDatos.removeAll()
+                butRegresar.isEnabled = false
+                butRegresar.isHidden = true
                 butTitle.text = "Pabellones"
                 Handle = self.FireBaseRef?.child("Pabellones").observe(.childAdded, with:{(DataSnapshot) in
                 if let item = DataSnapshot.key as? String
                     {
                         self.arrDatos.append(item)
                         self.tableView.reloadData()
-                        print(self.arrDatos.count)
                     }
                 })
+                butRegresar.isEnabled = false
+                butRegresar.isHidden = true
+                viewHappened = true
             default:
                 break
             }
         }
-        else if NombrePabellon != ""{
+        else if NombrePabellon != "" && bFiltrar == false{
+            arrEventos.removeAll()
             butTitle.text = NombrePabellon
             let refAct = self.FireBaseRef?.child("Pabellones").child(NombrePabellon)
             llenarEvento(ref: refAct!)
         }
-        else{
-            print("Prueba")
+        else if bFiltrar == false{
+            viewHappened = false
             butFiltrar.setTitle("", for: .normal)
             butFiltrar.isEnabled = false
+            butFiltrar.isHidden = true
+            butRegresar.isHidden = false
+            butRegresar.isEnabled = true
+            arrEventos.removeAll()
             switch FinalIndice{
             case 0?:
                 butTitle.text = "Eje Derechos Humanos"
@@ -113,8 +132,16 @@ class TableViewControllerActividadesCult: UITableViewController {
                 break
             }
         }
-        viewHappened = true
-        print(arrDatos.count)
+        else{
+            viewHappened = false
+            if arrEventos.isEmpty{
+                let evento = Evento(sCategoria: "No hay", sDescripcion: "No hay Actividad con dichos filtro", sExpositor: "NA", sHora: "NA", sLugar: "NA", sNombre: "No hay resultados", sFecha: "Na")
+                self.arrEventos.append(evento)
+            }
+            self.tableView.reloadData()
+            bFiltrar = false
+        }
+        viewHappened = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -130,6 +157,7 @@ class TableViewControllerActividadesCult: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        self.refreshControl?.endRefreshing()
         if tabBarController?.selectedIndex != nil && arrDatos.count > 0{
             switch tabBarController?.selectedIndex {
             case 3?:
@@ -141,10 +169,7 @@ class TableViewControllerActividadesCult: UITableViewController {
             }
             
         }
-        else {
-            return arrEventos.count
-        }
-        return 0
+        return arrEventos.count
 
     }
 
@@ -191,41 +216,7 @@ class TableViewControllerActividadesCult: UITableViewController {
             }
         })
     }
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
+    
     
     // MARK: - Navigation
     
@@ -239,6 +230,8 @@ class TableViewControllerActividadesCult: UITableViewController {
                 let refAct = self.FireBaseRef?.child("Pabellones").child(NombrePabellon)
                 llenarEvento(ref: refAct!)
                 viewHappened = false
+                butRegresar.isEnabled = true
+                butRegresar.isHidden = false
                 return false
             }
         return true
@@ -249,7 +242,7 @@ class TableViewControllerActividadesCult: UITableViewController {
         if segue.identifier != "filtrar" && arrDatos.count == 0{
             let dest = segue.destination as! ViewControllerInfoActividad
             let indice = tableView.indexPathForSelectedRow
-                
+            
             dest.titulo = arrEventos[(indice?.row)!].sNombre
             dest.descripcion = arrEventos[(indice?.row)!].sDescripcion
             dest.Fecha = arrEventos[(indice?.row)!].sFecha
@@ -263,48 +256,40 @@ class TableViewControllerActividadesCult: UITableViewController {
 
         
         else{
-           _ = segue.destination as! ViewControllerFiltrar
-        }
-    }
-    
-    @IBAction func unwind(unwindSegue:UIStoryboardSegue){
-        if categoFiltrar != nil || edadFiltrar != nil{
-            arrEventos.removeAll()
-            self.tableView.reloadData()
-            if NombrePabellon==""{
-                switch tabBarController?.selectedIndex{
-                case 2?:
-                    FireBaseRef.child("ActividadesCulturales").observeSingleEvent(of: .value, with:{ DataSnapshot in
-                        for child in DataSnapshot.children{
-                            let snap = child as! DataSnapshot
-                            let dict = snap.value as! [String:Any]
-                            let nom = dict["Nombre"] as! String
-                            let desc = dict["Descripcion"] as! String
-                            let cat = dict["Categoria"] as! String
-                            let Expos = dict["Expositor"] as! String
-                            let Fecha = dict["Fecha"] as! String
-                            let Hora = dict["Hora"] as! String
-                            let lugar = dict["Lugar"] as! String
-                            if cat==self.categoFiltrar{
-                                let Event = Evento(sCategoria: cat, sDescripcion: desc, sExpositor: Expos, sHora: Hora, sLugar: lugar, sNombre: nom, sFecha: Fecha)
-                                self.arrEventos.append(Event)
-                                self.tableView.reloadData()
-                                
-                            }
-                        }
-                    })
-                //case 3?:
-                default:
-                    break;
-                }
-            }
+           let dest = segue.destination as! ViewControllerFiltrar
+            dest.arrEventos = arrEventos
             
         }
     }
     
-    @IBAction func butRegresar(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
+    @IBAction func unwind(unwindSegue:UIStoryboardSegue){
+        bFiltrar = true
+        print(arrEventos.count)
+        self.tableView.reloadData()
     }
+    
+    
+    @IBAction func butRegresar(_ sender: UIButton) {
+        if (butTitle.text?.contains("Eje"))!  {
+            dismiss(animated: true, completion: nil)
+        }
+        else{
+            butTitle.text = "Pabellones"
+            arrEventos.removeAll()
+            arrDatos.removeAll()
+            NombrePabellon = ""
+            Handle = self.FireBaseRef?.child("Pabellones").observe(.childAdded, with:{(DataSnapshot) in
+                if let item = DataSnapshot.key as? String
+                {
+                    self.arrDatos.append(item)
+                    self.tableView.reloadData()
+                }
+            })
+            self.tableView.reloadData()
+        }
+        
+    }
+    
     
 }
 
