@@ -63,6 +63,7 @@ class ViewControllerInfoActividad: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     @IBAction func addToCalendar(_ sender: Any) {
+        if Expositor != "NA"{
         let eventStore:EKEventStore = EKEventStore()
         var dateComponent=DateComponents()
         dateComponent.hour=1
@@ -86,7 +87,7 @@ class ViewControllerInfoActividad: UIViewController {
                 do{
                     try eventStore.save(event, span: .thisEvent)
                     let alerta=UIAlertController(title: "Agregado a su Calendario", message: "Evento agregado con èxito", preferredStyle: UIAlertControllerStyle.alert)
-                    alerta.addAction(UIAlertAction(title: "OK", style: .destructive, handler: nil))
+                    alerta.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                     self.present(alerta, animated: true, completion: nil)
                     
                 } catch let error as NSError{
@@ -99,8 +100,15 @@ class ViewControllerInfoActividad: UIViewController {
                 print("error")
             }
             
+            }
+        } else{
+            let alerta=UIAlertController(title: "Imposible Agregar a su calendario", message: "no existe ningún evento a agregar", preferredStyle: UIAlertControllerStyle.alert)
+            alerta.addAction(UIAlertAction(title: "OK", style: .destructive, handler: nil))
+            self.present(alerta, animated: true, completion: nil)
         }
+        
     }
+    
     
     
 }
