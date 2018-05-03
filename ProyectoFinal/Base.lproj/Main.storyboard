@@ -26,10 +26,6 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2m0-ae-xFG">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="1280"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cerroDeLaSilla2" translatesAutoresizingMaskIntoConstraints="NO" id="cMu-w2-Joj">
-                                                <rect key="frame" x="-565" y="-2" width="1286" height="1295"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoESL" translatesAutoresizingMaskIntoConstraints="NO" id="aeF-6a-5Wn">
                                                 <rect key="frame" x="0.0" y="65" width="320" height="104"/>
                                                 <constraints>
@@ -104,6 +100,10 @@
                                                     <constraint firstAttribute="bottom" secondItem="oPv-P8-l7z" secondAttribute="bottom" constant="20" id="qMi-st-LnB"/>
                                                 </constraints>
                                             </view>
+                                            <imageView userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cerroDeLaSilla2" translatesAutoresizingMaskIntoConstraints="NO" id="cMu-w2-Joj">
+                                                <rect key="frame" x="-986" y="-128" width="2057" height="1653"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
