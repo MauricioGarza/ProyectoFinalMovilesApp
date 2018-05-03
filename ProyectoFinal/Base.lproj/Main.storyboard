@@ -203,10 +203,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QXz-KS-rTj">
-                                                <rect key="frame" x="0.0" y="169" width="320" height="362"/>
+                                                <rect key="frame" x="0.0" y="115" width="320" height="362"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qwi-nV-TD6">
-                                                        <rect key="frame" x="128.5" y="208" width="63.5" height="28"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qwi-nV-TD6">
+                                                        <rect key="frame" x="123" y="198" width="74" height="28"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="Correo">
                                                                 <attributes>
@@ -218,7 +218,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPt-U6-tXr">
-                                                        <rect key="frame" x="124" y="313" width="73" height="34"/>
+                                                        <rect key="frame" x="124" y="303" width="73" height="34"/>
                                                         <color key="backgroundColor" red="0.20407393700000001" green="0.53739453179999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                         <state key="normal" title="Regresar">
@@ -229,10 +229,10 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzq-9f-ycW">
-                                                        <rect key="frame" x="226" y="29" width="35" height="35"/>
+                                                        <rect key="frame" x="226" y="29" width="30" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="35" id="C8j-oR-8km"/>
-                                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="35" id="g8T-pH-7B5"/>
+                                                            <constraint firstAttribute="width" constant="30" id="g8T-pH-7B5"/>
                                                         </constraints>
                                                         <state key="normal" title="Button" image="phone"/>
                                                         <connections>
@@ -240,7 +240,7 @@
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVI-vw-FZ6">
-                                                        <rect key="frame" x="114.5" y="32" width="91" height="28"/>
+                                                        <rect key="frame" x="115" y="32" width="91" height="28"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="Teléfono">
                                                                 <attributes>
@@ -252,22 +252,22 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="info@encuentrosinlimites.mx" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ggh-5U-hPV">
-                                                        <rect key="frame" x="56.5" y="245" width="207" height="30"/>
+                                                        <rect key="frame" x="57" y="235" width="207" height="30"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="81-2919-5130" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ISa-GS-WWf">
+                                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="81-2919-5130" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ISa-GS-WWf">
                                                         <rect key="frame" x="103" y="68" width="114" height="30"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" textContentType="tel"/>
                                                     </textField>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21e-M1-5oR">
-                                                        <rect key="frame" x="214" y="201" width="45" height="40"/>
+                                                        <rect key="frame" x="219" y="201" width="30" height="30"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="45" id="CZD-7M-rhn"/>
-                                                            <constraint firstAttribute="height" constant="40" id="rq4-Nw-HKA"/>
+                                                            <constraint firstAttribute="width" constant="30" id="CZD-7M-rhn"/>
+                                                            <constraint firstAttribute="height" constant="30" id="rq4-Nw-HKA"/>
                                                         </constraints>
                                                         <state key="normal" title="Button" image="mail-512"/>
                                                         <connections>
@@ -293,20 +293,48 @@
                                                     <constraint firstItem="ISa-GS-WWf" firstAttribute="top" secondItem="XVI-vw-FZ6" secondAttribute="bottom" constant="8" id="bML-GH-GWR"/>
                                                     <constraint firstItem="FPt-U6-tXr" firstAttribute="top" secondItem="Ggh-5U-hPV" secondAttribute="bottom" constant="38" id="gnN-JQ-7RW"/>
                                                     <constraint firstItem="vzq-9f-ycW" firstAttribute="leading" secondItem="XVI-vw-FZ6" secondAttribute="trailing" constant="20" id="idL-5i-n8w"/>
-                                                    <constraint firstItem="Qwi-nV-TD6" firstAttribute="top" secondItem="ISa-GS-WWf" secondAttribute="bottom" constant="110" id="oM9-Od-VDy"/>
+                                                    <constraint firstItem="Qwi-nV-TD6" firstAttribute="top" relation="lessThanOrEqual" secondItem="ISa-GS-WWf" secondAttribute="bottom" constant="110" id="oM9-Od-VDy"/>
                                                     <constraint firstAttribute="height" constant="362" id="vFK-V4-bt0"/>
                                                 </constraints>
                                             </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ku0-He-Ty6">
+                                                <rect key="frame" x="0.0" y="470" width="320" height="102"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="102" id="vJq-eL-erD"/>
+                                                </constraints>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <string key="content">encuentroSinLimites fue desarrollado por estudiantes del Tecnológico de Monterrey durante el semestre enero-mayo 2018, como parte del curso "Desarrollo de Apps para Dispositivos Móviles” y asesorados por la maestra Yolanda Martínez Treviño.
+Desarrolladores:
+-Mauricio Garza
+-Norberto Reyes
+-Diego Jiménez
+encuentroSinLimites se distribuye como está de manera gratuita y se prohíbe su distribución y uso con fines de lucro.</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.27059" green="0.27059" blue="0.27059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="8" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="QXz-KS-rTj" secondAttribute="trailing" id="50D-wE-W3w"/>
                                             <constraint firstItem="s3R-56-y5I" firstAttribute="centerX" secondItem="c6x-c3-pUm" secondAttribute="centerX" id="7gW-oJ-zY7"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ku0-He-Ty6" secondAttribute="trailing" id="FYq-pw-5eo"/>
                                             <constraint firstItem="QXz-KS-rTj" firstAttribute="leading" secondItem="c6x-c3-pUm" secondAttribute="leading" id="GGX-Rf-5Z6"/>
-                                            <constraint firstItem="QXz-KS-rTj" firstAttribute="top" secondItem="s3R-56-y5I" secondAttribute="bottom" constant="79" id="PSk-32-ROi"/>
+                                            <constraint firstItem="QXz-KS-rTj" firstAttribute="top" secondItem="s3R-56-y5I" secondAttribute="bottom" constant="25" id="PSk-32-ROi"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ku0-He-Ty6" secondAttribute="bottom" constant="128" id="UPM-eK-zIS"/>
                                             <constraint firstAttribute="height" constant="700" id="ZOB-HR-clY"/>
+                                            <constraint firstItem="Ku0-He-Ty6" firstAttribute="top" relation="greaterThanOrEqual" secondItem="FPt-U6-tXr" secondAttribute="bottom" constant="18" id="guo-NJ-4Ql"/>
                                             <constraint firstItem="s3R-56-y5I" firstAttribute="top" secondItem="c6x-c3-pUm" secondAttribute="top" constant="20" id="jh8-ap-P3F"/>
                                             <constraint firstAttribute="trailing" secondItem="s3R-56-y5I" secondAttribute="trailing" id="oRR-UZ-XG9"/>
+                                            <constraint firstItem="Ku0-He-Ty6" firstAttribute="leading" secondItem="c6x-c3-pUm" secondAttribute="leading" id="qzJ-Xl-FqL"/>
                                             <constraint firstItem="s3R-56-y5I" firstAttribute="leading" secondItem="c6x-c3-pUm" secondAttribute="leading" id="sXs-h8-0Be"/>
                                         </constraints>
                                     </view>
