@@ -37,8 +37,12 @@ class TableViewControllerActividadesCult: UITableViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        programaPrincipal()
+    }
+    
+    func programaPrincipal(){
         //Conecta a la base datos Firebase
-            FireBaseRef = Database.database().reference()
+        FireBaseRef = Database.database().reference()
         FinalIndice = Indice
         navigationController?.setNavigationBarHidden(true, animated: false)
         if tabBarController?.selectedIndex != nil && NombrePabellon == "" && viewHappened == false && bFiltrar == false {
@@ -48,7 +52,7 @@ class TableViewControllerActividadesCult: UITableViewController {
             case 2?:
                 arrEventos.removeAll()
                 self.tableView.reloadData()
-                butTitle.text = "Actividades Culturales"                
+                butTitle.text = "Actividades Culturales"
                 let refActividadesCulturales = self.FireBaseRef?.child("ActividadesCulturales")
                 llenarEvento(ref: refActividadesCulturales!)
                 butRegresar.isEnabled = true
@@ -64,7 +68,7 @@ class TableViewControllerActividadesCult: UITableViewController {
                 butFiltrar.isHidden = true
                 butTitle.text = "Pabellones"
                 Handle = self.FireBaseRef?.child("Pabellones").observe(.childAdded, with:{(DataSnapshot) in
-                if let item = DataSnapshot.key as? String
+                    if let item = DataSnapshot.key as? String
                     {
                         self.arrDatos.append(item)
                         self.tableView.reloadData()
@@ -128,11 +132,16 @@ class TableViewControllerActividadesCult: UITableViewController {
         else{
             viewHappened = false
             if arrEventos.isEmpty{
-                let evento = Evento(sCategoria: "No hay", sDescripcion: "No hay Actividad con dichos filtro", sExpositor: "NA", sHora: "NA", sLugar: "NA", sNombre: "No hay resultados", sFecha: "Na")
+                let evento = Evento(sCategoria: "No hay", sDescripcion: "No hay Actividad con dichos filtro", sExpositor: "NA", sHora: "NA", sLugar: "NA", sNombre: "No hay resultados", sFecha: "NA")
                 self.arrEventos.append(evento)
             }
             self.tableView.reloadData()
-            bFiltrar = false
+            butRegresar.isHidden = false
+            butRegresar.isEnabled = true
+            butTitle.text = "Filtro Aplicado"
+            butFiltrar.isHidden = true
+            butFiltrar.isEnabled = false
+            //bFiltrar = false
         }
         viewHappened = false
     }
@@ -268,6 +277,11 @@ class TableViewControllerActividadesCult: UITableViewController {
     @IBAction func butRegresar(_ sender: UIButton) {
         if (butTitle.text?.contains("Eje"))!  {
             dismiss(animated: true, completion: nil)
+        }
+            
+        else if bFiltrar == true{
+            bFiltrar = false
+            programaPrincipal()
         }
         else{
             butTitle.text = "Pabellones"
