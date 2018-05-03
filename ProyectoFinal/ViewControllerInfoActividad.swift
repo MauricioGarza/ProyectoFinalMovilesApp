@@ -42,6 +42,10 @@ class ViewControllerInfoActividad: UIViewController {
         labLugar.text = Lugar
         labCategoría.text = Categoria
         self.Fecha=Fecha+" "+Hora
+        if labFecha.text == "NA" {
+            btAgregarCalendario.isHidden = true
+            btAgregarCalendario.isEnabled = false
+        }
     }
 
     override func didReceiveMemoryWarning() {

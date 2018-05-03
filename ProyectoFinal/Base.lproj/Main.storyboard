@@ -167,7 +167,6 @@
         <!--Info View Controller-->
         <scene sceneID="f8L-Lw-s1I">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="67W-kp-kCm" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="O5o-IV-OVM" customClass="InfoViewController" customModule="ProyectoFinal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lfj-7z-bRu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="700"/>
@@ -363,6 +362,7 @@ encuentroSinLimites se distribuye como está de manera gratuita y se prohíbe su
                         <outlet property="btRegresar" destination="FPt-U6-tXr" id="CzL-PL-5Ef"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="67W-kp-kCm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1590" y="-943.30985915492954"/>
         </scene>
@@ -678,16 +678,16 @@ encuentroSinLimites se distribuye como está de manera gratuita y se prohíbe su
                                                 <rect key="frame" x="56" y="319" width="208" height="167.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hxU-RR-Z0r">
-                                                        <rect key="frame" x="0.0" y="0.0" width="207" height="50"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="208" height="50"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripcion:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bt1-a4-Vlw">
-                                                                <rect key="frame" x="0.0" y="0.0" width="103.5" height="50"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="104" height="50"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripcion:" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aV2-Z2-Ie4">
-                                                                <rect key="frame" x="103.5" y="0.0" width="103.5" height="50"/>
+                                                                <rect key="frame" x="104" y="0.0" width="104" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="pnk-4E-phK"/>
                                                                 </constraints>
@@ -1065,8 +1065,8 @@ encuentroSinLimites se distribuye como está de manera gratuita y se prohíbe su
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8O-By-El0">
-                                                <rect key="frame" x="48" y="429" width="39" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8O-By-El0">
+                                                <rect key="frame" x="48" y="429" width="75" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1110,8 +1110,8 @@ encuentroSinLimites se distribuye como está de manera gratuita y se prohíbe su
                                                     <action selector="checkButon:" destination="UjK-3D-Sog" eventType="touchUpInside" id="W4f-nD-MRm"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoría" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64Y-W4-O6f">
-                                                <rect key="frame" x="48" y="246" width="75" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64Y-W4-O6f">
+                                                <rect key="frame" x="48" y="246" width="39" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1190,8 +1190,8 @@ encuentroSinLimites se distribuye como está de manera gratuita y se prohíbe su
                     <size key="freeformSize" width="320" height="700"/>
                     <connections>
                         <outlet property="btCategoria" destination="Gy7-Yk-YKP" id="MHa-3V-PhJ"/>
-                        <outlet property="btEdad" destination="mdh-kK-oh5" id="hYy-Mj-99R"/>
-                        <outlet property="btFecha" destination="wFV-Hl-bbq" id="Maq-qa-9G2"/>
+                        <outlet property="btEdad" destination="wFV-Hl-bbq" id="6io-9V-rjS"/>
+                        <outlet property="btFecha" destination="mdh-kK-oh5" id="t4q-OY-nB2"/>
                         <outlet property="datePicker" destination="bwa-ws-bw2" id="Cmh-e0-wMj"/>
                         <outlet property="pickerCategorias" destination="gq1-5P-EXx" id="Lep-ou-7nF"/>
                         <outlet property="pickerEdades" destination="Ct3-65-pac" id="JWx-HE-tRM"/>

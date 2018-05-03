@@ -71,6 +71,8 @@ depends-member:
 - !private ["s7CVarArgP", "Edades"]
 - !private ["s7CVarArgP", "UIAlertAction"]
 - !private ["s7CVarArgP", "UIAlertController"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "addAction"]
 - !private ["s7CVarArgP", "append"]
 - !private ["s7CVarArgP", "arrEventos"]
@@ -107,7 +109,6 @@ depends-member:
 - !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "tag"]
 - !private ["s7CVarArgP", "viewDidLoad"]
-- ["s7CVarArgP", ""]
 - !private ["10Foundation8CalendarV", "current"]
 - !private ["10Foundation8CalendarV", "isDate"]
 - !private ["s10CollectionP", "append"]
@@ -122,6 +123,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "Edades"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertAction"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertController"]
+- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "addAction"]
 - !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "arrEventos"]
@@ -160,7 +162,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "tag"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
-- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
@@ -177,6 +178,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "Edades"]
 - !private ["s23CustomStringConvertibleP", "UIAlertAction"]
 - !private ["s23CustomStringConvertibleP", "UIAlertController"]
+- ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "addAction"]
 - !private ["s23CustomStringConvertibleP", "append"]
@@ -216,7 +218,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "tag"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
-- ["s23CustomStringConvertibleP", ""]
 - !private ["So13DateFormatterC", "date"]
 - !private ["So13DateFormatterC", "dateFormat"]
 - !private ["So13DateFormatterC", "init"]
@@ -242,9 +243,11 @@ depends-member:
 - !private ["s9EquatableP", "Edades"]
 - !private ["s9EquatableP", "UIAlertAction"]
 - !private ["s9EquatableP", "UIAlertController"]
+- ["s9EquatableP", ""]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "addAction"]
 - !private ["s9EquatableP", "alert"]
+- !private ["s9EquatableP", "append"]
 - !private ["s9EquatableP", "arrEventos"]
 - !private ["s9EquatableP", "bFiltrar"]
 - !private ["s9EquatableP", "btCategoria"]
@@ -252,6 +255,7 @@ depends-member:
 - !private ["s9EquatableP", "btFecha"]
 - !private ["s9EquatableP", "cancel"]
 - !private ["s9EquatableP", "categoEscogida"]
+- !private ["s9EquatableP", "count"]
 - !private ["s9EquatableP", "current"]
 - !private ["s9EquatableP", "dataSource"]
 - !private ["s9EquatableP", "date"]
@@ -274,13 +278,14 @@ depends-member:
 - ["s9EquatableP", "pickerView"]
 - !private ["s9EquatableP", "present"]
 - !private ["s9EquatableP", "print"]
+- !private ["s9EquatableP", "removeAll"]
 - !private ["s9EquatableP", "sCategoria"]
 - !private ["s9EquatableP", "sFecha"]
 - !private ["s9EquatableP", "sNombre"]
 - !private ["s9EquatableP", "setImage"]
+- !private ["s9EquatableP", "subscript"]
 - !private ["s9EquatableP", "tag"]
 - !private ["s9EquatableP", "viewDidLoad"]
-- ["s9EquatableP", ""]
 - !private ["13ProyectoFinal6EventoC", "sCategoria"]
 - !private ["13ProyectoFinal6EventoC", "sFecha"]
 - !private ["13ProyectoFinal6EventoC", "sNombre"]
@@ -302,6 +307,7 @@ depends-member:
 - !private ["s8HashableP", "Edades"]
 - !private ["s8HashableP", "UIAlertAction"]
 - !private ["s8HashableP", "UIAlertController"]
+- ["s8HashableP", ""]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
 - !private ["s8HashableP", "addAction"]
 - !private ["s8HashableP", "alert"]
@@ -339,7 +345,6 @@ depends-member:
 - !private ["s8HashableP", "setImage"]
 - !private ["s8HashableP", "tag"]
 - !private ["s8HashableP", "viewDidLoad"]
-- ["s8HashableP", ""]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - ["s25LosslessStringConvertibleP", "init"]
 - ["s10MirrorPathP", "init"]
@@ -353,6 +358,7 @@ depends-member:
 - !private ["So8NSCodingP", "Edades"]
 - !private ["So8NSCodingP", "UIAlertAction"]
 - !private ["So8NSCodingP", "UIAlertController"]
+- ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "addAction"]
 - !private ["So8NSCodingP", "arrEventos"]
 - !private ["So8NSCodingP", "bFiltrar"]
@@ -370,7 +376,7 @@ depends-member:
 - !private ["So8NSCodingP", "edadEscogida"]
 - !private ["So8NSCodingP", "image"]
 - !private ["So8NSCodingP", "imageView"]
-- ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "init"]
 - ["So8NSCodingP", "numberOfComponents"]
 - ["So8NSCodingP", "numberOfComponentsInPickerView"]
 - !private ["So8NSCodingP", "pickerCategorias"]
@@ -381,16 +387,16 @@ depends-member:
 - !private ["So8NSCodingP", "setImage"]
 - !private ["So8NSCodingP", "tag"]
 - !private ["So8NSCodingP", "viewDidLoad"]
-- ["So8NSCodingP", ""]
 - !private ["So9NSCopyingP", "date"]
 - !private ["So9NSCopyingP", "dateFormat"]
-- ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "Calendar"]
 - !private ["So26NSExtensionRequestHandlingP", "Categorias"]
 - !private ["So26NSExtensionRequestHandlingP", "DateFormatter"]
 - !private ["So26NSExtensionRequestHandlingP", "Edades"]
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertAction"]
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertController"]
+- ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "addAction"]
 - !private ["So26NSExtensionRequestHandlingP", "arrEventos"]
 - !private ["So26NSExtensionRequestHandlingP", "bFiltrar"]
@@ -411,10 +417,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "present"]
 - !private ["So26NSExtensionRequestHandlingP", "print"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
-- ["So26NSExtensionRequestHandlingP", ""]
-- ["So21NSItemProviderReadingP", "init"]
-- ["So21NSItemProviderWritingP", "init"]
-- ["So16NSMutableCopyingP", "init"]
 - ["So8NSObjectC", "Bool"]
 - !private ["So8NSObjectC", "Calendar"]
 - ["So8NSObjectC", "Categorias"]
@@ -473,6 +475,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "Edades"]
 - !private ["So16NSObjectProtocolP", "UIAlertAction"]
 - !private ["So16NSObjectProtocolP", "UIAlertController"]
+- ["So16NSObjectProtocolP", ""]
 - !private ["So16NSObjectProtocolP", "addAction"]
 - !private ["So16NSObjectProtocolP", "arrEventos"]
 - !private ["So16NSObjectProtocolP", "bFiltrar"]
@@ -491,7 +494,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "edadEscogida"]
 - !private ["So16NSObjectProtocolP", "image"]
 - !private ["So16NSObjectProtocolP", "imageView"]
-- ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "init"]
 - ["So16NSObjectProtocolP", "numberOfComponents"]
 - ["So16NSObjectProtocolP", "numberOfComponentsInPickerView"]
 - !private ["So16NSObjectProtocolP", "pickerCategorias"]
@@ -505,9 +508,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "setImage"]
 - !private ["So16NSObjectProtocolP", "tag"]
 - !private ["So16NSObjectProtocolP", "viewDidLoad"]
-- ["So16NSObjectProtocolP", ""]
-- ["So14NSSecureCodingP", "init"]
-- ["So8NSStringC", "init"]
 - !private ["s9OptionSetP", "normal"]
 - !private ["s22RandomAccessCollectionP", "append"]
 - !private ["s22RandomAccessCollectionP", "count"]
@@ -563,6 +563,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "Edades"]
 - !private ["So21UIAppearanceContainerP", "UIAlertAction"]
 - !private ["So21UIAppearanceContainerP", "UIAlertController"]
+- ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "addAction"]
 - !private ["So21UIAppearanceContainerP", "arrEventos"]
 - !private ["So21UIAppearanceContainerP", "bFiltrar"]
@@ -590,7 +591,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "setImage"]
 - !private ["So21UIAppearanceContainerP", "tag"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
-- ["So21UIAppearanceContainerP", ""]
 - !private ["So8UIButtonC", "imageView"]
 - !private ["So8UIButtonC", "setImage"]
 - !private ["So18UIContentContainerP", "Calendar"]
@@ -599,6 +599,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "Edades"]
 - !private ["So18UIContentContainerP", "UIAlertAction"]
 - !private ["So18UIContentContainerP", "UIAlertController"]
+- ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "addAction"]
 - !private ["So18UIContentContainerP", "arrEventos"]
 - !private ["So18UIContentContainerP", "bFiltrar"]
@@ -619,7 +620,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "present"]
 - !private ["So18UIContentContainerP", "print"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
-- ["So18UIContentContainerP", ""]
 - !private ["So9UIControlC", "date"]
 - !private ["So9UIControlC", "imageView"]
 - !private ["So9UIControlC", "setImage"]
@@ -645,6 +645,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "Edades"]
 - !private ["So18UIFocusEnvironmentP", "UIAlertAction"]
 - !private ["So18UIFocusEnvironmentP", "UIAlertController"]
+- ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "addAction"]
 - !private ["So18UIFocusEnvironmentP", "arrEventos"]
 - !private ["So18UIFocusEnvironmentP", "bFiltrar"]
@@ -672,7 +673,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "setImage"]
 - !private ["So18UIFocusEnvironmentP", "tag"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
-- ["So18UIFocusEnvironmentP", ""]
 - !private ["So11UIFocusItemP", "dataSource"]
 - !private ["So11UIFocusItemP", "date"]
 - !private ["So11UIFocusItemP", "delegate"]
@@ -687,6 +687,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "Edades"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertAction"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertController"]
+- ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "addAction"]
 - !private ["So30UIPasteConfigurationSupportingP", "arrEventos"]
 - !private ["So30UIPasteConfigurationSupportingP", "bFiltrar"]
@@ -714,7 +715,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "setImage"]
 - !private ["So30UIPasteConfigurationSupportingP", "tag"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
-- ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So12UIPickerViewC", "dataSource"]
 - !private ["So12UIPickerViewC", "delegate"]
 - !private ["So12UIPickerViewC", "tag"]
@@ -724,6 +724,7 @@ depends-member:
 - !private ["So22UIPickerViewDataSourceP", "Edades"]
 - !private ["So22UIPickerViewDataSourceP", "UIAlertAction"]
 - !private ["So22UIPickerViewDataSourceP", "UIAlertController"]
+- ["So22UIPickerViewDataSourceP", ""]
 - !private ["So22UIPickerViewDataSourceP", "arrEventos"]
 - !private ["So22UIPickerViewDataSourceP", "btCategoria"]
 - !private ["So22UIPickerViewDataSourceP", "btEdad"]
@@ -739,13 +740,13 @@ depends-member:
 - ["So22UIPickerViewDataSourceP", "pickerView"]
 - !private ["So22UIPickerViewDataSourceP", "present"]
 - !private ["So22UIPickerViewDataSourceP", "print"]
-- ["So22UIPickerViewDataSourceP", ""]
 - !private ["So20UIPickerViewDelegateP", "Calendar"]
 - !private ["So20UIPickerViewDelegateP", "Categorias"]
 - !private ["So20UIPickerViewDelegateP", "DateFormatter"]
 - !private ["So20UIPickerViewDelegateP", "Edades"]
 - !private ["So20UIPickerViewDelegateP", "UIAlertAction"]
 - !private ["So20UIPickerViewDelegateP", "UIAlertController"]
+- ["So20UIPickerViewDelegateP", ""]
 - !private ["So20UIPickerViewDelegateP", "arrEventos"]
 - !private ["So20UIPickerViewDelegateP", "btCategoria"]
 - !private ["So20UIPickerViewDelegateP", "btEdad"]
@@ -761,7 +762,6 @@ depends-member:
 - ["So20UIPickerViewDelegateP", "pickerView"]
 - !private ["So20UIPickerViewDelegateP", "present"]
 - !private ["So20UIPickerViewDelegateP", "print"]
-- ["So20UIPickerViewDelegateP", ""]
 - ["So11UIResponderC", "Bool"]
 - !private ["So11UIResponderC", "Calendar"]
 - ["So11UIResponderC", "Categorias"]
@@ -815,6 +815,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "Edades"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertAction"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertController"]
+- ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "addAction"]
 - !private ["So30UIResponderStandardEditActionsP", "arrEventos"]
 - !private ["So30UIResponderStandardEditActionsP", "bFiltrar"]
@@ -842,7 +843,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "setImage"]
 - !private ["So30UIResponderStandardEditActionsP", "tag"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
-- ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So20UIScrollViewDelegateP", "arrEventos"]
 - !private ["So20UIScrollViewDelegateP", "bFiltrar"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "addAction"]
@@ -855,6 +855,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "Edades"]
 - !private ["So16UIStateRestoringP", "UIAlertAction"]
 - !private ["So16UIStateRestoringP", "UIAlertController"]
+- ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "addAction"]
 - !private ["So16UIStateRestoringP", "arrEventos"]
 - !private ["So16UIStateRestoringP", "bFiltrar"]
@@ -875,7 +876,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "present"]
 - !private ["So16UIStateRestoringP", "print"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
-- ["So16UIStateRestoringP", ""]
 - !private ["So17UIStoryboardSegueC", "destination"]
 - !private ["So21UITableViewControllerC", "arrEventos"]
 - !private ["So21UITableViewControllerC", "bFiltrar"]
@@ -889,6 +889,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "Edades"]
 - !private ["So18UITraitEnvironmentP", "UIAlertAction"]
 - !private ["So18UITraitEnvironmentP", "UIAlertController"]
+- ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "addAction"]
 - !private ["So18UITraitEnvironmentP", "arrEventos"]
 - !private ["So18UITraitEnvironmentP", "bFiltrar"]
@@ -916,7 +917,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "setImage"]
 - !private ["So18UITraitEnvironmentP", "tag"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
-- ["So18UITraitEnvironmentP", ""]
 - !private ["So6UIViewC", "dataSource"]
 - !private ["So6UIViewC", "date"]
 - !private ["So6UIViewC", "delegate"]
@@ -939,6 +939,7 @@ depends-member:
 - ["So16UIViewControllerC", "UIDatePicker"]
 - ["So16UIViewControllerC", "UIPickerView"]
 - ["So16UIViewControllerC", "UIStoryboardSegue"]
+- ["So16UIViewControllerC", ""]
 - !private ["So16UIViewControllerC", "addAction"]
 - ["So16UIViewControllerC", "arrEventos"]
 - !private ["So16UIViewControllerC", "bFiltrar"]
@@ -964,7 +965,6 @@ depends-member:
 - !private ["So16UIViewControllerC", "print"]
 - ["So16UIViewControllerC", "shouldPerformSegue"]
 - ["So16UIViewControllerC", "viewDidLoad"]
-- ["So16UIViewControllerC", ""]
 - ["13ProyectoFinal21ViewControllerFiltrarC", "Bool"]
 - !private ["13ProyectoFinal21ViewControllerFiltrarC", "Calendar"]
 - ["13ProyectoFinal21ViewControllerFiltrarC", "Categorias"]
@@ -1008,11 +1008,6 @@ depends-member:
 - !private ["s14_ArrayProtocolP", "count"]
 - !private ["s14_ArrayProtocolP", "removeAll"]
 - !private ["s14_ArrayProtocolP", "subscript"]
-- !private ["s23_BidirectionalIndexableP", "append"]
-- !private ["s23_BidirectionalIndexableP", "count"]
-- ["s23_BidirectionalIndexableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "removeAll"]
-- !private ["s23_BidirectionalIndexableP", "subscript"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "dataSource"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "date"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "delegate"]
@@ -1030,23 +1025,13 @@ depends-member:
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
-- ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "append"]
-- !private ["s10_IndexableP", "count"]
-- ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "removeAll"]
-- !private ["s10_IndexableP", "subscript"]
-- !private ["s14_IndexableBaseP", "append"]
-- !private ["s14_IndexableBaseP", "count"]
-- ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "removeAll"]
-- !private ["s14_IndexableBaseP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Calendar"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Categorias"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DateFormatter"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Edades"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertController"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "arrEventos"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "bFiltrar"]
@@ -1065,7 +1050,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "edadEscogida"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "image"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "imageView"]
-- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "numberOfComponents"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "numberOfComponentsInPickerView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "pickerCategorias"]
@@ -1079,13 +1064,8 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setImage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "tag"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
-- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation14_MutableBoxingP", "current"]
 - !private ["10Foundation14_MutableBoxingP", "isDate"]
-- !private ["s17_MutableIndexableP", "append"]
-- !private ["s17_MutableIndexableP", "count"]
-- !private ["s17_MutableIndexableP", "removeAll"]
-- !private ["s17_MutableIndexableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
@@ -1094,15 +1074,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "isDate"]
 - !private ["s21_ObjectiveCBridgeableP", "removeAll"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
-- !private ["s22_RandomAccessIndexableP", "append"]
-- !private ["s22_RandomAccessIndexableP", "count"]
-- !private ["s22_RandomAccessIndexableP", "removeAll"]
-- !private ["s22_RandomAccessIndexableP", "subscript"]
-- !private ["s26_RangeReplaceableIndexableP", "append"]
-- !private ["s26_RangeReplaceableIndexableP", "count"]
-- ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "removeAll"]
-- !private ["s26_RangeReplaceableIndexableP", "subscript"]
 - ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "Sa"
@@ -1133,15 +1104,10 @@ depends-nominal:
 - "s10MirrorPathP"
 - !private "s17MutableCollectionP"
 - "So8NSCodingP"
-- "So9NSCopyingP"
+- !private "So9NSCopyingP"
 - "So26NSExtensionRequestHandlingP"
-- "So21NSItemProviderReadingP"
-- "So21NSItemProviderWritingP"
-- "So16NSMutableCopyingP"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
-- "So14NSSecureCodingP"
-- "So8NSStringC"
 - !private "s9OptionSetP"
 - !private "s22RandomAccessCollectionP"
 - "s26RangeReplaceableCollectionP"
@@ -1190,7 +1156,6 @@ depends-nominal:
 - "So16UIViewControllerC"
 - "13ProyectoFinal21ViewControllerFiltrarC"
 - !private "s14_ArrayProtocolP"
-- "s23_BidirectionalIndexableP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
@@ -1199,15 +1164,9 @@ depends-nominal:
 - "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
-- "s35_HasCustomAnyHashableRepresentationP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "10Foundation14_MutableBoxingP"
-- !private "s17_MutableIndexableP"
 - "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- "s26_RangeReplaceableIndexableP"
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -1259,4 +1218,17 @@ depends-external:
 - "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-interface-hash: "046f178d2807bcc4357ebfaced06c5bf"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/MessageUI.framework/Headers/MessageUI.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/EventKit.framework/Headers/EventKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "1bc4d502f4ee63f49a4b9282d8a71ff6"

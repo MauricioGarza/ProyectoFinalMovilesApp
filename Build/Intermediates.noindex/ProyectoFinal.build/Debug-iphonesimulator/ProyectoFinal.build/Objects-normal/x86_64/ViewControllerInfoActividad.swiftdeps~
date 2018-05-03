@@ -19,6 +19,7 @@ provides-dynamic-lookup:
 - "labTitulo"
 - "viewDidLoad"
 depends-top-level:
+- !private "!="
 - !private "&&"
 - !private "+"
 - !private "=="
@@ -47,6 +48,8 @@ depends-member:
 - !private ["s23BidirectionalCollectionP", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So7CALayerC", "cornerRadius"]
+- !private ["So15CALayerDelegateP", "isEnabled"]
+- !private ["So15CALayerDelegateP", "isHidden"]
 - !private ["So15CALayerDelegateP", "layer"]
 - !private ["So15CALayerDelegateP", "text"]
 - !private ["So13CAMediaTimingP", "cornerRadius"]
@@ -64,6 +67,8 @@ depends-member:
 - !private ["s7CVarArgP", "UIAlertAction"]
 - !private ["s7CVarArgP", "UIAlertController"]
 - !private ["s7CVarArgP", "UIAlertControllerStyle"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "addAction"]
 - !private ["s7CVarArgP", "addAlarm"]
 - !private ["s7CVarArgP", "btAgregarCalendario"]
@@ -78,6 +83,8 @@ depends-member:
 - !private ["s7CVarArgP", "dismiss"]
 - !private ["s7CVarArgP", "endDate"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isEnabled"]
+- !private ["s7CVarArgP", "isHidden"]
 - !private ["s7CVarArgP", "labCategor\xEDa"]
 - !private ["s7CVarArgP", "labExpositor"]
 - !private ["s7CVarArgP", "labFecha"]
@@ -95,7 +102,6 @@ depends-member:
 - !private ["s7CVarArgP", "title"]
 - !private ["s7CVarArgP", "titulo"]
 - !private ["s7CVarArgP", "viewDidLoad"]
-- ["s7CVarArgP", ""]
 - !private ["10Foundation8CalendarV", "current"]
 - !private ["10Foundation8CalendarV", "date"]
 - !private ["s10CollectionP", "init"]
@@ -114,6 +120,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertAction"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertController"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertControllerStyle"]
+- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "addAction"]
 - !private ["s28CustomDebugStringConvertibleP", "addAlarm"]
 - !private ["s28CustomDebugStringConvertibleP", "btAgregarCalendario"]
@@ -130,6 +137,8 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "endDate"]
 - !private ["s28CustomDebugStringConvertibleP", "hour"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isEnabled"]
+- !private ["s28CustomDebugStringConvertibleP", "isHidden"]
 - !private ["s28CustomDebugStringConvertibleP", "labCategor\xEDa"]
 - !private ["s28CustomDebugStringConvertibleP", "labExpositor"]
 - !private ["s28CustomDebugStringConvertibleP", "labFecha"]
@@ -147,7 +156,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "title"]
 - !private ["s28CustomDebugStringConvertibleP", "titulo"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
-- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
@@ -169,6 +177,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "UIAlertAction"]
 - !private ["s23CustomStringConvertibleP", "UIAlertController"]
 - !private ["s23CustomStringConvertibleP", "UIAlertControllerStyle"]
+- ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "addAction"]
 - !private ["s23CustomStringConvertibleP", "addAlarm"]
@@ -186,6 +195,8 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "endDate"]
 - !private ["s23CustomStringConvertibleP", "hour"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isEnabled"]
+- !private ["s23CustomStringConvertibleP", "isHidden"]
 - !private ["s23CustomStringConvertibleP", "labCategor\xEDa"]
 - !private ["s23CustomStringConvertibleP", "labExpositor"]
 - !private ["s23CustomStringConvertibleP", "labFecha"]
@@ -203,7 +214,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "title"]
 - !private ["s23CustomStringConvertibleP", "titulo"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
-- ["s23CustomStringConvertibleP", ""]
 - !private ["10Foundation14DateComponentsV", "hour"]
 - !private ["10Foundation14DateComponentsV", "init"]
 - !private ["So13DateFormatterC", "date"]
@@ -261,12 +271,14 @@ depends-member:
 - !private ["s9EquatableP", "UIAlertAction"]
 - !private ["s9EquatableP", "UIAlertController"]
 - !private ["s9EquatableP", "UIAlertControllerStyle"]
+- ["s9EquatableP", ""]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "addAction"]
 - !private ["s9EquatableP", "addAlarm"]
 - !private ["s9EquatableP", "alert"]
 - !private ["s9EquatableP", "btAgregarCalendario"]
 - !private ["s9EquatableP", "calendar"]
+- !private ["s9EquatableP", "cancel"]
 - !private ["s9EquatableP", "cornerRadius"]
 - !private ["s9EquatableP", "current"]
 - !private ["s9EquatableP", "date"]
@@ -281,6 +293,8 @@ depends-member:
 - !private ["s9EquatableP", "event"]
 - !private ["s9EquatableP", "hour"]
 - !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "isEnabled"]
+- !private ["s9EquatableP", "isHidden"]
 - !private ["s9EquatableP", "labCategor\xEDa"]
 - !private ["s9EquatableP", "labExpositor"]
 - !private ["s9EquatableP", "labFecha"]
@@ -299,7 +313,6 @@ depends-member:
 - !private ["s9EquatableP", "title"]
 - !private ["s9EquatableP", "titulo"]
 - !private ["s9EquatableP", "viewDidLoad"]
-- ["s9EquatableP", ""]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
@@ -321,12 +334,14 @@ depends-member:
 - !private ["s8HashableP", "UIAlertAction"]
 - !private ["s8HashableP", "UIAlertController"]
 - !private ["s8HashableP", "UIAlertControllerStyle"]
+- ["s8HashableP", ""]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
 - !private ["s8HashableP", "addAction"]
 - !private ["s8HashableP", "addAlarm"]
 - !private ["s8HashableP", "alert"]
 - !private ["s8HashableP", "btAgregarCalendario"]
 - !private ["s8HashableP", "calendar"]
+- !private ["s8HashableP", "cancel"]
 - !private ["s8HashableP", "cornerRadius"]
 - !private ["s8HashableP", "current"]
 - !private ["s8HashableP", "date"]
@@ -341,6 +356,8 @@ depends-member:
 - !private ["s8HashableP", "event"]
 - !private ["s8HashableP", "hour"]
 - !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "isEnabled"]
+- !private ["s8HashableP", "isHidden"]
 - !private ["s8HashableP", "labCategor\xEDa"]
 - !private ["s8HashableP", "labExpositor"]
 - !private ["s8HashableP", "labFecha"]
@@ -359,7 +376,6 @@ depends-member:
 - !private ["s8HashableP", "title"]
 - !private ["s8HashableP", "titulo"]
 - !private ["s8HashableP", "viewDidLoad"]
-- ["s8HashableP", ""]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
@@ -377,6 +393,7 @@ depends-member:
 - !private ["So8NSCodingP", "UIAlertAction"]
 - !private ["So8NSCodingP", "UIAlertController"]
 - !private ["So8NSCodingP", "UIAlertControllerStyle"]
+- ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "addAction"]
 - !private ["So8NSCodingP", "btAgregarCalendario"]
 - !private ["So8NSCodingP", "cornerRadius"]
@@ -387,6 +404,8 @@ depends-member:
 - !private ["So8NSCodingP", "didReceiveMemoryWarning"]
 - !private ["So8NSCodingP", "dismiss"]
 - !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "isEnabled"]
+- !private ["So8NSCodingP", "isHidden"]
 - !private ["So8NSCodingP", "labCategor\xEDa"]
 - !private ["So8NSCodingP", "labExpositor"]
 - !private ["So8NSCodingP", "labFecha"]
@@ -399,7 +418,6 @@ depends-member:
 - !private ["So8NSCodingP", "text"]
 - !private ["So8NSCodingP", "titulo"]
 - !private ["So8NSCodingP", "viewDidLoad"]
-- ["So8NSCodingP", ""]
 - !private ["So9NSCopyingP", "date"]
 - !private ["So9NSCopyingP", "dateFormat"]
 - !private ["So9NSCopyingP", "init"]
@@ -417,6 +435,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertAction"]
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertController"]
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertControllerStyle"]
+- ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "addAction"]
 - !private ["So26NSExtensionRequestHandlingP", "btAgregarCalendario"]
 - !private ["So26NSExtensionRequestHandlingP", "descActividad"]
@@ -434,10 +453,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "print"]
 - !private ["So26NSExtensionRequestHandlingP", "titulo"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
-- ["So26NSExtensionRequestHandlingP", ""]
-- !private ["So21NSItemProviderReadingP", "init"]
-- !private ["So21NSItemProviderWritingP", "init"]
-- !private ["So16NSMutableCopyingP", "init"]
 - ["So8NSObjectC", "Bool"]
 - !private ["So8NSObjectC", "Calendar"]
 - ["So8NSObjectC", "Categoria"]
@@ -474,6 +489,8 @@ depends-member:
 - !private ["So8NSObjectC", "endDate"]
 - ["So8NSObjectC", "eventoAgregado"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "isEnabled"]
+- !private ["So8NSObjectC", "isHidden"]
 - ["So8NSObjectC", "labCategor\xEDa"]
 - ["So8NSObjectC", "labExpositor"]
 - ["So8NSObjectC", "labFecha"]
@@ -505,6 +522,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "UIAlertAction"]
 - !private ["So16NSObjectProtocolP", "UIAlertController"]
 - !private ["So16NSObjectProtocolP", "UIAlertControllerStyle"]
+- ["So16NSObjectProtocolP", ""]
 - !private ["So16NSObjectProtocolP", "addAction"]
 - !private ["So16NSObjectProtocolP", "addAlarm"]
 - !private ["So16NSObjectProtocolP", "btAgregarCalendario"]
@@ -519,6 +537,8 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "dismiss"]
 - !private ["So16NSObjectProtocolP", "endDate"]
 - !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "isEnabled"]
+- !private ["So16NSObjectProtocolP", "isHidden"]
 - !private ["So16NSObjectProtocolP", "labCategor\xEDa"]
 - !private ["So16NSObjectProtocolP", "labExpositor"]
 - !private ["So16NSObjectProtocolP", "labFecha"]
@@ -536,12 +556,10 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "title"]
 - !private ["So16NSObjectProtocolP", "titulo"]
 - !private ["So16NSObjectProtocolP", "viewDidLoad"]
-- ["So16NSObjectProtocolP", ""]
 - !private ["So14NSSecureCodingP", "cornerRadius"]
-- !private ["So14NSSecureCodingP", "init"]
-- !private ["So8NSStringC", "init"]
 - !private ["s26RangeReplaceableCollectionP", "init"]
 - !private ["s16RawRepresentableP", "alert"]
+- !private ["s16RawRepresentableP", "cancel"]
 - !private ["s16RawRepresentableP", "destructive"]
 - !private ["s16RawRepresentableP", "event"]
 - !private ["s16RawRepresentableP", "thisEvent"]
@@ -554,14 +572,21 @@ depends-member:
 - !private ["s14StringProtocolP", "init"]
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "isEnabled"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "isHidden"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "layer"]
+- !private ["So29UIAccessibilityIdentificationP", "isEnabled"]
+- !private ["So29UIAccessibilityIdentificationP", "isHidden"]
 - !private ["So29UIAccessibilityIdentificationP", "layer"]
 - !private ["So29UIAccessibilityIdentificationP", "text"]
 - !private ["So13UIAlertActionC", "init"]
+- !private ["SC18UIAlertActionStyleO", "cancel"]
 - !private ["SC18UIAlertActionStyleO", "destructive"]
 - !private ["So17UIAlertControllerC", "addAction"]
 - !private ["So17UIAlertControllerC", "init"]
 - !private ["SC22UIAlertControllerStyleO", "alert"]
+- !private ["So12UIAppearanceP", "isEnabled"]
+- !private ["So12UIAppearanceP", "isHidden"]
 - !private ["So12UIAppearanceP", "layer"]
 - !private ["So12UIAppearanceP", "text"]
 - !private ["So21UIAppearanceContainerP", "Calendar"]
@@ -578,6 +603,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "UIAlertAction"]
 - !private ["So21UIAppearanceContainerP", "UIAlertController"]
 - !private ["So21UIAppearanceContainerP", "UIAlertControllerStyle"]
+- ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "addAction"]
 - !private ["So21UIAppearanceContainerP", "btAgregarCalendario"]
 - !private ["So21UIAppearanceContainerP", "descActividad"]
@@ -585,6 +611,8 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
 - !private ["So21UIAppearanceContainerP", "dismiss"]
 - !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "isEnabled"]
+- !private ["So21UIAppearanceContainerP", "isHidden"]
 - !private ["So21UIAppearanceContainerP", "labCategor\xEDa"]
 - !private ["So21UIAppearanceContainerP", "labExpositor"]
 - !private ["So21UIAppearanceContainerP", "labFecha"]
@@ -597,7 +625,8 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "text"]
 - !private ["So21UIAppearanceContainerP", "titulo"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
-- ["So21UIAppearanceContainerP", ""]
+- !private ["So8UIButtonC", "isEnabled"]
+- !private ["So8UIButtonC", "isHidden"]
 - !private ["So8UIButtonC", "layer"]
 - !private ["So18UIContentContainerP", "Calendar"]
 - !private ["So18UIContentContainerP", "Categoria"]
@@ -613,6 +642,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "UIAlertAction"]
 - !private ["So18UIContentContainerP", "UIAlertController"]
 - !private ["So18UIContentContainerP", "UIAlertControllerStyle"]
+- ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "addAction"]
 - !private ["So18UIContentContainerP", "btAgregarCalendario"]
 - !private ["So18UIContentContainerP", "descActividad"]
@@ -630,11 +660,16 @@ depends-member:
 - !private ["So18UIContentContainerP", "print"]
 - !private ["So18UIContentContainerP", "titulo"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
-- ["So18UIContentContainerP", ""]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So9UIControlC", "isEnabled"]
+- !private ["So9UIControlC", "isHidden"]
 - !private ["So9UIControlC", "layer"]
+- !private ["So17UICoordinateSpaceP", "isEnabled"]
+- !private ["So17UICoordinateSpaceP", "isHidden"]
 - !private ["So17UICoordinateSpaceP", "layer"]
 - !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So13UIDynamicItemP", "isEnabled"]
+- !private ["So13UIDynamicItemP", "isHidden"]
 - !private ["So13UIDynamicItemP", "layer"]
 - !private ["So13UIDynamicItemP", "text"]
 - !private ["So18UIFocusEnvironmentP", "Calendar"]
@@ -651,6 +686,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "UIAlertAction"]
 - !private ["So18UIFocusEnvironmentP", "UIAlertController"]
 - !private ["So18UIFocusEnvironmentP", "UIAlertControllerStyle"]
+- ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "addAction"]
 - !private ["So18UIFocusEnvironmentP", "btAgregarCalendario"]
 - !private ["So18UIFocusEnvironmentP", "descActividad"]
@@ -658,6 +694,8 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
 - !private ["So18UIFocusEnvironmentP", "dismiss"]
 - !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "isEnabled"]
+- !private ["So18UIFocusEnvironmentP", "isHidden"]
 - !private ["So18UIFocusEnvironmentP", "labCategor\xEDa"]
 - !private ["So18UIFocusEnvironmentP", "labExpositor"]
 - !private ["So18UIFocusEnvironmentP", "labFecha"]
@@ -670,7 +708,8 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "text"]
 - !private ["So18UIFocusEnvironmentP", "titulo"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
-- ["So18UIFocusEnvironmentP", ""]
+- !private ["So11UIFocusItemP", "isEnabled"]
+- !private ["So11UIFocusItemP", "isHidden"]
 - !private ["So11UIFocusItemP", "layer"]
 - !private ["So11UIFocusItemP", "text"]
 - !private ["So7UILabelC", "text"]
@@ -688,6 +727,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertAction"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertController"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertControllerStyle"]
+- ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "addAction"]
 - !private ["So30UIPasteConfigurationSupportingP", "btAgregarCalendario"]
 - !private ["So30UIPasteConfigurationSupportingP", "descActividad"]
@@ -695,6 +735,8 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
 - !private ["So30UIPasteConfigurationSupportingP", "dismiss"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "isEnabled"]
+- !private ["So30UIPasteConfigurationSupportingP", "isHidden"]
 - !private ["So30UIPasteConfigurationSupportingP", "labCategor\xEDa"]
 - !private ["So30UIPasteConfigurationSupportingP", "labExpositor"]
 - !private ["So30UIPasteConfigurationSupportingP", "labFecha"]
@@ -707,7 +749,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "titulo"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
-- ["So30UIPasteConfigurationSupportingP", ""]
 - ["So11UIResponderC", "Bool"]
 - !private ["So11UIResponderC", "Calendar"]
 - ["So11UIResponderC", "Categoria"]
@@ -737,6 +778,8 @@ depends-member:
 - !private ["So11UIResponderC", "dismiss"]
 - ["So11UIResponderC", "eventoAgregado"]
 - ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "isEnabled"]
+- !private ["So11UIResponderC", "isHidden"]
 - ["So11UIResponderC", "labCategor\xEDa"]
 - ["So11UIResponderC", "labExpositor"]
 - ["So11UIResponderC", "labFecha"]
@@ -763,6 +806,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertAction"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertController"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertControllerStyle"]
+- ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "addAction"]
 - !private ["So30UIResponderStandardEditActionsP", "btAgregarCalendario"]
 - !private ["So30UIResponderStandardEditActionsP", "descActividad"]
@@ -770,6 +814,8 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
 - !private ["So30UIResponderStandardEditActionsP", "dismiss"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "isEnabled"]
+- !private ["So30UIResponderStandardEditActionsP", "isHidden"]
 - !private ["So30UIResponderStandardEditActionsP", "labCategor\xEDa"]
 - !private ["So30UIResponderStandardEditActionsP", "labExpositor"]
 - !private ["So30UIResponderStandardEditActionsP", "labFecha"]
@@ -782,9 +828,10 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "text"]
 - !private ["So30UIResponderStandardEditActionsP", "titulo"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
-- ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So35UISpringLoadedInteractionSupportingP", "addAction"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "init"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "isEnabled"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "isHidden"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "layer"]
 - !private ["So16UIStateRestoringP", "Calendar"]
 - !private ["So16UIStateRestoringP", "Categoria"]
@@ -800,6 +847,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "UIAlertAction"]
 - !private ["So16UIStateRestoringP", "UIAlertController"]
 - !private ["So16UIStateRestoringP", "UIAlertControllerStyle"]
+- ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "addAction"]
 - !private ["So16UIStateRestoringP", "btAgregarCalendario"]
 - !private ["So16UIStateRestoringP", "descActividad"]
@@ -817,7 +865,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "print"]
 - !private ["So16UIStateRestoringP", "titulo"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
-- ["So16UIStateRestoringP", ""]
 - !private ["So18UITraitEnvironmentP", "Calendar"]
 - !private ["So18UITraitEnvironmentP", "Categoria"]
 - !private ["So18UITraitEnvironmentP", "DateComponents"]
@@ -832,6 +879,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "UIAlertAction"]
 - !private ["So18UITraitEnvironmentP", "UIAlertController"]
 - !private ["So18UITraitEnvironmentP", "UIAlertControllerStyle"]
+- ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "addAction"]
 - !private ["So18UITraitEnvironmentP", "btAgregarCalendario"]
 - !private ["So18UITraitEnvironmentP", "descActividad"]
@@ -839,6 +887,8 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
 - !private ["So18UITraitEnvironmentP", "dismiss"]
 - !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "isEnabled"]
+- !private ["So18UITraitEnvironmentP", "isHidden"]
 - !private ["So18UITraitEnvironmentP", "labCategor\xEDa"]
 - !private ["So18UITraitEnvironmentP", "labExpositor"]
 - !private ["So18UITraitEnvironmentP", "labFecha"]
@@ -851,7 +901,8 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "text"]
 - !private ["So18UITraitEnvironmentP", "titulo"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
-- ["So18UITraitEnvironmentP", ""]
+- !private ["So6UIViewC", "isEnabled"]
+- !private ["So6UIViewC", "isHidden"]
 - !private ["So6UIViewC", "layer"]
 - !private ["So6UIViewC", "text"]
 - ["So16UIViewControllerC", "Bool"]
@@ -873,6 +924,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "UIAlertControllerStyle"]
 - ["So16UIViewControllerC", "UIButton"]
 - ["So16UIViewControllerC", "UILabel"]
+- ["So16UIViewControllerC", ""]
 - !private ["So16UIViewControllerC", "addAction"]
 - ["So16UIViewControllerC", "addToCalendar"]
 - ["So16UIViewControllerC", "btAgregarCalendario"]
@@ -893,7 +945,6 @@ depends-member:
 - !private ["So16UIViewControllerC", "print"]
 - ["So16UIViewControllerC", "titulo"]
 - ["So16UIViewControllerC", "viewDidLoad"]
-- ["So16UIViewControllerC", ""]
 - ["13ProyectoFinal27ViewControllerInfoActividadC", "Bool"]
 - !private ["13ProyectoFinal27ViewControllerInfoActividadC", "Calendar"]
 - ["13ProyectoFinal27ViewControllerInfoActividadC", "Categoria"]
@@ -933,7 +984,8 @@ depends-member:
 - !private ["13ProyectoFinal27ViewControllerInfoActividadC", "print"]
 - ["13ProyectoFinal27ViewControllerInfoActividadC", "titulo"]
 - ["13ProyectoFinal27ViewControllerInfoActividadC", "viewDidLoad"]
-- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "isEnabled"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "isHidden"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "layer"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
@@ -942,9 +994,6 @@ depends-member:
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s14_IndexableBaseP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Calendar"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Categoria"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DateComponents"]
@@ -959,6 +1008,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertControllerStyle"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addAlarm"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "btAgregarCalendario"]
@@ -973,6 +1023,8 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dismiss"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "endDate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isEnabled"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isHidden"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "labCategor\xEDa"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "labExpositor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "labFecha"]
@@ -990,7 +1042,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "titulo"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
-- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation14_MutableBoxingP", "current"]
 - !private ["10Foundation14_MutableBoxingP", "date"]
 - !private ["10Foundation14_MutableBoxingP", "hour"]
@@ -1000,7 +1051,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "date"]
 - !private ["s21_ObjectiveCBridgeableP", "hour"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "s23BidirectionalCollectionP"
@@ -1039,13 +1089,9 @@ depends-nominal:
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
 - "So26NSExtensionRequestHandlingP"
-- !private "So21NSItemProviderReadingP"
-- !private "So21NSItemProviderWritingP"
-- !private "So16NSMutableCopyingP"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
 - !private "So14NSSecureCodingP"
-- !private "So8NSStringC"
 - !private "s26RangeReplaceableCollectionP"
 - !private "s16RawRepresentableP"
 - !private "10Foundation20ReferenceConvertibleP"
@@ -1080,7 +1126,6 @@ depends-nominal:
 - !private "So6UIViewC"
 - "So16UIViewControllerC"
 - "13ProyectoFinal27ViewControllerInfoActividadC"
-- !private "s23_BidirectionalIndexableP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
@@ -1088,13 +1133,9 @@ depends-nominal:
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
-- !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "10Foundation14_MutableBoxingP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s26_RangeReplaceableIndexableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -1146,4 +1187,17 @@ depends-external:
 - "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-interface-hash: "ce99350cd6098eed442eba35dff6c2fb"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/MessageUI.framework/Headers/MessageUI.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/EventKit.framework/Headers/EventKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "de2a1e1c788972b9b6a2b903d99ae6a1"

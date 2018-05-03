@@ -4,7 +4,7 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Products/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers",
+      'name': "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Products/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -19,7 +19,7 @@
         {
           'type': 'file',
           'name': "GoogleToolboxForMac-Swift.h",
-          'external-contents': "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Products/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers/GoogleToolboxForMac-Swift.h"
+          'external-contents': "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Products/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers/GoogleToolboxForMac-Swift.h"
         },
         {
           'type': 'file',
@@ -30,18 +30,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Products/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework/Modules",
+      'name': "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Products/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/GoogleToolboxForMac.build/module.modulemap"
+          'external-contents': "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/GoogleToolboxForMac.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Products/Debug-iphoneos/Pods_ProyectoFinal.framework/Headers",
+      'name': "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Products/Debug-iphonesimulator/Pods_ProyectoFinal.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -51,24 +51,24 @@
         {
           'type': 'file',
           'name': "Pods_ProyectoFinal-Swift.h",
-          'external-contents': "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Products/Debug-iphoneos/Pods_ProyectoFinal.framework/Headers/Pods_ProyectoFinal-Swift.h"
+          'external-contents': "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Products/Debug-iphonesimulator/Pods_ProyectoFinal.framework/Headers/Pods_ProyectoFinal-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Products/Debug-iphoneos/Pods_ProyectoFinal.framework/Modules",
+      'name': "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Products/Debug-iphonesimulator/Pods_ProyectoFinal.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Pods-ProyectoFinal.build/module.modulemap"
+          'external-contents': "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Pods-ProyectoFinal.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Products/Debug-iphoneos/leveldb-library/leveldb.framework/Headers",
+      'name': "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Products/Debug-iphonesimulator/leveldb-library/leveldb.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -113,7 +113,7 @@
         {
           'type': 'file',
           'name': "leveldb-Swift.h",
-          'external-contents': "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Products/Debug-iphoneos/leveldb-library/leveldb.framework/Headers/leveldb-Swift.h"
+          'external-contents': "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Products/Debug-iphonesimulator/leveldb-library/leveldb.framework/Headers/leveldb-Swift.h"
         },
         {
           'type': 'file',
@@ -154,23 +154,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Products/Debug-iphoneos/leveldb-library/leveldb.framework/Modules",
+      'name': "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Products/Debug-iphonesimulator/leveldb-library/leveldb.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/leveldb-library.build/module.modulemap"
+          'external-contents': "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/leveldb-library.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Products/Debug-iphoneos/nanopb/nanopb.framework/Headers",
+      'name': "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Products/Debug-iphonesimulator/nanopb/nanopb.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "nanopb-Swift.h",
-          'external-contents': "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Products/Debug-iphoneos/nanopb/nanopb.framework/Headers/nanopb-Swift.h"
+          'external-contents': "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Products/Debug-iphonesimulator/nanopb/nanopb.framework/Headers/nanopb-Swift.h"
         },
         {
           'type': 'file',
@@ -201,12 +201,12 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Products/Debug-iphoneos/nanopb/nanopb.framework/Modules",
+      'name': "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Products/Debug-iphonesimulator/nanopb/nanopb.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/nanopb.build/module.modulemap"
+          'external-contents': "/Users/mauriciogarza/Desktop/ProyectoFinal/ProyectoFinalMovilesApp/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/nanopb.build/module.modulemap"
         }
       ]
     }
