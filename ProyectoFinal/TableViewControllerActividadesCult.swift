@@ -14,9 +14,8 @@ class TableViewControllerActividadesCult: UITableViewController {
     @IBOutlet weak var butFiltrar: UIButton!
     @IBOutlet weak var butTitle: UILabel!
 
-    var arrDatos : [String] = []
-    var arrEventos : [Evento] = []
-    var arrEventosFiltrados : [Evento] = []
+    var arrDatos : [String] = [] //En este arreglo se guardan los nombres de los pabellones y los datos cuando se aplica un filtro
+    var arrEventos : [Evento] = [] // Aqui se guardan los eventos de Actividades Culturales, los Ejes y los pabellones cuando se selecciona un nombre.
     
     var Indice : Int!
     var FinalIndice : Int!
@@ -45,20 +44,23 @@ class TableViewControllerActividadesCult: UITableViewController {
         FireBaseRef = Database.database().reference()
         FinalIndice = Indice
         navigationController?.setNavigationBarHidden(true, animated: false)
+        //If que checa si se ingreso al viewcontroller desde el tab bar y checa cual tab fue seleccionado
         if tabBarController?.selectedIndex != nil && NombrePabellon == "" && viewHappened == false && bFiltrar == false {
             butRegresar.setTitle("", for: .normal)
             butRegresar.isEnabled = false
+            //Si el tab 2 fue seleccionado
             switch tabBarController?.selectedIndex{
             case 2?:
                 arrEventos.removeAll()
                 self.tableView.reloadData()
                 butTitle.text = "Actividades Culturales"
                 let refActividadesCulturales = self.FireBaseRef?.child("ActividadesCulturales")
-                llenarEvento(ref: refActividadesCulturales!)
+                llenarEvento(ref: refActividadesCulturales!) //Llena el arreglo con los eventos de Actividades Culturales
                 butRegresar.isEnabled = true
                 butRegresar.isHidden = true
                 butFiltrar.isHidden = false
                 butFiltrar.isEnabled = true
+                //Este case checa que se selecciona el case de pabellones
             case 3?:
                 arrDatos.removeAll()
                 self.tableView.reloadData()
@@ -67,7 +69,7 @@ class TableViewControllerActividadesCult: UITableViewController {
                 butFiltrar.isEnabled = false
                 butFiltrar.isHidden = true
                 butTitle.text = "Pabellones"
-                Handle = self.FireBaseRef?.child("Pabellones").observe(.childAdded, with:{(DataSnapshot) in
+                Handle = self.FireBaseRef?.child("Pabellones").observe(.childAdded, with:{(DataSnapshot) in //Llene el arreglo arrDatos, con info de los nombre de los pabellones
                     if let item = DataSnapshot.key as? String
                     {
                         self.arrDatos.append(item)
@@ -81,15 +83,17 @@ class TableViewControllerActividadesCult: UITableViewController {
                 break
             }
         }
+            //Este else if checa cuando se selecciona un nombre de pabellon y se quieren ver sus actividades
         else if NombrePabellon != "" && bFiltrar == false{
             butFiltrar.isHidden = false
             butFiltrar.isEnabled = true
             arrEventos.removeAll()
             self.tableView.reloadData()
             butTitle.text = NombrePabellon
-            let refAct = self.FireBaseRef?.child("Pabellones").child(NombrePabellon)
+            let refAct = self.FireBaseRef?.child("Pabellones").child(NombrePabellon) //Llena el arreglo de eventos dependiendo del nombre del pabellon
             llenarEvento(ref: refAct!)
         }
+            //Este else se usa cuando se llega al view desde la vista de Ejes
         else if bFiltrar == false{
             viewHappened = false
             butFiltrar.setTitle("", for: .normal)
@@ -99,6 +103,7 @@ class TableViewControllerActividadesCult: UITableViewController {
             butRegresar.isEnabled = true
             arrEventos.removeAll()
             self.tableView.reloadData()
+            //Switch que checa cual eje fue seleccionado
             switch FinalIndice{
             case 0?:
                 butTitle.text = "Eje Derechos Humanos"
@@ -129,6 +134,7 @@ class TableViewControllerActividadesCult: UITableViewController {
                 break
             }
         }
+            //Por ultimo, si llega hasta el else, significa que el usuario filtro las actividades
         else{
             viewHappened = false
             if arrEventos.isEmpty{
@@ -199,7 +205,8 @@ class TableViewControllerActividadesCult: UITableViewController {
 
         return cell
     }
-    
+    //Funcion que llena el arreglo de eventos dependiendo de lo que se encuentre en la bases de datos
+    //Recive como parametro la referencia de lo que se quiere rellenar con la base datos.
     func llenarEvento(ref:DatabaseReference){
         ref.observeSingleEvent(of: .value, with:{ DataSnapshot in
             for child in DataSnapshot.children{
@@ -221,10 +228,11 @@ class TableViewControllerActividadesCult: UITableViewController {
     
     
     // MARK: - Navigation
-    
+    //Este should perform segue checa si tiene que hacer el segue o no
+    //Si el segue lo esta mandado la vista con los titulos de pabellones, el segue no se va a realizar
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
             let ident = identifier
-            if ident == "infoactividad" && arrDatos.count > 0{
+            if ident == "infoactividad" && arrDatos.count > 0{ // Si arrDatos tiene datos significa que se esta en la pantalla con los nombres de los pabellones
                 let indice = tableView.indexPathForSelectedRow
                 NombrePabellon = arrDatos[(indice?.row)!]
                 arrDatos.removeAll()

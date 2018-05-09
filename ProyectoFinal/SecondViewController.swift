@@ -37,7 +37,7 @@ class SecondViewController: UIViewController {
     //MARK: Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let Dest = segue.destination as! TableViewControllerActividadesCult
-        
+        //Esto es para saber que boton fue el que hizo que se llevará a la otra vista
         switch sender as! UIButton {
         case butDerechosHumanos:
             Dest.Indice = 0

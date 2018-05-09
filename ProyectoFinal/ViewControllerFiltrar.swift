@@ -73,6 +73,7 @@ class ViewControllerFiltrar: UIViewController, UIPickerViewDataSource, UIPickerV
         // Dispose of any resources that can be recreated.
     }
     
+    //Funcion que crea la imagen de check y uncheck
     @IBAction func checkButon(_ sender: UIButton) {
         if sender.imageView?.image == #imageLiteral(resourceName: "unchecked"){
             sender.setImage(#imageLiteral(resourceName: "checked"), for: .normal)
@@ -88,6 +89,8 @@ class ViewControllerFiltrar: UIViewController, UIPickerViewDataSource, UIPickerV
     
      // MARK: - Navigation
     
+    
+    //Esto shouldperform segue checa que no se haya dejado en blanco algún campo que si se quiere filtrar
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if  btCategoria.imageView?.image == #imageLiteral(resourceName: "checked") && categoEscogida == nil{
             let alerta = UIAlertController(title: "Error", message: "El campo de categoria no fue seleccionado", preferredStyle: .alert)
@@ -104,11 +107,13 @@ class ViewControllerFiltrar: UIViewController, UIPickerViewDataSource, UIPickerV
         return true
     }
      // In a storyboard-based application, you will often want to do a little preparation before navigation
+    //aqui es donde se hace el filtro
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let dest = segue.destination as! TableViewControllerActividadesCult
         let dateFormater=DateFormatter()
         dateFormater.dateFormat="YYYY-MM-dd"
         dest.arrEventos.removeAll()
+        //Checa que solo se quiera filtrar fecha
         if btFecha.imageView?.image==#imageLiteral(resourceName: "checked") && btEdad.imageView?.image == #imageLiteral(resourceName: "unchecked") && btCategoria.imageView?.image == #imageLiteral(resourceName: "unchecked"){
             for event in arrEventos{
                 let date = dateFormater.date(from: event.sFecha)
@@ -117,11 +122,13 @@ class ViewControllerFiltrar: UIViewController, UIPickerViewDataSource, UIPickerV
                 }
             }
         }
+            //Checa que solo se quiera filtrar edad
         else if btFecha.imageView?.image == #imageLiteral(resourceName: "unchecked") && btEdad.imageView?.image == #imageLiteral(resourceName: "checked") && btCategoria.imageView?.image == #imageLiteral(resourceName: "unchecked"){
             for event in arrEventos{
                 dest.arrEventos.append(event)
             }
         }
+            //Checa que solo se quiera filtrar la edad
         else if btFecha.imageView?.image == #imageLiteral(resourceName: "unchecked") && btEdad.imageView?.image == #imageLiteral(resourceName: "unchecked") && btCategoria.imageView?.image == #imageLiteral(resourceName: "checked"){
             print(categoEscogida)
             for event in arrEventos{
@@ -131,6 +138,7 @@ class ViewControllerFiltrar: UIViewController, UIPickerViewDataSource, UIPickerV
                 }
             }
         }
+            //Checa cuando se hace la fecha con la edad
         else if btFecha.imageView?.image == #imageLiteral(resourceName: "checked") && btEdad.imageView?.image == #imageLiteral(resourceName: "checked") && btCategoria.imageView?.image == #imageLiteral(resourceName: "unchecked"){
             for event in arrEventos{
                 let date = dateFormater.date(from: event.sFecha)
@@ -139,6 +147,7 @@ class ViewControllerFiltrar: UIViewController, UIPickerViewDataSource, UIPickerV
                 }
             }
         }
+            //checa el filtro con la fecha y con la categoria
         else if btFecha.imageView?.image == #imageLiteral(resourceName: "checked") && btEdad.imageView?.image == #imageLiteral(resourceName: "unchecked") && btCategoria.imageView?.image == #imageLiteral(resourceName: "checked"){
             for event in arrEventos{
                 let date = dateFormater.date(from: event.sFecha)
@@ -147,6 +156,7 @@ class ViewControllerFiltrar: UIViewController, UIPickerViewDataSource, UIPickerV
                 }
             }
         }
+            //Checa con la edad y con la categoria juntos
         else if btFecha.imageView?.image == #imageLiteral(resourceName: "unchecked") && btEdad.imageView?.image == #imageLiteral(resourceName: "checked") && btCategoria.imageView?.image == #imageLiteral(resourceName: "checked"){
             for event in arrEventos{
                 if categoEscogida == event.sCategoria{
@@ -154,6 +164,7 @@ class ViewControllerFiltrar: UIViewController, UIPickerViewDataSource, UIPickerV
                 }
             }
         }
+            //Checa con todos los filtros
         else if btFecha.imageView?.image == #imageLiteral(resourceName: "checked") && btEdad.imageView?.image == #imageLiteral(resourceName: "checked") && btCategoria.imageView?.image == #imageLiteral(resourceName: "checked"){
             for event in arrEventos{
                 let date = dateFormater.date(from: event.sFecha)

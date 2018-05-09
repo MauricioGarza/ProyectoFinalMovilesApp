@@ -678,7 +678,6 @@ depends-member:
 - !private ["So8NSObjectC", "ViewControllerInfoActividad"]
 - ["So8NSObjectC", "arrDatos"]
 - ["So8NSObjectC", "arrEventos"]
-- ["So8NSObjectC", "arrEventosFiltrados"]
 - ["So8NSObjectC", "bFiltrar"]
 - ["So8NSObjectC", "butFiltrar"]
 - ["So8NSObjectC", "butRegresar"]
@@ -883,7 +882,6 @@ depends-member:
 - !private ["13ProyectoFinal34TableViewControllerActividadesCultC", "ViewControllerInfoActividad"]
 - ["13ProyectoFinal34TableViewControllerActividadesCultC", "arrDatos"]
 - ["13ProyectoFinal34TableViewControllerActividadesCultC", "arrEventos"]
-- ["13ProyectoFinal34TableViewControllerActividadesCultC", "arrEventosFiltrados"]
 - ["13ProyectoFinal34TableViewControllerActividadesCultC", "bFiltrar"]
 - ["13ProyectoFinal34TableViewControllerActividadesCultC", "butFiltrar"]
 - ["13ProyectoFinal34TableViewControllerActividadesCultC", "butRegresar"]
@@ -1184,7 +1182,6 @@ depends-member:
 - !private ["So11UIResponderC", "ViewControllerInfoActividad"]
 - ["So11UIResponderC", "arrDatos"]
 - ["So11UIResponderC", "arrEventos"]
-- ["So11UIResponderC", "arrEventosFiltrados"]
 - ["So11UIResponderC", "bFiltrar"]
 - ["So11UIResponderC", "butFiltrar"]
 - ["So11UIResponderC", "butRegresar"]
@@ -1372,7 +1369,6 @@ depends-member:
 - ["So21UITableViewControllerC", ""]
 - ["So21UITableViewControllerC", "arrDatos"]
 - ["So21UITableViewControllerC", "arrEventos"]
-- ["So21UITableViewControllerC", "arrEventosFiltrados"]
 - ["So21UITableViewControllerC", "bFiltrar"]
 - ["So21UITableViewControllerC", "butFiltrar"]
 - ["So21UITableViewControllerC", "butRegresar"]
@@ -1533,7 +1529,6 @@ depends-member:
 - !private ["So16UIViewControllerC", "ViewControllerInfoActividad"]
 - ["So16UIViewControllerC", "arrDatos"]
 - ["So16UIViewControllerC", "arrEventos"]
-- ["So16UIViewControllerC", "arrEventosFiltrados"]
 - ["So16UIViewControllerC", "bFiltrar"]
 - ["So16UIViewControllerC", "butFiltrar"]
 - ["So16UIViewControllerC", "butRegresar"]
@@ -1865,4 +1860,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/EventKit.framework/Headers/EventKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "e3ef448782d5adb5a1e45dce5c81c2b3"
+interface-hash: "89035311394420928b5248d54bd94ec0"
